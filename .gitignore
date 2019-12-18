@@ -1,0 +1,13 @@
+.DS_Store
+node_modules/
+.vscode
+*.log
+*.rar
+*.zip
+.svn/*
+obj/*
+*.bak
+config.js
+**/env/production.js
+scss/
+note.txt
