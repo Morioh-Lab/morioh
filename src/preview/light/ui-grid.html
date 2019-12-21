@@ -44,6 +44,16 @@
 
     <link rel="stylesheet" href="../../css/morioh.css">
 
+    <style>
+        .grid-container {
+            background-color: #f1f5f7;
+            margin-bottom: 10px;
+            font-size: .8rem;
+            font-weight: 500;
+            padding: 10px 20px;
+        }
+    </style>
+
 
 </head>
 
@@ -568,386 +578,257 @@
         <div class="container-fluid mt-30">
 
             <div class="card">
-
                 <div class="card-body">
+                    <h4>Grid options </h4>
+                    <p>See how aspects of the Bootstrap grid system work across multiple devices with a handy table.</p>
 
-                    <h4 class="card-title">
-                        Display headings
-                    </h4>
-                    <p>Traditional heading elements are designed to work best in the meat of your page content. When you
-                        need a heading to stand out, consider using a display heading—a larger, slightly more
-                        opinionated heading style.</p>
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-striped mb-0">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th class="text-center">
+                                        Extra small<br>
+                                        <small>&lt;576px</small>
+                                    </th>
+                                    <th class="text-center">
+                                        Small<br>
+                                        <small>≥576px</small>
+                                    </th>
+                                    <th class="text-center">
+                                        Medium<br>
+                                        <small>≥768px</small>
+                                    </th>
+                                    <th class="text-center">
+                                        Large<br>
+                                        <small>≥992px</small>
+                                    </th>
+                                    <th class="text-center">
+                                        X Large<br>
+                                        <small>≥1200px</small>
+                                    </th>
 
-                    <div class="form-group">
-
-                        <h1 class="display-1">Display 1</h1>
-
-                        <h1 class="display-2">Display 2</h1>
-
-                        <h1 class="display-3">Display 3</h1>
-
-                        <h1 class="display-4">Display 4</h1>
-
+                                    <th class="text-center">
+                                        XX Large<br>
+                                        <small>≥1600px</small>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th class="text-nowrap" scope="row">Max container width</th>
+                                    <td>None (auto)</td>
+                                    <td>540px</td>
+                                    <td>720px</td>
+                                    <td>960px</td>
+                                    <td>1140px</td>
+                                    <td>1640px</td>
+                                </tr>
+                                <tr>
+                                    <th class="text-nowrap" scope="row">Class prefix</th>
+                                    <td><code>.col-</code></td>
+                                    <td><code>.col-sm-</code></td>
+                                    <td><code>.col-md-</code></td>
+                                    <td><code>.col-lg-</code></td>
+                                    <td><code>.col-xl-</code></td>
+                                    <td><code>.col-xxl-</code></td>
+                                </tr>
+                                <tr>
+                                    <th class="text-nowrap" scope="row"># of columns</th>
+                                    <td colspan="6">12</td>
+                                </tr>
+                                <tr>
+                                    <th class="text-nowrap" scope="row">Gutter width</th>
+                                    <td colspan="6">1.875rem = 30px (15px on each side of a column)</td>
+                                </tr>
+                                <tr>
+                                    <th class="text-nowrap" scope="row">Nestable</th>
+                                    <td colspan="6">Yes</td>
+                                </tr>
+                                <tr>
+                                    <th class="text-nowrap" scope="row">Column ordering</th>
+                                    <td colspan="6">Yes</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
 
                 </div>
             </div>
 
-
             <div class="card">
 
                 <div class="card-body">
-
-                    <h4 class="card-title">
-                        Headings
-                    </h4>
-                    <p>
-                        All HTML headings, <code>&lt;h1&gt;</code> through
-                        <code>&lt;h6&gt;</code>, are available. <code>.h1</code> through <code>.h6</code>
-                        classes are also available, for when you want to match the font styling of a heading
-                        but still want your text to be displayed inline.
-                    </p>
-
-                    <h1>This is a Heading 1</h1>
-                    <p class="text-muted">Suspendisse vel quam malesuada, aliquet sem sit
-                        amet, fringilla elit. Morbi
-                        tempor tincidunt tempor. Etiam id turpis viverra, vulputate sapien
-                        nec,
-                        varius sem. Curabitur ullamcorper fringilla eleifend. In ut eros
-                        hendrerit
-                        est consequat posuere et at velit.</p>
-
-                    <div class="clearfix"></div>
-
-                    <h2>This is a Heading 2</h2>
-                    <p class="text-muted">In nec rhoncus eros. Vestibulum eu mattis nisl.
-                        Quisque viverra viverra magna
-                        nec pulvinar. Maecenas pellentesque porta augue, consectetur
-                        facilisis diam
-                        porttitor sed. Suspendisse tempor est sodales augue rutrum
-                        tincidunt.
-                        Quisque a malesuada purus.</p>
-
-                    <div class="clearfix"></div>
-
-                    <h3>This is a Heading 3</h3>
-                    <p class="text-muted">Vestibulum auctor tincidunt semper. Phasellus ut
-                        vulputate lacus. Suspendisse
-                        ultricies mi eros, sit amet tempor nulla varius sed. Proin nisl
-                        nisi,
-                        feugiat quis bibendum vitae, dapibus in tellus.</p>
-
-                    <div class="clearfix"></div>
-
-                    <h4>This is a Heading 4</h4>
-                    <p class="text-muted">Nulla et mattis nunc. Curabitur scelerisque
-                        commodo condimentum. Mauris
-                        blandit, velit a consectetur egestas, diam arcu fermentum justo,
-                        eget
-                        ultrices arcu eros vel erat.</p>
-
-                    <div class="clearfix"></div>
-
-                    <h5>This is a Heading 5</h5>
-                    <p class="text-muted">Quisque nec turpis at urna dictum luctus.
-                        Suspendisse convallis dignissim
-                        eros at volutpat. In egestas mattis dui. Aliquam mattis dictum
-                        aliquet.
-                        Nulla sapien mauris, eleifend et sem ac.</p>
-
-                    <div class="clearfix"></div>
-
-                    <h6>This is a Heading 6</h6>
-                    <p class="text-muted">Donec ultricies, lacus id tempor condimentum, orci
-                        leo faucibus sem, a
-                        molestie libero lectus ac justo. ultricies mi eros, sit amet tempor
-                        nulla
-                        varius sed. Proin nisl nisi, feugiat quis bibendum vitae, dapibus in
-                        tellus.</p>
-
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="grid-container">
+                                col-lg-12
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-11">
+                            <div class="grid-container">
+                                col-lg-11
+                            </div>
+                        </div>
+                        <div class="col-lg-1">
+                            <div class="grid-container">
+                                col-lg-1
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-10">
+                            <div class="grid-container">
+                                col-lg-10
+                            </div>
+                        </div>
+                        <div class="col-lg-2">
+                            <div class="grid-container">
+                                col-lg-2
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-9">
+                            <div class="grid-container">
+                                col-lg-9
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="grid-container">
+                                col-lg-3
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <div class="grid-container">
+                                col-lg-8
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="grid-container">
+                                col-lg-4
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-7">
+                            <div class="grid-container">
+                                col-lg-7
+                            </div>
+                        </div>
+                        <div class="col-lg-5">
+                            <div class="grid-container">
+                                col-lg-5
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="grid-container">
+                                col-lg-6
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="grid-container">
+                                col-lg-6
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-5">
+                            <div class="grid-container">
+                                col-lg-5
+                            </div>
+                        </div>
+                        <div class="col-lg-7">
+                            <div class="grid-container">
+                                col-lg-7
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="grid-container">
+                                col-lg-4
+                            </div>
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="grid-container">
+                                col-lg-8
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <div class="grid-container">
+                                col-lg-3
+                            </div>
+                        </div>
+                        <div class="col-lg-9">
+                            <div class="grid-container">
+                                col-lg-9
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-2">
+                            <div class="grid-container">
+                                col-lg-2
+                            </div>
+                        </div>
+                        <div class="col-lg-10">
+                            <div class="grid-container">
+                                col-lg-10
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-1">
+                            <div class="grid-container">
+                                col-lg-1
+                            </div>
+                        </div>
+                        <div class="col-lg-11">
+                            <div class="grid-container">
+                                col-lg-11
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-2">
+                            <div class="grid-container">
+                                col-lg-2
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="grid-container">
+                                col-lg-3
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="grid-container">
+                                col-lg-4
+                            </div>
+                        </div>
+                        <div class="col-lg-2">
+                            <div class="grid-container">
+                                col-lg-2
+                            </div>
+                        </div>
+                        <div class="col-lg-1">
+                            <div class="grid-container">
+                                col-lg-1
+                            </div>
+                        </div>
+                    </div> <!-- end row -->
                 </div>
             </div>
 
-
-            <div class="card">
-
-                <div class="card-body">
-
-                    <h4 class="card-title">
-                        Inline text elements
-
-                    </h4>
-                    <p class="lead">
-                        Your title goes here
-                    </p>
-
-                    You can use the mark tag to
-                    <mark>
-                        highlight</mark> text.
-
-                    <br><br>
-
-                    <del>This line of text is meant to be treated as deleted text.</del>
-
-                    <br><br>
-
-                    <ins>This line of text is meant to be treated as an addition to the document.</ins>
-
-                    <br><br>
-
-                    <strong>rendered as bold text</strong>
-
-                    <br><br>
-
-                    <em>rendered as italicized text</em>
-
-
-                </div>
-            </div>
-
-
-            <div class="card">
-
-                <div class="card-body">
-
-                    <h4 class="card-title">
-                        Contextual Text Colors
-                    </h4>
-
-
-                    <p class="text-muted">
-                        Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.
-                    </p>
-                    <p class="text-primary">
-                        Nullam id dolor id nibh ultricies vehicula ut id elit.
-                    </p>
-                    <p class="text-success">
-                        Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
-                    </p>
-                    <p class="text-info">
-                        Maecenas sed diam eget risus varius blandit sit amet non magna.
-                    </p>
-                    <p class="text-warning">
-                        Etiam porta sem malesuada magna mollis euismod.
-                    </p>
-                    <p class="text-danger">
-                        Donec ullamcorper nulla non metus auctor fringilla.
-                    </p>
-                    <p class="text-dark">
-                        Nullam id dolor id nibh ultricies vehicula ut id elit.
-                    </p>
-
-
-                </div>
-            </div>
-
-
-            <div class="card">
-
-                <div class="card-body">
-
-                    <h4 class="card-title">
-                        Unordered
-                    </h4>
-
-                    <p>
-                        A list of items in which the order does not explicitly matter.
-                    </p>
-
-                    <ul>
-                        <li>
-                            Lorem ipsum dolor sit amet
-                        </li>
-                        <li>
-                            Consectetur adipiscing elit
-                        </li>
-                        <li>
-                            Integer molestie lorem at massa
-                        </li>
-                        <li>
-                            Facilisis in pretium nisl aliquet
-                        </li>
-                        <li>
-                            Nulla volutpat aliquam velit
-                            <ul>
-                                <li>
-                                    Phasellus iaculis neque
-                                </li>
-                                <li>
-                                    Purus sodales ultricies
-                                </li>
-                                <li>
-                                    Vestibulum laoreet porttitor sem
-                                </li>
-                                <li>
-                                    Ac tristique libero volutpat at
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            Faucibus porta lacus fringilla vel
-                        </li>
-                        <li>
-                            Aenean sit amet erat nunc
-                        </li>
-                        <li>
-                            Eget porttitor lorem
-                        </li>
-                    </ul>
-
-                </div>
-            </div>
-
-
-            <div class="card">
-
-                <div class="card-body">
-
-                    <h4 class="card-title">
-                        Ordered
-                    </h4>
-
-                    <p>
-                        A list of items in which the order does explicitly matter.
-                    </p>
-
-                    <ol>
-                        <li>
-                            Lorem ipsum dolor sit amet
-                        </li>
-                        <li>
-                            Consectetur adipiscing elit
-                        </li>
-                        <li>
-                            Integer molestie lorem at massa
-                        </li>
-                        <li>
-                            Facilisis in pretium nisl aliquet
-                        </li>
-                        <li>
-                            Nulla volutpat aliquam velit
-                            <ol>
-                                <li>
-                                    Phasellus iaculis neque
-                                </li>
-                                <li>
-                                    Purus sodales ultricies
-                                </li>
-                                <li>
-                                    Vestibulum laoreet porttitor sem
-                                </li>
-                                <li>
-                                    Ac tristique libero volutpat at
-                                </li>
-                            </ol>
-                        </li>
-                        <li>
-                            Faucibus porta lacus fringilla vel
-                        </li>
-                        <li>
-                            Aenean sit amet erat nunc
-                        </li>
-                        <li>
-                            Eget porttitor lorem
-                        </li>
-                    </ol>
-
-                </div>
-            </div>
-
-            <div class="card">
-
-                <div class="card-body">
-
-                    <h4 class="card-title">
-                        Unstyled
-                    </h4>
-
-                    <p>
-                        <strong>This only applies to immediate children
-                            list items</strong>, meaning you will need to add the class for any nested lists as well.
-                    </p>
-
-                    <ul class="list-unstyled">
-                        <li>
-                            Lorem ipsum dolor sit amet
-                        </li>
-                        <li>
-                            Integer molestie lorem at massa
-                            <ul>
-                                <li>
-                                    Phasellus iaculis neque
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            Faucibus porta lacus fringilla vel
-                        </li>
-                        <li>
-                            Eget porttitor lorem
-                        </li>
-                    </ul>
-
-                    <h5 class="header-title">Inline</h5>
-                    <p class="sub-header">
-                        Place all list items on a single line with <code>
-                        display: inline-block;</code>
-                        and some light padding.
-                    </p>
-
-                    <ul class="list-inline m-b-0">
-                        <li class="list-inline-item">
-                            Lorem ipsum
-                        </li>
-                        <li class="list-inline-item">
-                            Phasellus iaculis
-                        </li>
-                        <li class="list-inline-item">
-                            Nulla volutpat
-                        </li>
-                    </ul>
-                </div>
-
-            </div>
-
-            <div class="card">
-
-                <div class="card-body">
-
-                    <h4 class="card-title">
-                        Blockquotes
-                    </h4>
-
-                    <blockquote class="blockquote">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                        <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source
-                                Title</cite></footer>
-                    </blockquote>
-
-                    <p class="text-muted">
-                        Use text utilities as needed to change the alignment of your blockquote.
-                    </p>
-
-                    <blockquote class="blockquote border-0 text-center">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                        <footer class="blockquote-footer">Someone famous in Source Title</footer>
-                    </blockquote>
-
-                    <blockquote class="blockquote blockquote-reverse text-right mb-0">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                        <small class="blockquote-footer">Someone famous in Source Title</small>
-                    </blockquote>
-
-
-                </div>
-
-            </div>
         </div>
-
-    </div>
-
-
-
 
     </div>
 
@@ -958,7 +839,6 @@
 
     <script src="https://unpkg.com/perfect-scrollbar@1.4.0/dist/perfect-scrollbar.min.js"></script>
 
-
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-50750921-19"></script>
     <script>
@@ -968,7 +848,6 @@
 
         gtag('config', 'UA-50750921-19');
     </script>
-
 
     <script src="../../js/morioh.js"></script>
 

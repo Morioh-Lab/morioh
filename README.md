@@ -13,10 +13,16 @@
 ### Quick start
 Looking to quickly add Morioh to your project? Use CDN, provided for free by the folks at UNPKG.
 
+```html
+<link rel="stylesheet" href="https://unpkg.com/morioh/dist/css/morioh.min.css">
 ```
-<link rel="stylesheet" href="https://unpkg.org/morioh/dist/css/morioh.min.css">
+OR
+
+```html
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/morioh/dist/css/morioh.min.css">
 ```
-```js
+
+```html
 <script src="https://unpkg.com/jquery@3.4.1/dist/jquery.slim.min.js"></script>
 <script src="https://unpkg.com/popper.js@1.16.0/dist/umd/popper.min.js"></script>
 <script src="https://unpkg.com/bootstrap@4.4.1/dist/js/bootstrap.min.js"></script>
@@ -24,20 +30,20 @@ Looking to quickly add Morioh to your project? Use CDN, provided for free by the
 
 ### NPM
 
-```js
+```
 npm install morioh
 ```
 
 ### Yarn
 
-```js
+```
 yarn install morioh
 ```
 
 ### Starter template
 Be sure to have your pages set up with the latest design and development standards. That means using an HTML5 doctype and including a viewport meta tag for proper responsive behaviors. Put it all together and your pages should look like this:
 
-```
+```html
 <!doctype html>
 <html lang="en">
     <head>
@@ -46,7 +52,7 @@ Be sure to have your pages set up with the latest design and development standar
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Morioh CSS -->
-    <link rel="stylesheet" href="https://unpkg.org/morioh/dist/css/morioh.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/morioh/dist/css/morioh.min.css">
 
     <title>Hello, world!</title>
     </head>
@@ -64,5 +70,7 @@ Be sure to have your pages set up with the latest design and development standar
 
 ### Community
 Stay up to date on the development of Morioh and reach out to the community with these helpful resources.
+
 Follow [@codek_tv](https://twitter.com/codek_tv) and [@im_a_developer](https://twitter.com/im_a_developer) on Twitter.
+
 Join the official [Discord](https://discord.gg/sqxU6un) room: [https://discord.gg/sqxU6un](https://discord.gg/sqxU6un).

@@ -51,7 +51,7 @@
 
     <div class="wrapper">
 
-        <nav class="main-navbar navbar-expand-md navbar-light bg-white fixed-top shadow-sm">
+        <div class="main-navbar navbar-expand-md navbar-light bg-white fixed-top shadow-sm">
 
             <button class="btn hidden-md-up" type="button" data-toggle="collapse" data-target="#main-menu"
                 aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
@@ -153,15 +153,15 @@
                 </ul>
 
             </div>
-        </nav>
+        </div>
 
         <div class="menubar menubar-dark" id="main-menu">
 
             <div class="menubar-header text-center bg-primary">
-                <div class="menubar-brand">
+                <a class="menubar-brand" href="https://morioh.com">
                     <img src="https://i.imgur.com/RFG2le2.png" title="Morioh" class="menubar-logo"
                         style="height: 50px;">
-                </div>
+                </a>
             </div>
 
             <div class="menubar-body">
@@ -193,13 +193,12 @@
                     </li> -->
                     <li class="menu-item">
                         <a href="dashboard-01.html" class="menu-link">
-
                             <!-- <i class="menu-icon fas fa-magic"></i> -->
-                            <i class="menu-icon mdi mdi-view-dashboard-outline"></i>
+                            <i class="menu-icon mdi mdi-view-dashboard"></i>
                             <span class="menu-label">Dashboard</span>
-                            <!-- <span class="menu-badge">
-                                <span class="badge badge-info">4</span>
-                            </span> -->
+                            <span class="menu-badge">
+                                <span class="badge badge-info">1</span>
+                            </span>
 
                         </a>
                     </li>
@@ -207,7 +206,7 @@
                         <a href="javascript://" class="menu-link" data-toggle="collapse" data-target="#menu-90ba1a"
                             aria-expanded="true" aria-controls="menu-90ba1a">
                             <!-- <i class="menu-icon fas fa-border-all"></i> -->
-                            <i class="menu-icon mdi mdi-grid-large"></i>
+                            <i class="menu-icon mdi mdi-view-split-vertical"></i>
                             <span class="menu-label">Layouts</span>
                             <i class="menu-arrow mdi mdi-chevron-right"></i>
                         </a>
@@ -269,6 +268,13 @@
                             </li>
 
                             <li class="menu-item">
+                                <a href="ui-breadcrumb.html" class="menu-link">
+                                    <i class="menu-icon">B</i>
+                                    <span class="menu-label">Breadcrumb</span>
+                                </a>
+                            </li>
+
+                            <li class="menu-item">
                                 <a href="ui-cards.html" class="menu-link">
                                     <i class="menu-icon">C</i>
                                     <span class="menu-label">Cards</span>
@@ -294,7 +300,7 @@
                                     <i class="menu-icon">L</i>
                                     <span class="menu-label">List group</span>
                                 </a>
-                            </li>                            
+                            </li>
 
                             <li class="menu-item">
                                 <a href="ui-modals.html" class="menu-link">
@@ -343,8 +349,8 @@
                                     <i class="menu-icon">P</i>
                                     <span class="menu-label">Popovers</span>
                                 </a>
-                            </li>                            
-                            
+                            </li>
+
 
                             <li class="menu-item">
                                 <a href="ui-proress.html" class="menu-link">
@@ -359,7 +365,14 @@
                                     <i class="menu-icon">P</i>
                                     <span class="menu-label">Tooltips</span>
                                 </a>
-                            </li>                            
+                            </li>
+
+                            <li class="menu-item">
+                                <a href="ui-ribbons.html" class="menu-link">
+                                    <i class="menu-icon">R</i>
+                                    <span class="menu-label">Ribbons</span>
+                                </a>
+                            </li>
 
                             <li class="menu-item">
                                 <a href="ui-spinners.html" class="menu-link">
@@ -378,27 +391,55 @@
                         </ul>
                     </li>
 
+
+
                     <li class="menu-item">
-                        <a href="widgets.html" class="menu-link">
-                            <i class="menu-icon mdi mdi-widgets"></i>
-                            <span class="menu-label">Widgets</span>
-                            <i class="menu-arrow mdi mdi-chevron-right"></i>
+                        <a href="ui-grid.html" class="menu-link">
+                            <i class="menu-icon mdi mdi-view-grid-outline"></i>
+                            <span class="menu-label">Grid</span>
                         </a>
 
                     </li>
 
                     <li class="menu-item">
-                        <a href="ui-forms.html" class="menu-link">
+                        <a href="widgets.html" class="menu-link">
+                            <i class="menu-icon mdi mdi-widgets"></i>
+                            <span class="menu-label">Widgets</span>
+                        </a>
+                    </li>
+
+                    <li class="menu-item">
+                        <a href="javascript://" class="menu-link" data-toggle="collapse" data-target="#menu-96b24e"
+                            aria-expanded="true" aria-controls="menu-96b24e">
                             <!-- <i class="menu-icon fas fa-tasks"></i> -->
                             <i class="menu-icon mdi mdi-format-float-left"></i>
                             <span class="menu-label">Forms</span>
                             <i class="menu-arrow mdi mdi-chevron-right"></i>
                         </a>
+
+                        <ul class="menu collapse" data-parent="#main-menu" id="menu-96b24e">
+
+                            <li class="menu-item">
+                                <a href="form-general.html" class="menu-link">
+                                    <i class="menu-icon">E</i>
+                                    <span class="menu-label">General</span>
+                                </a>
+                            </li>
+
+                            <li class="menu-item">
+                                <a href="form-advanced.html" class="menu-link">
+                                    <i class="menu-icon">A</i>
+                                    <span class="menu-label">Advanced</span>
+                                </a>
+                            </li>
+
+
+                        </ul>
                     </li>
 
                     <li class="menu-item">
-                        <a href="#" class="menu-link" class="menu-link" data-toggle="collapse"
-                            data-target="#menu-62d0a7" aria-expanded="true" aria-controls="menu-62d0a7">
+                        <a href="#" class="menu-link" data-toggle="collapse" data-target="#menu-62d0a7"
+                            aria-expanded="true" aria-controls="menu-62d0a7">
                             <i class="menu-icon mdi mdi-chart-line"></i>
 
                             <span class="menu-label">Charts</span>
@@ -518,7 +559,7 @@
             </div>
 
             <div class="menubar-footer bg-dark p-10">
-                <a href="https://morioh.com" class="d-block text-truncate">&copy Morioh</a>
+                <a href="https://morioh.com" class="d-block text-truncate">&copy Morioh <span id="version"></span></a>
             </div>
 
         </div>
@@ -526,40 +567,102 @@
 
         <div class="container-fluid mt-30">
 
-           <div class="card">
-               <div class="card-body">
-                   Updating...
-               </div>
-           </div>           
+
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Breadcrumb</h4>
+                    <p>
+                        Indicate the current page’s location within a navigational hierarchy that automatically adds
+                        separators via CSS.
+                    </p>
+
+
+                    <div class="form-group">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item active" aria-current="page">Home</li>
+                            </ol>
+                        </nav>
+
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Library</li>
+                            </ol>
+                        </nav>
+
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                <li class="breadcrumb-item"><a href="#">Library</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Data</li>
+                            </ol>
+                        </nav>
+                    </div>
+
+
+                    <pre>
+&lt;nav aria-label=&quot;breadcrumb&quot;&gt;
+&lt;ol class=&quot;breadcrumb&quot;&gt;
+    &lt;li class=&quot;breadcrumb-item active&quot; aria-current=&quot;page&quot;&gt;Home&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/nav&gt;
+
+&lt;nav aria-label=&quot;breadcrumb&quot;&gt;
+&lt;ol class=&quot;breadcrumb&quot;&gt;
+    &lt;li class=&quot;breadcrumb-item&quot;&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+    &lt;li class=&quot;breadcrumb-item active&quot; aria-current=&quot;page&quot;&gt;Library&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/nav&gt;
+
+&lt;nav aria-label=&quot;breadcrumb&quot;&gt;
+&lt;ol class=&quot;breadcrumb&quot;&gt;
+    &lt;li class=&quot;breadcrumb-item&quot;&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+    &lt;li class=&quot;breadcrumb-item&quot;&gt;&lt;a href=&quot;#&quot;&gt;Library&lt;/a&gt;&lt;/li&gt;
+    &lt;li class=&quot;breadcrumb-item active&quot; aria-current=&quot;page&quot;&gt;Data&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/nav&gt;</pre>
+
+
+                    <h4>Accessibility</h4>
+
+                    <p>Since breadcrumbs provide a navigation, it’s a good idea to add a meaningful label such as
+                        <code>aria-label="breadcrumb"</code> to describe the type of navigation provided in the
+                        <code>&lt;nav&gt;</code> element, as well as applying an <code>aria-current="page"</code> to the
+                        last item of the set to indicate that it represents the current page.</p>
+
+                    <p>For more information, see the <a
+                            href="https://www.w3.org/TR/wai-aria-practices/#breadcrumb">WAI-ARIA Authoring Practices for
+                            the breadcrumb pattern</a>.</p>
+
+                </div>
+            </div>
+
+
+
 
         </div>
 
-    </div>
 
+        <script src="https://unpkg.com/jquery@3.4.1/dist/jquery.slim.min.js"></script>
+        <script src="https://unpkg.com/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+        <script src="https://unpkg.com/bootstrap@4.4.1/dist/js/bootstrap.min.js"></script>
 
-    <script src="https://unpkg.com/jquery@3.4.1/dist/jquery.slim.min.js"></script>
-    <script src="https://unpkg.com/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-    <script src="https://unpkg.com/bootstrap@4.4.1/dist/js/bootstrap.min.js"></script>
+        <script src="https://unpkg.com/perfect-scrollbar@1.4.0/dist/perfect-scrollbar.min.js"></script>
+      
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-50750921-19"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
 
-    <script src="https://unpkg.com/perfect-scrollbar@1.4.0/dist/perfect-scrollbar.min.js"></script>
-    <script src="https://unpkg.com/highcharts@8.0.0/highcharts.js"></script>
-    <script src="https://unpkg.com/jquery-knob@1.2.11/dist/jquery.knob.min.js"></script>
-    <script src="https://unpkg.com/jquery-sparkline@2.4.0/jquery.sparkline.min.js"></script>
-    <script src="https://unpkg.com/peity@3.3.0/jquery.peity.min.js"></script>
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-50750921-19"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'UA-50750921-19');
-    </script>
+            gtag('config', 'UA-50750921-19');
+        </script>
 
 
 
-    <script src="../../js/morioh.js"></script>   
+        <script src="../../js/morioh.js"></script>
 
 
 </body>

@@ -294,7 +294,7 @@
                                     <i class="menu-icon">L</i>
                                     <span class="menu-label">List group</span>
                                 </a>
-                            </li>                            
+                            </li>
 
                             <li class="menu-item">
                                 <a href="ui-modals.html" class="menu-link">
@@ -343,8 +343,8 @@
                                     <i class="menu-icon">P</i>
                                     <span class="menu-label">Popovers</span>
                                 </a>
-                            </li>                            
-                            
+                            </li>
+
 
                             <li class="menu-item">
                                 <a href="ui-proress.html" class="menu-link">
@@ -359,7 +359,7 @@
                                     <i class="menu-icon">P</i>
                                     <span class="menu-label">Tooltips</span>
                                 </a>
-                            </li>                            
+                            </li>
 
                             <li class="menu-item">
                                 <a href="ui-spinners.html" class="menu-link">
@@ -526,40 +526,451 @@
 
         <div class="container-fluid mt-30">
 
-           <div class="card">
-               <div class="card-body">
-                   Updating...
-               </div>
-           </div>           
+
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Spinners</h4>
+                    <p class="card-subtitle">
+                        Indicate the loading state of a component or page with Bootstrap spinners, built
+                        entirely with HTML, CSS, and no JavaScript.
+                    </p>
+
+
+                    <p>Bootstrap “spinners” can be used to show the loading state in your projects. They’re
+                        built only with HTML and CSS, meaning you don’t need any JavaScript to create them.
+                        You will, however, need some custom JavaScript to toggle their visibility. Their
+                        appearance, alignment, and sizing can be easily customized with our amazing utility
+                        classes.</p>
+
+                    <p>For accessibility purposes, each loader here includes <code>role="status"</code> and a
+                        nested <code>&lt;span class="sr-only"&gt;Loading...&lt;/span&gt;</code>.</p>
+
+
+                    <h5>Border spinner</h5>
+
+                    <p>Use the border spinners for a lightweight loading indicator.</p>
+
+                    <div class="form-group">
+                        <div class="spinner-border" role="status">
+                            <span class="sr-only">Loading...</span>
+                        </div>
+                    </div>
+
+                    <pre>
+&lt;div class=&quot;spinner-border&quot; role=&quot;status&quot;&gt;
+&lt;span class=&quot;sr-only&quot;&gt;Loading...&lt;/span&gt;
+&lt;/div&gt;                            </pre>
+
+                    <hr>
+
+                    <h5>Colors</h5>
+
+                    <p>The border spinner uses <code>currentColor</code> for its <code>border-color</code>,
+                        meaning you can customize the color with text color utilities. You can use any of our
+                        text color utilities on the standard spinner.</p>
+
+                    <div class="form-group">
+
+                        <div class="spinner-border text-primary" role="status">
+                            <span class="sr-only">Loading...</span>
+                        </div>
+                        <div class="spinner-border text-secondary" role="status">
+                            <span class="sr-only">Loading...</span>
+                        </div>
+                        <div class="spinner-border text-success" role="status">
+                            <span class="sr-only">Loading...</span>
+                        </div>
+                        <div class="spinner-border text-danger" role="status">
+                            <span class="sr-only">Loading...</span>
+                        </div>
+                        <div class="spinner-border text-warning" role="status">
+                            <span class="sr-only">Loading...</span>
+                        </div>
+                        <div class="spinner-border text-info" role="status">
+                            <span class="sr-only">Loading...</span>
+                        </div>
+                        <div class="spinner-border text-light" role="status">
+                            <span class="sr-only">Loading...</span>
+                        </div>
+                        <div class="spinner-border text-dark" role="status">
+                            <span class="sr-only">Loading...</span>
+                        </div>
+                    </div>
+
+                    <pre>
+&lt;div class=&quot;spinner-border text-primary&quot; role=&quot;status&quot;&gt;
+&lt;span class=&quot;sr-only&quot;&gt;Loading...&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;spinner-border text-secondary&quot; role=&quot;status&quot;&gt;
+&lt;span class=&quot;sr-only&quot;&gt;Loading...&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;spinner-border text-success&quot; role=&quot;status&quot;&gt;
+&lt;span class=&quot;sr-only&quot;&gt;Loading...&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;spinner-border text-danger&quot; role=&quot;status&quot;&gt;
+&lt;span class=&quot;sr-only&quot;&gt;Loading...&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;spinner-border text-warning&quot; role=&quot;status&quot;&gt;
+&lt;span class=&quot;sr-only&quot;&gt;Loading...&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;spinner-border text-info&quot; role=&quot;status&quot;&gt;
+&lt;span class=&quot;sr-only&quot;&gt;Loading...&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;spinner-border text-light&quot; role=&quot;status&quot;&gt;
+&lt;span class=&quot;sr-only&quot;&gt;Loading...&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;spinner-border text-dark&quot; role=&quot;status&quot;&gt;
+&lt;span class=&quot;sr-only&quot;&gt;Loading...&lt;/span&gt;
+&lt;/div&gt;</pre>
+
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Growing spinner</h4>
+                    <p>
+                        If you don’t fancy a border spinner, switch to the grow spinner. While it doesn’t
+                        technically spin, it does repeatedly grow!
+                    </p>
+
+
+
+
+                    <div class="form-group">
+                        <div class="spinner-grow" role="status">
+                            <span class="sr-only">Loading...</span>
+                        </div>
+                    </div>
+
+                    <pre>
+&lt;div class=&quot;spinner-grow&quot; role=&quot;status&quot;&gt;
+&lt;span class=&quot;sr-only&quot;&gt;Loading...&lt;/span&gt;
+&lt;/div&gt;                            </pre>
+
+                    <hr>
+
+                    <h5>Colors</h5>
+
+                    <p>The border spinner uses <code>currentColor</code> for its <code>border-color</code>,
+                        meaning you can customize the color with text color utilities. You can use any of our
+                        text color utilities on the standard spinner.</p>
+
+                    <div class="form-group">
+
+                        <div class="spinner-grow text-primary" role="status">
+                            <span class="sr-only">Loading...</span>
+                        </div>
+                        <div class="spinner-grow text-secondary" role="status">
+                            <span class="sr-only">Loading...</span>
+                        </div>
+                        <div class="spinner-grow text-success" role="status">
+                            <span class="sr-only">Loading...</span>
+                        </div>
+                        <div class="spinner-grow text-danger" role="status">
+                            <span class="sr-only">Loading...</span>
+                        </div>
+                        <div class="spinner-grow text-warning" role="status">
+                            <span class="sr-only">Loading...</span>
+                        </div>
+                        <div class="spinner-grow text-info" role="status">
+                            <span class="sr-only">Loading...</span>
+                        </div>
+                        <div class="spinner-grow text-light" role="status">
+                            <span class="sr-only">Loading...</span>
+                        </div>
+                        <div class="spinner-grow text-dark" role="status">
+                            <span class="sr-only">Loading...</span>
+                        </div>
+                    </div>
+
+
+                    <pre>
+&lt;div class=&quot;spinner-grow text-primary&quot; role=&quot;status&quot;&gt;
+&lt;span class=&quot;sr-only&quot;&gt;Loading...&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;spinner-grow text-secondary&quot; role=&quot;status&quot;&gt;
+&lt;span class=&quot;sr-only&quot;&gt;Loading...&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;spinner-grow text-success&quot; role=&quot;status&quot;&gt;
+&lt;span class=&quot;sr-only&quot;&gt;Loading...&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;spinner-grow text-danger&quot; role=&quot;status&quot;&gt;
+&lt;span class=&quot;sr-only&quot;&gt;Loading...&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;spinner-grow text-warning&quot; role=&quot;status&quot;&gt;
+&lt;span class=&quot;sr-only&quot;&gt;Loading...&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;spinner-grow text-info&quot; role=&quot;status&quot;&gt;
+&lt;span class=&quot;sr-only&quot;&gt;Loading...&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;spinner-grow text-light&quot; role=&quot;status&quot;&gt;
+&lt;span class=&quot;sr-only&quot;&gt;Loading...&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;spinner-grow text-dark&quot; role=&quot;status&quot;&gt;
+&lt;span class=&quot;sr-only&quot;&gt;Loading...&lt;/span&gt;
+&lt;/div&gt;</pre>
+
+
+
+                    <hr>
+
+                    <h5>Spinner Dots Fade</h5>
+
+
+
+                    <div class="form-group">
+
+                        <div class="spinner spinner-dots-fade">
+                            <span class="badge badge-primary rounded-circle w-10 h-10">
+                                <i class="sr-only">&nbsp;</i>
+                            </span>
+                            <span class="badge badge-primary rounded-circle w-10 h-10">
+                                <i class="sr-only">&nbsp;</i>
+                            </span>
+                            <span class="badge badge-primary rounded-circle w-10 h-10">
+                                <i class="sr-only">&nbsp;</i>
+                            </span>
+                            <span class="badge badge-primary rounded-circle w-10 h-10">
+                                <i class="sr-only">&nbsp;</i>
+                            </span>
+                            <span class="badge badge-primary rounded-circle w-10 h-10">
+                                <i class="sr-only">&nbsp;</i>
+                            </span>
+                        </div>
+                        <div>
+
+                            <pre>
+&lt;div class=&quot;spinner spinner-dots-fade&quot;&gt;
+    &lt;span class=&quot;badge badge-primary rounded-circle w-10 h-10&quot;&gt;
+        &lt;i class=&quot;sr-only&quot;&gt;&amp;nbsp;&lt;/i&gt;
+    &lt;/span&gt;
+    &lt;span class=&quot;badge badge-primary rounded-circle w-10 h-10&quot;&gt;
+        &lt;i class=&quot;sr-only&quot;&gt;&amp;nbsp;&lt;/i&gt;
+    &lt;/span&gt;
+    &lt;span class=&quot;badge badge-primary rounded-circle w-10 h-10&quot;&gt;
+        &lt;i class=&quot;sr-only&quot;&gt;&amp;nbsp;&lt;/i&gt;
+    &lt;/span&gt;
+    &lt;span class=&quot;badge badge-primary rounded-circle w-10 h-10&quot;&gt;
+        &lt;i class=&quot;sr-only&quot;&gt;&amp;nbsp;&lt;/i&gt;
+    &lt;/span&gt;
+    &lt;span class=&quot;badge badge-primary rounded-circle w-10 h-10&quot;&gt;
+        &lt;i class=&quot;sr-only&quot;&gt;&amp;nbsp;&lt;/i&gt;
+    &lt;/span&gt;
+&lt;/div&gt;                        </pre>
+
+
+                            <hr>
+
+
+                            <div class="form-group">
+
+                                <div class="spinner spinner-dots-fade">
+                                    <span class="badge badge-primary rounded-circle w-10 h-10">
+                                        <i class="sr-only">&nbsp;</i>
+                                    </span>
+                                    <span class="badge badge-success rounded-circle w-10 h-10">
+                                        <i class="sr-only">&nbsp;</i>
+                                    </span>
+                                    <span class="badge badge-info rounded-circle w-10 h-10">
+                                        <i class="sr-only">&nbsp;</i>
+                                    </span>
+                                    <span class="badge badge-warning rounded-circle w-10 h-10">
+                                        <i class="sr-only">&nbsp;</i>
+                                    </span>
+                                    <span class="badge badge-danger rounded-circle w-10 h-10">
+                                        <i class="sr-only">&nbsp;</i>
+                                    </span>
+                                </div>
+
+                            </div>
+
+                            <pre class="mt-30">
+&lt;div class=&quot;spinner spinner-dots-fade&quot;&gt;
+    &lt;span class=&quot;badge badge-primary rounded-circle w-10 h-10&quot;&gt;
+        &lt;i class=&quot;sr-only&quot;&gt;&amp;nbsp;&lt;/i&gt;
+    &lt;/span&gt;
+    &lt;span class=&quot;badge badge-success rounded-circle w-10 h-10&quot;&gt;
+        &lt;i class=&quot;sr-only&quot;&gt;&amp;nbsp;&lt;/i&gt;
+    &lt;/span&gt;
+    &lt;span class=&quot;badge badge-info rounded-circle w-10 h-10&quot;&gt;
+        &lt;i class=&quot;sr-only&quot;&gt;&amp;nbsp;&lt;/i&gt;
+    &lt;/span&gt;
+    &lt;span class=&quot;badge badge-warning rounded-circle w-10 h-10&quot;&gt;
+        &lt;i class=&quot;sr-only&quot;&gt;&amp;nbsp;&lt;/i&gt;
+    &lt;/span&gt;
+    &lt;span class=&quot;badge badge-danger rounded-circle w-10 h-10&quot;&gt;
+        &lt;i class=&quot;sr-only&quot;&gt;&amp;nbsp;&lt;/i&gt;
+    &lt;/span&gt;
+&lt;/div&gt;
+                        </pre>
+
+                            <div class="form-group">
+
+                                <div class="spinner spinner-dots-fade">
+                                    <span class="badge badge-primary rounded-circle w-10 h-10">
+                                        <i class="sr-only">&nbsp;</i>
+                                    </span>
+                                    <span class="badge badge-success rounded-circle w-10 h-10">
+                                        <i class="sr-only">&nbsp;</i>
+                                    </span>
+                                    <span class="badge badge-info rounded-circle w-10 h-10">
+                                        <i class="sr-only">&nbsp;</i>
+                                    </span>
+                                </div>
+
+                            </div>
+
+                            <pre class="mt-30">
+&lt;div class=&quot;spinner spinner-dots-fade&quot;&gt;
+    &lt;span class=&quot;badge badge-primary rounded-circle w-10 h-10&quot;&gt;
+        &lt;i class=&quot;sr-only&quot;&gt;&amp;nbsp;&lt;/i&gt;
+    &lt;/span&gt;
+    &lt;span class=&quot;badge badge-success rounded-circle w-10 h-10&quot;&gt;
+        &lt;i class=&quot;sr-only&quot;&gt;&amp;nbsp;&lt;/i&gt;
+    &lt;/span&gt;
+    &lt;span class=&quot;badge badge-info rounded-circle w-10 h-10&quot;&gt;
+        &lt;i class=&quot;sr-only&quot;&gt;&amp;nbsp;&lt;/i&gt;
+    &lt;/span&gt;                               
+&lt;/div&gt;                        </pre>
+
+
+                            <div class="form-group">
+
+                                <div class="spinner spinner-dots-fade">
+                                    <span class="badge badge-primary w-10 h-10">
+                                        <i class="sr-only">&nbsp;</i>
+                                    </span>
+                                    <span class="badge badge-success w-10 h-10">
+                                        <i class="sr-only">&nbsp;</i>
+                                    </span>
+                                    <span class="badge badge-info w-10 h-10">
+                                        <i class="sr-only">&nbsp;</i>
+                                    </span>
+                                </div>
+
+                            </div>
+
+                            <pre class="mt-30">
+&lt;div class=&quot;spinner spinner-dots-fade&quot;&gt;
+    &lt;span class=&quot;badge badge-primary w-10 h-10&quot;&gt;
+        &lt;i class=&quot;sr-only&quot;&gt;&amp;nbsp;&lt;/i&gt;
+    &lt;/span&gt;
+    &lt;span class=&quot;badge badge-success w-10 h-10&quot;&gt;
+        &lt;i class=&quot;sr-only&quot;&gt;&amp;nbsp;&lt;/i&gt;
+    &lt;/span&gt;
+    &lt;span class=&quot;badge badge-info w-10 h-10&quot;&gt;
+        &lt;i class=&quot;sr-only&quot;&gt;&amp;nbsp;&lt;/i&gt;
+    &lt;/span&gt;
+&lt;/div&gt;
+                            </pre>
+
+
+                            <div class="spinner spinner-dots-fade">
+                                <span class="badge badge-primary rounded-circle w-20 h-20">
+                                    <i class="sr-only">&nbsp;</i>
+                                </span>
+                                <span class="badge badge-success rounded-circle w-20 h-20">
+                                    <i class="sr-only">&nbsp;</i>
+                                </span>
+                                <span class="badge badge-danger rounded-circle w-20 h-20">
+                                    <i class="sr-only">&nbsp;</i>
+                                </span>
+                            </div>
+
+                            <pre class="mt-30">
+&lt;div class=&quot;spinner spinner-dots-fade&quot;&gt;
+    &lt;span class=&quot;badge badge-primary rounded-circle w-20 h-20&quot;&gt;
+        &lt;i class=&quot;sr-only&quot;&gt;&amp;nbsp;&lt;/i&gt;
+    &lt;/span&gt;
+    &lt;span class=&quot;badge badge-success rounded-circle w-20 h-20&quot;&gt;
+        &lt;i class=&quot;sr-only&quot;&gt;&amp;nbsp;&lt;/i&gt;
+    &lt;/span&gt;
+    &lt;span class=&quot;badge badge-danger rounded-circle w-20 h-20&quot;&gt;
+        &lt;i class=&quot;sr-only&quot;&gt;&amp;nbsp;&lt;/i&gt;
+    &lt;/span&gt;
+&lt;/div&gt;                                                            </pre>
+
+
+                            <hr>
+
+
+
+                            <div class="form-group">
+
+                                <div class="spinner spinner-dots-wave">
+                                    <span class="badge badge-primary rounded-circle w-10 h-10">
+                                        <i class="sr-only">&nbsp;</i>
+                                    </span>
+                                    <span class="badge badge-success rounded-circle w-10 h-10">
+                                        <i class="sr-only">&nbsp;</i>
+                                    </span>
+                                    <span class="badge badge-info rounded-circle w-10 h-10">
+                                        <i class="sr-only">&nbsp;</i>
+                                    </span>
+                                    <span class="badge badge-warning rounded-circle w-10 h-10">
+                                        <i class="sr-only">&nbsp;</i>
+                                    </span>
+                                    <span class="badge badge-danger rounded-circle w-10 h-10">
+                                        <i class="sr-only">&nbsp;</i>
+                                    </span>
+                                </div>
+
+                            </div>
+
+
+                            <pre class="mt-30">
+&lt;div class=&quot;spinner spinner-dots-wave&quot;&gt;
+    &lt;span class=&quot;badge badge-primary rounded-circle w-10 h-10&quot;&gt;
+        &lt;i class=&quot;sr-only&quot;&gt;&amp;nbsp;&lt;/i&gt;
+    &lt;/span&gt;
+    &lt;span class=&quot;badge badge-success rounded-circle w-10 h-10&quot;&gt;
+        &lt;i class=&quot;sr-only&quot;&gt;&amp;nbsp;&lt;/i&gt;
+    &lt;/span&gt;
+    &lt;span class=&quot;badge badge-info rounded-circle w-10 h-10&quot;&gt;
+        &lt;i class=&quot;sr-only&quot;&gt;&amp;nbsp;&lt;/i&gt;
+    &lt;/span&gt;
+    &lt;span class=&quot;badge badge-warning rounded-circle w-10 h-10&quot;&gt;
+        &lt;i class=&quot;sr-only&quot;&gt;&amp;nbsp;&lt;/i&gt;
+    &lt;/span&gt;
+    &lt;span class=&quot;badge badge-danger rounded-circle w-10 h-10&quot;&gt;
+        &lt;i class=&quot;sr-only&quot;&gt;&amp;nbsp;&lt;/i&gt;
+    &lt;/span&gt;
+&lt;/div&gt;</pre>
+
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
 
         </div>
 
-    </div>
 
+        <script src="https://unpkg.com/jquery@3.4.1/dist/jquery.slim.min.js"></script>
+        <script src="https://unpkg.com/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+        <script src="https://unpkg.com/bootstrap@4.4.1/dist/js/bootstrap.min.js"></script>
 
-    <script src="https://unpkg.com/jquery@3.4.1/dist/jquery.slim.min.js"></script>
-    <script src="https://unpkg.com/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-    <script src="https://unpkg.com/bootstrap@4.4.1/dist/js/bootstrap.min.js"></script>
+        <script src="https://unpkg.com/perfect-scrollbar@1.4.0/dist/perfect-scrollbar.min.js"></script>
+       
 
-    <script src="https://unpkg.com/perfect-scrollbar@1.4.0/dist/perfect-scrollbar.min.js"></script>
-    <script src="https://unpkg.com/highcharts@8.0.0/highcharts.js"></script>
-    <script src="https://unpkg.com/jquery-knob@1.2.11/dist/jquery.knob.min.js"></script>
-    <script src="https://unpkg.com/jquery-sparkline@2.4.0/jquery.sparkline.min.js"></script>
-    <script src="https://unpkg.com/peity@3.3.0/jquery.peity.min.js"></script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-50750921-19"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-50750921-19"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'UA-50750921-19');
-    </script>
+            gtag('config', 'UA-50750921-19');
+        </script>
 
 
 
-    <script src="../../js/morioh.js"></script>   
+        <script src="../../js/morioh.js"></script>
 
 
 </body>

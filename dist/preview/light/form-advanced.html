@@ -42,7 +42,23 @@
     <link rel="stylesheet" href="https://unpkg.com/@mdi/font@4.7.95/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="https://unpkg.com/animate.css@3.7.2/animate.min.css">
 
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-select@1.13.12/dist/css/bootstrap-select.min.css">
+
+
+
     <link rel="stylesheet" href="../../css/morioh.css">
+
+    <style>
+        .parsley-errors-list {
+            color: #dc3545;
+            list-style: none;
+            padding: 5px 0;
+            margin: 0;
+        }
+    </style>
+
+
 
 
 </head>
@@ -565,29 +581,111 @@
         </div>
 
 
-        <div class="container-fluid mt-30">
+        <div class="container mt-30">
 
             <div class="card">
-
                 <div class="card-body">
+                    <h4 class="card-title">Input Masks</h4>
+                    <p>
+                        jQuery Mask Plugin: A jQuery Plugin to make masks on form fields and HTML elements.
+                        (https://igorescobar.github.io/jQuery-Mask-Plugin/)
+                    </p>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <form action="#">
+                                <div class="form-group">
+                                    <label>Date</label>
+                                    <input type="text" class="form-control" data-toggle="input-mask"
+                                        data-mask-format="00/00/0000" maxlength="10">
+                                    <span class="font-13 text-muted">e.g "DD/MM/YYYY"</span>
+                                </div>
+                                <div class="form-group">
+                                    <label>Hour</label>
+                                    <input type="text" class="form-control" data-toggle="input-mask"
+                                        data-mask-format="00:00:00" maxlength="8">
+                                    <span class="font-13 text-muted">e.g "HH:MM:SS"</span>
+                                </div>
+                                <div class="form-group">
+                                    <label>Date &amp; Hour</label>
+                                    <input type="text" class="form-control" data-toggle="input-mask"
+                                        data-mask-format="00/00/0000 00:00:00" maxlength="19">
+                                    <span class="font-13 text-muted">e.g "DD/MM/YYYY HH:MM:SS"</span>
+                                </div>
+                                <div class="form-group">
+                                    <label>ZIP Code</label>
+                                    <input type="text" class="form-control" data-toggle="input-mask"
+                                        data-mask-format="00000-000" maxlength="9">
+                                    <span class="font-13 text-muted">e.g "xxxxx-xxx"</span>
+                                </div>
+                                <div class="form-group">
+                                    <label>Crazy Zip Code</label>
+                                    <input type="text" class="form-control" data-toggle="input-mask"
+                                        data-mask-format="0-00-00-00" maxlength="10">
+                                    <span class="font-13 text-muted">e.g "x-xx-xx-xx"</span>
+                                </div>
+                                <div class="form-group">
+                                    <label>Money</label>
+                                    <input type="text" class="form-control" data-toggle="input-mask"
+                                        data-mask-format="000.000.000.000.000,00" data-reverse="true" maxlength="22">
+                                    <span class="font-13 text-muted">e.g "Your money"</span>
+                                </div>
+                                <div class="form-group">
+                                    <label>Money 2</label>
+                                    <input type="text" class="form-control" data-toggle="input-mask"
+                                        data-mask-format="#.##0,00" data-reverse="true">
+                                    <span class="font-13 text-muted">e.g "#.##0,00"</span>
+                                </div>
 
-                    <h4 class="card-title">
-                        Display headings
-                    </h4>
-                    <p>Traditional heading elements are designed to work best in the meat of your page content. When you
-                        need a heading to stand out, consider using a display heading—a larger, slightly more
-                        opinionated heading style.</p>
+                            </form>
+                        </div> <!-- end col -->
 
-                    <div class="form-group">
+                        <div class="col-md-6">
+                            <form action="#">
+                                <div class="form-group">
+                                    <label>Telephone</label>
+                                    <input type="text" class="form-control" data-toggle="input-mask"
+                                        data-mask-format="0000-0000" maxlength="9">
+                                    <span class="font-13 text-muted">e.g "xxxx-xxxx"</span>
+                                </div>
+                                <div class="form-group">
+                                    <label>Telephone with Code Area</label>
+                                    <input type="text" class="form-control" data-toggle="input-mask"
+                                        data-mask-format="(00) 0000-0000" maxlength="14">
+                                    <span class="font-13 text-muted">e.g "(xx) xxxx-xxxx"</span>
+                                </div>
+                                <div class="form-group">
+                                    <label>US Telephone</label>
+                                    <input type="text" class="form-control" data-toggle="input-mask"
+                                        data-mask-format="(000) 000-0000" maxlength="14">
+                                    <span class="font-13 text-muted">e.g "(xxx) xxx-xxxx"</span>
+                                </div>
+                                <div class="form-group">
+                                    <label>São Paulo Celphones</label>
+                                    <input type="text" class="form-control" data-toggle="input-mask"
+                                        data-mask-format="(00) 00000-0000" maxlength="15">
+                                    <span class="font-13 text-muted">e.g "(xx) xxxxx-xxxx"</span>
+                                </div>
+                                <div class="form-group">
+                                    <label>CPF</label>
+                                    <input type="text" class="form-control" data-toggle="input-mask"
+                                        data-mask-format="000.000.000-00" data-reverse="true" maxlength="14">
+                                    <span class="font-13 text-muted">e.g "xxx.xxx.xxxx-xx"</span>
+                                </div>
+                                <div class="form-group">
+                                    <label>CNPJ</label>
+                                    <input type="text" class="form-control" data-toggle="input-mask"
+                                        data-mask-format="00.000.000/0000-00" data-reverse="true" maxlength="18">
+                                    <span class="font-13 text-muted">e.g "xx.xxx.xxx/xxxx-xx"</span>
+                                </div>
+                                <div class="form-group">
+                                    <label>IP Address</label>
+                                    <input type="text" class="form-control" data-toggle="input-mask"
+                                        data-mask-format="099.099.099.099" data-reverse="true" maxlength="15">
+                                    <span class="font-13 text-muted">e.g "xxx.xxx.xxx.xxx"</span>
+                                </div>
 
-                        <h1 class="display-1">Display 1</h1>
-
-                        <h1 class="display-2">Display 2</h1>
-
-                        <h1 class="display-3">Display 3</h1>
-
-                        <h1 class="display-4">Display 4</h1>
-
+                            </form>
+                        </div> <!-- end col -->
                     </div>
 
                 </div>
@@ -595,382 +693,431 @@
 
 
             <div class="card">
-
                 <div class="card-body">
-
-                    <h4 class="card-title">
-                        Headings
-                    </h4>
+                    <h4 class="card-title">Bootstrap Select</h4>
                     <p>
-                        All HTML headings, <code>&lt;h1&gt;</code> through
-                        <code>&lt;h6&gt;</code>, are available. <code>.h1</code> through <code>.h6</code>
-                        classes are also available, for when you want to match the font styling of a heading
-                        but still want your text to be displayed inline.
+                        The jQuery plugin that brings select elements into the 21st century with intuitive
+                        multiselection, searching, and much more. Now with Bootstrap 4 support.
+                        (https://developer.snapappointments.com/bootstrap-select/)
                     </p>
 
-                    <h1>This is a Heading 1</h1>
-                    <p class="text-muted">Suspendisse vel quam malesuada, aliquet sem sit
-                        amet, fringilla elit. Morbi
-                        tempor tincidunt tempor. Etiam id turpis viverra, vulputate sapien
-                        nec,
-                        varius sem. Curabitur ullamcorper fringilla eleifend. In ut eros
-                        hendrerit
-                        est consequat posuere et at velit.</p>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p class="text-muted font-13">
+                                Create your <code>&lt;select&gt;</code> with the <code>.selectpicker</code> class.
+                            </p>
 
-                    <div class="clearfix"></div>
+                            <select class="selectpicker" data-style="btn-light" tabindex="-98">
+                                <option>Mustard</option>
+                                <option>Ketchup</option>
+                                <option>Relish</option>
+                            </select>
 
-                    <h2>This is a Heading 2</h2>
-                    <p class="text-muted">In nec rhoncus eros. Vestibulum eu mattis nisl.
-                        Quisque viverra viverra magna
-                        nec pulvinar. Maecenas pellentesque porta augue, consectetur
-                        facilisis diam
-                        porttitor sed. Suspendisse tempor est sodales augue rutrum
-                        tincidunt.
-                        Quisque a malesuada purus.</p>
 
-                    <div class="clearfix"></div>
+                            <p class="text-muted">
+                                It also works with option groups:
+                            </p>
 
-                    <h3>This is a Heading 3</h3>
-                    <p class="text-muted">Vestibulum auctor tincidunt semper. Phasellus ut
-                        vulputate lacus. Suspendisse
-                        ultricies mi eros, sit amet tempor nulla varius sed. Proin nisl
-                        nisi,
-                        feugiat quis bibendum vitae, dapibus in tellus.</p>
+                            <select class="selectpicker" data-style="btn-light" tabindex="-98">
+                                <optgroup label="Picnic">
+                                    <option>Mustard</option>
+                                    <option>Ketchup</option>
+                                    <option>Relish</option>
+                                </optgroup>
+                                <optgroup label="Camping">
+                                    <option>Tent</option>
+                                    <option>Flashlight</option>
+                                    <option>Toilet Paper</option>
+                                </optgroup>
+                            </select>
 
-                    <div class="clearfix"></div>
+                            <p class="text-muted">
+                                You can also show the tick icon on single <code>select</code> with the
+                                <code>show-tick</code> class:
+                            </p>
 
-                    <h4>This is a Heading 4</h4>
-                    <p class="text-muted">Nulla et mattis nunc. Curabitur scelerisque
-                        commodo condimentum. Mauris
-                        blandit, velit a consectetur egestas, diam arcu fermentum justo,
-                        eget
-                        ultrices arcu eros vel erat.</p>
+                            <select class="selectpicker show-tick" data-style="btn-light" tabindex="-98">
+                                <option>Mustard</option>
+                                <option>Ketchup</option>
+                                <option>Relish</option>
+                            </select>
 
-                    <div class="clearfix"></div>
 
-                    <h5>This is a Heading 5</h5>
-                    <p class="text-muted">Quisque nec turpis at urna dictum luctus.
-                        Suspendisse convallis dignissim
-                        eros at volutpat. In egestas mattis dui. Aliquam mattis dictum
-                        aliquet.
-                        Nulla sapien mauris, eleifend et sem ac.</p>
 
-                    <div class="clearfix"></div>
+                            <p class="text-muted">
+                                And with multiple selects:
+                            </p>
 
-                    <h6>This is a Heading 6</h6>
-                    <p class="text-muted">Donec ultricies, lacus id tempor condimentum, orci
-                        leo faucibus sem, a
-                        molestie libero lectus ac justo. ultricies mi eros, sit amet tempor
-                        nulla
-                        varius sed. Proin nisl nisi, feugiat quis bibendum vitae, dapibus in
-                        tellus.</p>
+                            <select class="selectpicker" multiple="" data-style="btn-light" tabindex="-98">
+                                <option>Mustard</option>
+                                <option>Ketchup</option>
+                                <option>Relish</option>
+                            </select>
+
+                            <p class="text-muted">
+                                You can limit the number of elements you are allowed to select via the
+                                <code>
+                                    data-max-option
+                                </code>
+                                attribute. It also works for option groups.
+                            </p>
+
+                            <select class="selectpicker mb-0" multiple="" data-max-options="2" data-style="btn-light"
+                                tabindex="-98">
+                                <option>Mustard</option>
+                                <option>Ketchup</option>
+                                <option>Relish</option>
+                            </select>
+
+
+                        </div>
+                        <!-- end col -->
+
+                        <div class="col-md-6">
+                            <p class="text-muted">
+                                You can limit the number of elements you are allowed to select via the
+                                <code>
+                                    data-max-option
+                                </code>
+                                attribute. It also works for option groups.
+                            </p>
+
+                            <select class="selectpicker" data-style="btn-outline-primary" tabindex="-98">
+                                <option>Mustard</option>
+                                <option>Ketchup</option>
+                                <option>Relish</option>
+                            </select>
+
+                            <br>
+                            <br>
+                            <select class="selectpicker" data-style="btn-outline-success" tabindex="-98">
+                                <option>Mustard</option>
+                                <option>Ketchup</option>
+                                <option>Relish</option>
+                            </select>
+
+                            <br>
+                            <br>
+                            <select class="selectpicker" data-style="btn-outline-warning" tabindex="-98">
+                                <option>Mustard</option>
+                                <option>Ketchup</option>
+                                <option>Relish</option>
+                            </select>
+                            <br>
+                            <br>
+                            <select class="selectpicker" data-style="btn-info" tabindex="-98">
+                                <option>Mustard</option>
+                                <option>Ketchup</option>
+                                <option>Relish</option>
+                            </select>
+
+                            <br>
+                            <br>
+                            <select class="selectpicker" data-style="btn-danger" tabindex="-98">
+                                <option>Mustard</option>
+                                <option>Ketchup</option>
+                                <option>Relish</option>
+                            </select>
+
+                            <br>
+                            <br>
+                            <select class="selectpicker" data-style="btn-dark" tabindex="-98">
+                                <option>Mustard</option>
+                                <option>Ketchup</option>
+                                <option>Relish</option>
+                            </select>
+                            <p class="text-muted">
+                                Add an icon to an option or optgroup with the <code>data-icon</code> attribute:
+                            </p>
+                            <select class="selectpicker mb-0" data-style="btn-pink" tabindex="-98">
+                                <option data-icon="mdi mdi-camera-iris mr-1">Mustard</option>
+                                <option data-icon="mdi mdi-cards-club mr-1">Ketchup</option>
+                                <option data-icon="mdi mdi-cart-outline mr-1">Relish</option>
+                                <option data-icon="mdi mdi-checkerboard mr-1">Mayonnaise</option>
+                                <option data-icon="mdi mdi-coffee-outline mr-1">Barbecue Sauce</option>
+                            </select>
+
+                        </div>
+                        <!-- end col-->
+
+                        <div class="col-md-6">
+                            <p class="text-muted">
+                                You can add a search input by passing <code>data-live-search="true"</code> attribute:
+                            </p>
+
+                            <select class="selectpicker" data-live-search="true" data-style="btn-light" tabindex="-98">
+                                <option>Hot Dog, Fries and a Soda</option>
+                                <option>Burger, Shake and a Smile</option>
+                                <option>Sugar, Spice and all things nice</option>
+                            </select>
+
+                            <p class="text-muted">
+                                You can also use the <code>
+                                title</code> attribute as an alternative to display when the option is
+                                selected:
+                            </p>
+
+                            <select class="selectpicker" data-live-search="true" data-style="btn-light" tabindex="-98">
+                                <option title="Combo 1">Hot Dog, Fries and a Soda</option>
+                                <option title="Combo 2">Burger, Shake and a Smile</option>
+                                <option title="Combo 3">Sugar, Spice and all things nice</option>
+                            </select>
+
+
+
+                            <p class="text-muted">
+                                Using the <code>data-selected-text-format</code> attribute on a
+                                <code>multiple select</code>
+                                you can specify how the selection is displayed.
+                            </p>
+
+                            <select class="selectpicker" multiple="" data-selected-text-format="count"
+                                data-style="btn-light" tabindex="-98">
+                                <option>Mustard</option>
+                                <option>Ketchup</option>
+                                <option>Relish</option>
+                            </select>
+
+
+                            <br>
+                            <br>
+                            <select class="selectpicker" multiple="" data-selected-text-format="count > 3"
+                                data-style="btn-light" tabindex="-98">
+                                <option>Mustard</option>
+                                <option>Ketchup</option>
+                                <option>Relish</option>
+                                <option>Onions</option>
+                            </select>
+
+                            <p class="text-muted">
+                                Add the <code>disabled</code> attribute to the select to apply the <code>disabled</code>
+                                class.
+                            </p>
+                            <select class="selectpicker m-b-0" data-style="btn-light" disabled="" tabindex="-98">
+                                <option>Mustard</option>
+                                <option>Ketchup</option>
+                                <option>Relish</option>
+                            </select>
+
+                        </div>
+                        <!-- end col -->
+                    </div>
 
                 </div>
             </div>
 
 
             <div class="card">
-
                 <div class="card-body">
+                    <h4 class="card-title">Form Validation</h4>
+                    <p>Parsley is a javascript form validation library. It helps you provide your users
+                        with feedback on their form submission before sending it to your server. It saves you bandwidth,
+                        server load and it saves time for your users. Read the <a
+                            href="http://parsleyjs.org/doc/index.html" target="_blank">Official Parsley
+                            Documentation</a> for a full list of instructions and other options.</p>
 
-                    <h4 class="card-title">
-                        Inline text elements
 
-                    </h4>
-                    <p class="lead">
-                        Your title goes here
-                    </p>
+                    <h5>Basic Example</h5>
+                    <p>This is a demo of a required field that must not leave empty.</p>
 
-                    You can use the mark tag to
-                    <mark>
-                        highlight</mark> text.
+                    <form data-parsley-validate autocomplete="off">
+                        <div class="row">
+                            <div class="form-group col-6">
+                                <label>Firstname: <span class="text-danger">*</span></label>
+                                <input type="text" name="firstname" class="form-control" placeholder="Enter firstname"
+                                    required>
+                            </div><!-- form-group -->
+                            <div class="form-group col-6">
+                                <label>Lastname: <span class="text-danger">*</span></label>
+                                <input type="text" name="lastname" class="form-control" placeholder="Enter lastname"
+                                    required>
+                            </div><!-- form-group -->
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                    </form>
 
-                    <br><br>
+                    <hr>
 
-                    <del>This line of text is meant to be treated as deleted text.</del>
+                    <h5>Validation type</h5>
 
-                    <br><br>
 
-                    <ins>This line of text is meant to be treated as an addition to the document.</ins>
+                    <form data-parsley-validate autocomplete="off">
+                        <div class="form-group">
+                            <label>Required</label>
+                            <input type="text" class="form-control" required="" placeholder="Type something">
+                        </div>
 
-                    <br><br>
+                        <div class="form-group">
+                            <label>Equal To</label>
+                            <div>
+                                <input type="password" id="pass2" class="form-control" required=""
+                                    placeholder="Password">
+                            </div>
+                            <div class="mt-2">
+                                <input type="password" class="form-control" required="" data-parsley-equalto="#pass2"
+                                    placeholder="Re-Type Password">
+                            </div>
+                        </div>
 
-                    <strong>rendered as bold text</strong>
+                        <div class="form-group">
+                            <label>E-Mail</label>
+                            <div>
+                                <input type="email" class="form-control" required="" parsley-type="email"
+                                    placeholder="Enter a valid e-mail">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>URL</label>
+                            <div>
+                                <input parsley-type="url" type="url" class="form-control" required="" placeholder="URL">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Digits</label>
+                            <div>
+                                <input data-parsley-type="digits" type="text" class="form-control" required=""
+                                    placeholder="Enter only digits">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Number</label>
+                            <div>
+                                <input data-parsley-type="number" type="text" class="form-control" required=""
+                                    placeholder="Enter only numbers">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Alphanumeric</label>
+                            <div>
+                                <input data-parsley-type="alphanum" type="text" class="form-control" required=""
+                                    placeholder="Enter alphanumeric value">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Textarea</label>
+                            <div>
+                                <textarea required="" class="form-control"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group">
 
-                    <br><br>
+                            <button type="submit" class="btn btn-primary">
+                                Submit
+                            </button>
+                        </div>
+                    </form>
 
-                    <em>rendered as italicized text</em>
+                    <hr>
+                    <h5>Range validation</h5>
+
+                    <form data-parsley-validate autocomplete="off">
+
+                        <div class="form-group">
+                            <label>Min Length</label>
+                            <div>
+                                <input type="text" class="form-control" required data-parsley-minlength="6"
+                                    placeholder="Min 6 chars." />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Max Length</label>
+                            <div>
+                                <input type="text" class="form-control" required data-parsley-maxlength="6"
+                                    placeholder="Max 6 chars." />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Range Length</label>
+                            <div>
+                                <input type="text" class="form-control" required data-parsley-length="[5,10]"
+                                    placeholder="Text between 5 - 10 chars length" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Min Value</label>
+                            <div>
+                                <input type="text" class="form-control" required data-parsley-min="6"
+                                    placeholder="Min value is 6" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Max Value</label>
+                            <div>
+                                <input type="text" class="form-control" required data-parsley-max="6"
+                                    placeholder="Max value is 6" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Range Value</label>
+                            <div>
+                                <input class="form-control" required type="text" min="6" max="100"
+                                    placeholder="Number between 6 - 100" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Regular Exp</label>
+                            <div>
+                                <input type="text" class="form-control" required data-parsley-pattern="#[A-Fa-f0-9]{6}"
+                                    placeholder="Hex. Color" />
+                            </div>
+                        </div>
+
+                        <div class="form-group mb-0">
+                            <button type="submit" class="btn btn-primary">
+                                Submit
+                            </button>
+                        </div>
+                    </form>
 
 
                 </div>
             </div>
 
 
-            <div class="card">
 
-                <div class="card-body">
-
-                    <h4 class="card-title">
-                        Contextual Text Colors
-                    </h4>
-
-
-                    <p class="text-muted">
-                        Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.
-                    </p>
-                    <p class="text-primary">
-                        Nullam id dolor id nibh ultricies vehicula ut id elit.
-                    </p>
-                    <p class="text-success">
-                        Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
-                    </p>
-                    <p class="text-info">
-                        Maecenas sed diam eget risus varius blandit sit amet non magna.
-                    </p>
-                    <p class="text-warning">
-                        Etiam porta sem malesuada magna mollis euismod.
-                    </p>
-                    <p class="text-danger">
-                        Donec ullamcorper nulla non metus auctor fringilla.
-                    </p>
-                    <p class="text-dark">
-                        Nullam id dolor id nibh ultricies vehicula ut id elit.
-                    </p>
-
-
-                </div>
-            </div>
-
-
-            <div class="card">
-
-                <div class="card-body">
-
-                    <h4 class="card-title">
-                        Unordered
-                    </h4>
-
-                    <p>
-                        A list of items in which the order does not explicitly matter.
-                    </p>
-
-                    <ul>
-                        <li>
-                            Lorem ipsum dolor sit amet
-                        </li>
-                        <li>
-                            Consectetur adipiscing elit
-                        </li>
-                        <li>
-                            Integer molestie lorem at massa
-                        </li>
-                        <li>
-                            Facilisis in pretium nisl aliquet
-                        </li>
-                        <li>
-                            Nulla volutpat aliquam velit
-                            <ul>
-                                <li>
-                                    Phasellus iaculis neque
-                                </li>
-                                <li>
-                                    Purus sodales ultricies
-                                </li>
-                                <li>
-                                    Vestibulum laoreet porttitor sem
-                                </li>
-                                <li>
-                                    Ac tristique libero volutpat at
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            Faucibus porta lacus fringilla vel
-                        </li>
-                        <li>
-                            Aenean sit amet erat nunc
-                        </li>
-                        <li>
-                            Eget porttitor lorem
-                        </li>
-                    </ul>
-
-                </div>
-            </div>
-
-
-            <div class="card">
-
-                <div class="card-body">
-
-                    <h4 class="card-title">
-                        Ordered
-                    </h4>
-
-                    <p>
-                        A list of items in which the order does explicitly matter.
-                    </p>
-
-                    <ol>
-                        <li>
-                            Lorem ipsum dolor sit amet
-                        </li>
-                        <li>
-                            Consectetur adipiscing elit
-                        </li>
-                        <li>
-                            Integer molestie lorem at massa
-                        </li>
-                        <li>
-                            Facilisis in pretium nisl aliquet
-                        </li>
-                        <li>
-                            Nulla volutpat aliquam velit
-                            <ol>
-                                <li>
-                                    Phasellus iaculis neque
-                                </li>
-                                <li>
-                                    Purus sodales ultricies
-                                </li>
-                                <li>
-                                    Vestibulum laoreet porttitor sem
-                                </li>
-                                <li>
-                                    Ac tristique libero volutpat at
-                                </li>
-                            </ol>
-                        </li>
-                        <li>
-                            Faucibus porta lacus fringilla vel
-                        </li>
-                        <li>
-                            Aenean sit amet erat nunc
-                        </li>
-                        <li>
-                            Eget porttitor lorem
-                        </li>
-                    </ol>
-
-                </div>
-            </div>
-
-            <div class="card">
-
-                <div class="card-body">
-
-                    <h4 class="card-title">
-                        Unstyled
-                    </h4>
-
-                    <p>
-                        <strong>This only applies to immediate children
-                            list items</strong>, meaning you will need to add the class for any nested lists as well.
-                    </p>
-
-                    <ul class="list-unstyled">
-                        <li>
-                            Lorem ipsum dolor sit amet
-                        </li>
-                        <li>
-                            Integer molestie lorem at massa
-                            <ul>
-                                <li>
-                                    Phasellus iaculis neque
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            Faucibus porta lacus fringilla vel
-                        </li>
-                        <li>
-                            Eget porttitor lorem
-                        </li>
-                    </ul>
-
-                    <h5 class="header-title">Inline</h5>
-                    <p class="sub-header">
-                        Place all list items on a single line with <code>
-                        display: inline-block;</code>
-                        and some light padding.
-                    </p>
-
-                    <ul class="list-inline m-b-0">
-                        <li class="list-inline-item">
-                            Lorem ipsum
-                        </li>
-                        <li class="list-inline-item">
-                            Phasellus iaculis
-                        </li>
-                        <li class="list-inline-item">
-                            Nulla volutpat
-                        </li>
-                    </ul>
-                </div>
-
-            </div>
-
-            <div class="card">
-
-                <div class="card-body">
-
-                    <h4 class="card-title">
-                        Blockquotes
-                    </h4>
-
-                    <blockquote class="blockquote">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                        <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source
-                                Title</cite></footer>
-                    </blockquote>
-
-                    <p class="text-muted">
-                        Use text utilities as needed to change the alignment of your blockquote.
-                    </p>
-
-                    <blockquote class="blockquote border-0 text-center">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                        <footer class="blockquote-footer">Someone famous in Source Title</footer>
-                    </blockquote>
-
-                    <blockquote class="blockquote blockquote-reverse text-right mb-0">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                        <small class="blockquote-footer">Someone famous in Source Title</small>
-                    </blockquote>
-
-
-                </div>
-
-            </div>
         </div>
 
-    </div>
+
+        <script src="https://unpkg.com/jquery@3.4.1/dist/jquery.slim.min.js"></script>
+        <script src="https://unpkg.com/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+        <script src="https://unpkg.com/bootstrap@4.4.1/dist/js/bootstrap.min.js"></script>
+        <script src="https://unpkg.com/perfect-scrollbar@1.4.0/dist/perfect-scrollbar.min.js"></script>
+        
+        <script src="https://unpkg.com/jquery-mask-plugin@1.14.16/dist/jquery.mask.min.js"></script>        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/js/bootstrap-select.min.js"></script>
+        <script src="https://unpkg.com/parsleyjs@2.9.2/dist/parsley.min.js"></script>
+
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-50750921-19"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+
+            gtag('config', 'UA-50750921-19');
+        </script>
 
 
 
+        <script src="../../js/morioh.js"></script>
 
-    </div>
+        <script>
 
+            $(function () {
 
-    <script src="https://unpkg.com/jquery@3.4.1/dist/jquery.slim.min.js"></script>
-    <script src="https://unpkg.com/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-    <script src="https://unpkg.com/bootstrap@4.4.1/dist/js/bootstrap.min.js"></script>
+                // input mask
 
-    <script src="https://unpkg.com/perfect-scrollbar@1.4.0/dist/perfect-scrollbar.min.js"></script>
+                $('[data-toggle="input-mask"]').each(function (t, e) {
+                    var n = $(e).data("maskFormat"), a = $(e).data("reverse");
+                    null != a ? $(e).mask(n, { reverse: a }) : $(e).mask(n);
+                });
 
+            });
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-50750921-19"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'UA-50750921-19');
-    </script>
-
-
-    <script src="../../js/morioh.js"></script>
+        </script>
 
 
 </body>

@@ -1,6 +1,6 @@
 {
   "name": "morioh",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Morioh Theme: Responsive Template with Bootstrap 4, HTML5 and Vue.js",
   "main": "./dist/css/morioh.min.css",
   "scripts": {
@@ -14,10 +14,31 @@
   ],
   "keywords": [
     "morioh",
-    "theme"
+    "theme",
+    "bootstrap template",
+    "template",
+    "admin",
+    "admin panel",
+    "admin template",
+    "bootstrap",    
+    "dashboard",
+    "framework",
+    "front-end",
+    "responsive",
+    "sass",
+    "ui kit",
+    "webapp"
   ],
-  "author": "Morioh Team",
+  "author": "Morioh Team <support@morioh.com>",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Morioh-Lab/morioh.git"
+  },  
+  "bugs": {
+    "url": "https://github.com/Morioh-Lab/morioh/issues"
+  },
+  "homepage": "https://morioh.com/www/morioh",
   "devDependencies": {
     "autoprefixer": "^9.7.3",
     "clean-webpack-plugin": "^3.0.0",
