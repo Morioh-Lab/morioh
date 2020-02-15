@@ -18,6 +18,11 @@ $(() => {
     });
 
 
+    new PerfectScrollbar('.perfect-scrollbar', {
+        suppressScrollX: true
+    });
+    
+
     // 
 
     $('#navbar-toggler').on('click', function () {
