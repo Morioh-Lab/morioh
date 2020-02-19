@@ -451,7 +451,7 @@ mark,
 
 code {
   font-size: 87.5%;
-  color: #f3a4b5;
+  color: #8965e0;
   word-wrap: break-word; }
   a > code {
     color: inherit; }
@@ -9340,7 +9340,6 @@ a.text-darker:hover, a.text-darker:focus {
 pre,
 pre code {
   text-shadow: 0 1px rgba(255, 255, 255, 0.8);
-  background-color: #f8f9fa;
   direction: ltr;
   text-align: left;
   white-space: pre;
@@ -9356,6 +9355,9 @@ pre code {
   border: none;
   border-radius: 0.25rem;
   padding: 1rem; }
+
+pre {
+  background-color: #f8f9fa; }
 
 blockquote,
 .blockquote {

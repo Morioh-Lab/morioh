@@ -1,7 +1,7 @@
 $(() => {
 
 
-    $('#version').text('v1.0.3');
+    $('#version').text('v1.0.5');
 
     const psSidebar = new PerfectScrollbar('.menubar-body', {
         suppressScrollX: true
@@ -18,10 +18,12 @@ $(() => {
     });
 
 
-    new PerfectScrollbar('.perfect-scrollbar', {
-        suppressScrollX: true
-    });
-    
+    if ($('.perfect-scrollbar').length) {
+        new PerfectScrollbar('.perfect-scrollbar', {
+            suppressScrollX: true
+        });
+    }
+
 
     // 
 
@@ -43,7 +45,7 @@ $(() => {
     });
 
     $('a[data-toggle=collapse]').on('click', function () {
-        $(this).toggleClass('active');        
+        $(this).toggleClass('active');
     });
 
 
