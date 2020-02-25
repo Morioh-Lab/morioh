@@ -1,6 +1,6 @@
 {
   "name": "morioh",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Morioh Theme: Responsive Template with Bootstrap 4, HTML5 and Vue.js",
   "main": "./dist/css/morioh.min.css",
   "scripts": {

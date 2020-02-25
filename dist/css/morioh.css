@@ -17556,7 +17556,7 @@ blockquote,
     display: none; }
   .menubar-enabled .wrapper,
   .menubar-enabled .main-navbar {
-    margin-left: 0; }
+    margin-left: 0 !important; }
   .menubar-enabled .navbar-nav {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
