@@ -1,6 +1,6 @@
 /*!
  * Morioh Responsive Template based on Bootstrap
- * Version - 1.0.3
+ * Version - 1.0.8
  * Copyright 2011-2019 The Bootstrap Authors
  * Copyright 2011-2019 Twitter, Inc.
  * Copyright 2019-2020 Morioh Team - https://morioh.com
@@ -9353,11 +9353,11 @@ pre code {
       -ms-hyphens: none;
           hyphens: none;
   border: none;
-  border-radius: 0.25rem;
-  padding: 1rem; }
+  border-radius: 0.25rem; }
 
 pre {
-  background-color: #f8f9fa; }
+  background-color: #f8f9fa;
+  padding: 1rem; }
 
 blockquote,
 .blockquote {
@@ -16959,6 +16959,8 @@ blockquote,
       display: inline-block; }
   .card-title {
     font-size: 1.1875rem; }
+  .card .card-body + .card-body {
+    padding-top: 0; }
 
 .dropdown-menu {
   padding: 5px;
