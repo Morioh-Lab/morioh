@@ -37,10 +37,10 @@
     <meta name="image" content="https://i.imgur.com/gWYKl5F.png">
 
 
-    <link rel="stylesheet" href="https://unpkg.com/@fortawesome/fontawesome-free@5.11.2/css/all.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/perfect-scrollbar@1.4.0/css/perfect-scrollbar.css">
-    <link rel="stylesheet" href="https://unpkg.com/@mdi/font@4.7.95/css/materialdesignicons.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/animate.css@3.7.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/perfect-scrollbar@1.4.0/css/perfect-scrollbar.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@4.7.95/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css">
 
     <link rel="stylesheet" href="../../css/morioh.css">
 
@@ -53,17 +53,17 @@
 
         <div class="main-navbar navbar-expand-md navbar-light bg-white fixed-top shadow-sm">
 
-            <button class="btn hidden-md-up" type="button" data-toggle="collapse" data-target="#main-menu"
+            <button class="btn d-md-none" type="button" data-toggle="collapse" data-target="#main-menu"
                 aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fas fa-bars"></i>
             </button>
 
 
-            <img src="https://i.imgur.com/QTZ8pU1.png" title="Morioh" class="navbar-logo hidden-md-up"
+            <img src="https://i.imgur.com/QTZ8pU1.png" title="Morioh" class="navbar-logo d-md-none"
                 style="height: 36px;">
 
 
-            <button class="btn hidden-md-up" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            <button class="btn d-md-none" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fas fa-bars"></i>
             </button>
@@ -72,7 +72,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto hidden-sm-down">
 
-                    <li class="nav-item mr-10">
+                    <li class="nav-item mr-5">
                         <a href="javascript://" class="nav-icon font-2xl" id="navbar-toggler">
                             <!-- <i class="fas fa-bars"></i> -->
                             <!-- <i class="mdi mdi-view-sequential font-2xl"></i> -->
@@ -85,11 +85,11 @@
                         <form class="form-inline">
                             <div class="input-group">
                                 <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-                                <span class="input-group-append">
+                             
                                     <button class="btn btn-outline-primary" type="button">
                                         <i class="fas fa-search"></i>
                                     </button>
-                                </span>
+                                
                             </div>
                         </form>
                     </li>
@@ -100,27 +100,27 @@
                 <ul class="navbar-nav my-2 my-lg-0">
 
 
-                    <li class="nav-item mr-5">
+                    <li class="nav-item mr-10">
                         <a href="#" class="nav-icon font-2xl">
                             <!-- <i class="fas fa-chart-pie"></i> -->
                             <i class="mdi mdi-view-dashboard-outline"></i>
                         </a>
                     </li>
 
-                    <li class="nav-item mr-5">
+                    <li class="nav-item mr-10">
                         <a class="nav-icon font-2xl" href="#">
                             <i class="mdi mdi-bell-ring-outline"></i>
                         </a>
                     </li>
 
-                    <li class="nav-item mr-5">
+                    <li class="nav-item mr-10">
                         <a href="#" class="nav-icon font-2xl rounded-circle">
                             <!-- <i class="fas fa-cog"></i> -->
                             <i class="mdi mdi-settings-outline"></i>
                         </a>
                     </li>
 
-                    <li class="nav-item mr-5 dropdown">
+                    <li class="nav-item mr-10 dropdown">
                         <a href="#" class="nav-icon avatar rounded-circle" id="PJXN7R" role="button"
                             data-toggle="dropdown" aria-expanded="false">
                             <img src="https://i.imgur.com/ROPF2fQ.png">
@@ -197,7 +197,7 @@
                             <i class="menu-icon mdi mdi-view-dashboard"></i>
                             <span class="menu-label">Dashboard</span>
                             <span class="menu-badge">
-                                <span class="badge badge-info">1</span>
+                                <span class="badge bg-info">1</span>
                             </span>
 
                         </a>
@@ -565,13 +565,13 @@
         </div>
 
 
-        <div class="container-fluid mt-30">
+        <div class="container-fluid mt-15">
 
             <div class="row">
                 <div class="col-lg-3 col-md-2 col-sm-12">
-                    <div class="card">
+                    <div class="card mb-15">
                         <div class="card-body">
-                            <span class="badge badge-success float-right">+30%</span>
+                            <span class="badge bg-success float-right">+30%</span>
                             <h6 class="card-title text-muted text-uppercase">Visitors</h6>
                             <h2 class="mb-10">300K</h2>
                             <div class="progress progress-xs">
@@ -584,9 +584,9 @@
                 </div>
 
                 <div class="col-lg-3 col-md-2 col-sm-12">
-                    <div class="card">
+                    <div class="card mb-15">
                         <div class="card-body">
-                            <span class="badge badge-primary float-right">+10%</span>
+                            <span class="badge bg-primary float-right">+10%</span>
                             <h6 class="card-title text-muted text-uppercase">Orders</h6>
                             <h2 class="mb-10">1,234</h2>
                             <div class="progress progress-xs">
@@ -600,9 +600,9 @@
 
 
                 <div class="col-lg-3 col-md-2 col-sm-12">
-                    <div class="card">
+                    <div class="card mb-15">
                         <div class="card-body">
-                            <span class="badge badge-warning float-right">+10%</span>
+                            <span class="badge bg-warning float-right">+10%</span>
                             <h6 class="card-title text-muted text-uppercase">Revenue</h6>
                             <h2 class="mb-10">$45,089</h2>
                             <div class="progress progress-xs">
@@ -615,9 +615,9 @@
                 </div>
 
                 <div class="col-lg-3 col-md-2 col-sm-12">
-                    <div class="card">
+                    <div class="card mb-15">
                         <div class="card-body">
-                            <span class="badge badge-info float-right">+20%</span>
+                            <span class="badge bg-info float-right">+20%</span>
                             <h6 class="card-title text-muted text-uppercase">Members</h6>
                             <h2 class="mb-10">45K</h2>
                             <div class="progress progress-xs">
@@ -635,9 +635,9 @@
 
             <div class="row">
                 <div class="col-lg-3 col-md-2 col-sm-12">
-                    <div class="card">
+                    <div class="card mb-15">
                         <div class="card-body">
-                            <span class="badge badge-success float-right">Week</span>
+                            <span class="badge bg-success float-right">Week</span>
                             <h6 class="card-title text-muted">Income</h6>
                             <h2 class="mb-10">$34,909</h2>
 
@@ -649,9 +649,9 @@
                 </div>
 
                 <div class="col-lg-3 col-md-2 col-sm-12">
-                    <div class="card">
+                    <div class="card mb-15">
                         <div class="card-body">
-                            <span class="badge badge-primary float-right">Week</span>
+                            <span class="badge bg-primary float-right">Week</span>
                             <h6 class="card-title text-muted">Sales</h6>
                             <h2 class="mb-10">1,234</h2>
                             <p class="text-muted mb-0">Total sales: 329,890 <span class="float-right"><i
@@ -663,9 +663,9 @@
 
 
                 <div class="col-lg-3 col-md-2 col-sm-12">
-                    <div class="card">
+                    <div class="card mb-15">
                         <div class="card-body">
-                            <span class="badge badge-info float-right">Month</span>
+                            <span class="badge bg-info float-right">Month</span>
                             <h6 class="card-title text-muted">Members</h6>
                             <h2 class="mb-10">50K</h2>
                             <p class="text-muted mb-0">Total members: 150M <span class="float-right"><i
@@ -676,9 +676,9 @@
                 </div>
 
                 <div class="col-lg-3 col-md-2 col-sm-12">
-                    <div class="card">
+                    <div class="card mb-15">
                         <div class="card-body">
-                            <span class="badge badge-danger float-right">Month</span>
+                            <span class="badge bg-danger float-right">Month</span>
                             <h6 class="card-title text-muted">Revenue</h6>
                             <h2 class="mb-10">$125K</h2>
                             <p class="text-muted mb-0">Total revenue: $120M <span class="float-right"><i
@@ -696,7 +696,7 @@
 
             <div class="row">
                 <div class="col-lg-3 col-md-2 col-sm-12">
-                    <div class="card">
+                    <div class="card mb-15">
                         <div class="card-body">
                             <div class="card-controls float-right">
                                 <div class="dropdown">
@@ -739,7 +739,7 @@
 
 
                 <div class="col-lg-3 col-md-2 col-sm-12">
-                    <div class="card">
+                    <div class="card mb-15">
                         <div class="card-body">
                             <div class="card-controls float-right">
                                 <div class="dropdown">
@@ -766,7 +766,7 @@
                 </div>
 
                 <div class="col-lg-3 col-md-2 col-sm-12">
-                    <div class="card">
+                    <div class="card mb-15">
                         <div class="card-body">
                             <div class="card-controls float-right">
                                 <button class="btn btn-default btn-sm btn-icon" type="button">
@@ -789,7 +789,7 @@
             <div class="row">
 
                 <div class="col-lg-3 col-md-2 col-sm-12">
-                    <div class="card">
+                    <div class="card mb-15">
                         <div class="card-header bg-transparent">
                             Issues
                         </div>
@@ -807,9 +807,9 @@
                 </div>
 
                 <div class="col-lg-3 col-md-2 col-sm-12">
-                    <div class="card">
+                    <div class="card mb-15">
                         <div class="card-header bg-transparent">
-                            <span class="badge badge-primary mt-5 float-right">
+                            <span class="badge bg-primary mt-5 float-right">
                                 <i class="fas fa-angle-up"></i> 12%</span>
                             Orders
                         </div>
@@ -827,7 +827,7 @@
                 </div>
 
                 <div class="col-lg-3 col-md-2 col-sm-12">
-                    <div class="card">
+                    <div class="card mb-15">
                         <div class="card-header bg-transparent">
                             New Members
                         </div>
@@ -845,7 +845,7 @@
                 </div>
 
                 <div class="col-lg-3 col-md-2 col-sm-12">
-                    <div class="card">
+                    <div class="card mb-15">
                         <div class="card-header bg-transparent">
 
                             Feedbacks
@@ -870,7 +870,7 @@
             <div class="row">
 
                 <div class="col-lg-3 col-md-2 col-sm-12">
-                    <div class="card">
+                    <div class="card mb-15">
 
                         <div class="card-body">
                             <div class="card-title">
@@ -887,7 +887,7 @@
                 </div>
 
                 <div class="col-lg-3 col-md-2 col-sm-12">
-                    <div class="card">
+                    <div class="card mb-15">
                         <div class="card-body">
                             <div class="card-title">
                                 Orders
@@ -905,7 +905,7 @@
                 </div>
 
                 <div class="col-lg-3 col-md-2 col-sm-12">
-                    <div class="card">
+                    <div class="card mb-15">
                         <div class="card-body">
 
                             <div class="card-title">
@@ -925,7 +925,7 @@
                 </div>
 
                 <div class="col-lg-3 col-md-2 col-sm-12">
-                    <div class="card">
+                    <div class="card mb-15">
 
                         <div class="card-body">
                             <div class="card-title">
@@ -950,7 +950,7 @@
             <div class="row">
 
                 <div class="col-lg-3 col-md-2 col-sm-12">
-                    <div class="card">
+                    <div class="card mb-15">
 
                         <div class="card-body">
                             <div class="card-title">
@@ -966,7 +966,7 @@
                 </div>
 
                 <div class="col-lg-3 col-md-2 col-sm-12">
-                    <div class="card">
+                    <div class="card mb-15">
                         <div class="card-body">
 
                             <div class="card-title">
@@ -984,7 +984,7 @@
                 </div>
 
                 <div class="col-lg-3 col-md-2 col-sm-12">
-                    <div class="card">
+                    <div class="card mb-15">
                         <div class="card-body">
 
                             <div class="card-title">
@@ -1003,7 +1003,7 @@
                 </div>
 
                 <div class="col-lg-3 col-md-2 col-sm-12">
-                    <div class="card">
+                    <div class="card mb-15">
 
                         <div class="card-body">
                             <div class="card-title">
@@ -1026,7 +1026,7 @@
 
             <div class="row">
                 <div class="col-lg-3 col-md-2 col-sm-12">
-                    <div class="card">
+                    <div class="card mb-15">
                         <div class="card-body">
                             <div class="card-title">
                                 Sessions
@@ -1049,7 +1049,7 @@
                 </div>
 
                 <div class="col-lg-3 col-md-2 col-sm-12">
-                    <div class="card">
+                    <div class="card mb-15">
                         <div class="card-body">
                             <div class="card-title">
                                 Clicks
@@ -1072,7 +1072,7 @@
                 </div>
 
                 <div class="col-lg-3 col-md-2 col-sm-12">
-                    <div class="card">
+                    <div class="card mb-15">
                         <div class="card-body">
                             <div class="card-title">
                                 Sales
@@ -1095,7 +1095,7 @@
                 </div>
 
                 <div class="col-lg-3 col-md-2 col-sm-12">
-                    <div class="card">
+                    <div class="card mb-15">
                         <div class="card-body">
                             <div class="card-title">
                                 Revenue
@@ -1129,7 +1129,7 @@
             <div class="row">
 
                 <div class="col-lg-3 col-md-2 col-sm-12">
-                    <div class="card">
+                    <div class="card mb-15">
                         <div class="card-body">
                             <div class="float-right text-right">
                                 <h3>1,2K</h3>
@@ -1144,7 +1144,7 @@
                 </div>
 
                 <div class="col-lg-3 col-md-2 col-sm-12">
-                    <div class="card">
+                    <div class="card mb-15">
                         <div class="card-body">
                             <div class="float-right text-right">
                                 <h3>500</h3>
@@ -1159,7 +1159,7 @@
                 </div>
 
                 <div class="col-lg-3 col-md-2 col-sm-12">
-                    <div class="card">
+                    <div class="card mb-15">
                         <div class="card-body">
                             <div class="float-right text-right">
                                 <h3>$12K</h3>
@@ -1175,7 +1175,7 @@
 
 
                 <div class="col-lg-3 col-md-2 col-sm-12">
-                    <div class="card">
+                    <div class="card mb-15">
                         <div class="card-body">
                             <div class="float-right text-right">
                                 <h3>10%</h3>
@@ -1194,10 +1194,10 @@
             <div class="row">
 
                 <div class="col-lg-3 col-md-2 col-sm-12">
-                    <div class="card">
+                    <div class="card mb-15">
                         <div class="card-body">
 
-                            <div class="form-group clearfix">
+                            <div class="mb-15 clearfix">
                                 <div class="float-right text-right">
                                     <h3>1,2K</h3>
                                     <div class="text-muted">New members</div>
@@ -1209,7 +1209,7 @@
                             </div>
 
 
-                            <div class="form-group mb-0">
+                            <div class="mb-15 mb-0">
                                 <h6 class="text-uppercase text-muted">
                                     <span class="float-right">60%</span>
                                     Target</h6>
@@ -1227,9 +1227,9 @@
                 </div>
 
                 <div class="col-lg-3 col-md-2 col-sm-12">
-                    <div class="card">
+                    <div class="card mb-15">
                         <div class="card-body">
-                            <div class="form-group clearfix">
+                            <div class="mb-15 clearfix">
                                 <div class="float-right text-right">
                                     <h3>1,500</h3>
                                     <div class="text-muted">Month's sales</div>
@@ -1239,7 +1239,7 @@
                                 </button>
                             </div>
 
-                            <div class="form-group mb-0">
+                            <div class="mb-15 mb-0">
                                 <h6 class="text-uppercase text-muted">
                                     <span class="float-right">60%</span>
                                     Target</h6>
@@ -1257,10 +1257,10 @@
                 </div>
 
                 <div class="col-lg-3 col-md-2 col-sm-12">
-                    <div class="card">
+                    <div class="card mb-15">
                         <div class="card-body">
 
-                            <div class="form-group clearfix">
+                            <div class="mb-15 clearfix">
                                 <div class="float-right text-right">
                                     <h3>$120K</h3>
                                     <div class="text-muted">Month's income</div>
@@ -1271,7 +1271,7 @@
                                 </button>
                             </div>
 
-                            <div class="form-group mb-0">
+                            <div class="mb-15 mb-0">
                                 <h6 class="text-uppercase text-muted">
                                     <span class="float-right">90%</span>
                                     Target</h6>
@@ -1289,9 +1289,9 @@
 
 
                 <div class="col-lg-3 col-md-2 col-sm-12">
-                    <div class="card">
+                    <div class="card mb-15">
                         <div class="card-body">
-                            <div class="form-group clearfix">
+                            <div class="mb-15 clearfix">
                                 <div class="float-right text-right">
                                     <h3>150M</h3>
                                     <div class="text-muted">Month's views</div>
@@ -1302,7 +1302,7 @@
                                 </button>
                             </div>
 
-                            <div class="form-group mb-0">
+                            <div class="mb-15 mb-0">
                                 <h6 class="text-uppercase text-muted">
                                     <span class="float-right">90%</span>
                                     Target</h6>
@@ -1323,7 +1323,7 @@
             <div class="row">
 
                 <div class="col-lg-4 col-md-2 col-sm-12">
-                    <div class="card">
+                    <div class="card mb-15">
                         <div class="card-body">
 
                             <div class="card-controls">
@@ -1344,7 +1344,7 @@
                                 Tasks
                             </h4>
 
-                            <div class="form-group text-center">
+                            <div class="mb-15 text-center">
                                 <input type="text" value="90" class="knob" data-width="120" data-height="120"
                                     data-fgColor="#3b73da" data-thickness=".2">
                             </div>
@@ -1375,7 +1375,7 @@
                 </div>
 
                 <div class="col-lg-4 col-md-2 col-sm-12">
-                    <div class="card">
+                    <div class="card mb-15">
                         <div class="card-body">
 
                             <div class="card-controls">
@@ -1396,7 +1396,7 @@
                                 Projects
                             </h4>
 
-                            <div class="form-group text-center">
+                            <div class="mb-15 text-center">
                                 <input type="text" value="90" class="knob" data-width="120" data-height="120"
                                     data-fgColor="#5603ad" data-thickness=".2">
                             </div>
@@ -1427,7 +1427,7 @@
 
 
                 <div class="col-lg-4 col-md-2 col-sm-12">
-                    <div class="card">
+                    <div class="card mb-15">
                         <div class="card-body">
 
                             <div class="card-controls">
@@ -1448,7 +1448,7 @@
                                 Feedbacks
                             </h4>
 
-                            <div class="form-group text-center">
+                            <div class="mb-15 text-center">
                                 <input type="text" value="80" class="knob" data-width="120" data-height="120"
                                     data-fgColor="#19b5fe" data-thickness=".2">
                             </div>
@@ -1484,7 +1484,7 @@
 
 
                 <div class="col-lg-4 col-md-2 col-sm-12">
-                    <div class="card">
+                    <div class="card mb-15">
                         <div class="card-body text-center">
 
                             <a href="javascript://" class="avatar avatar-xxl">
@@ -1516,7 +1516,7 @@
 
 
                 <div class="col-lg-4 col-md-2 col-sm-12">
-                    <div class="card">
+                    <div class="card mb-15">
                         <div class="card-body text-center">
 
                             <a href="javascript://" class="avatar avatar-xxl">
@@ -1547,7 +1547,7 @@
                 </div>
 
                 <div class="col-lg-4 col-md-2 col-sm-12">
-                    <div class="card">
+                    <div class="card mb-15">
                         <div class="card-body text-center">
 
                             <a href="javascript://" class="avatar avatar-xxl">
@@ -1581,403 +1581,405 @@
 
 
 
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
 
-            <div class="card-columns">
+                <div class="col">
+                    <div class="card mb-15">
+                        <div class="card-body text-center">
 
-                <div class="card">
-                    <div class="card-body text-center">
-
-                        <a href="javascript://" class="avatar avatar-xxl">
-                            <img src="https://i.imgur.com/sqRDrAe.png">
-                        </a>
-                        <h6 class="card-subtitle text-muted mt-20">Neha Manshi</h6>
-                        <small class="text-muted">Graphic Designer</small>
-                        <div class="mt-10">
-                            <button type="button" class="btn btn-circle btn-icon btn-facebook">
-                                <i class="fab fa-facebook"></i>
-                            </button>
-                            <button type="button" class="btn btn-circle btn-icon btn-twitter">
-                                <i class="fab fa-twitter"></i>
-                            </button>
-                            <button type="button" class="btn btn-circle btn-icon btn-linkedin">
-                                <i class="fab fa-linkedin"></i>
-                            </button>
-                            <button type="button" class="btn btn-circle btn-icon btn-github">
-                                <i class="fab fa-github"></i>
-                            </button>
+                            <a href="javascript://" class="avatar avatar-xxl">
+                                <img src="https://i.imgur.com/sqRDrAe.png">
+                            </a>
+                            <h6 class="card-subtitle text-muted mt-20">Neha Manshi</h6>
+                            <small class="text-muted">Graphic Designer</small>
+                            <div class="mt-10">
+                                <button type="button" class="btn btn-circle btn-icon btn-facebook">
+                                    <i class="fab fa-facebook"></i>
+                                </button>
+                                <button type="button" class="btn btn-circle btn-icon btn-twitter">
+                                    <i class="fab fa-twitter"></i>
+                                </button>
+                                <button type="button" class="btn btn-circle btn-icon btn-linkedin">
+                                    <i class="fab fa-linkedin"></i>
+                                </button>
+                                <button type="button" class="btn btn-circle btn-icon btn-github">
+                                    <i class="fab fa-github"></i>
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="card">
-                    <div class="card-body text-center">
-                        <div class="card-controls">
-                            <div class="dropdown">
-                                <button class="btn btn-default btn-sm btn-icon btn-transparent" type="button"
-                                    id="d350ad" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <i class="mdi mdi-dots-vertical"></i>
-                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="d350ad">
-                                        <a class="dropdown-item" href="#">Block</a>
-                                        <a class="dropdown-item" href="#">Muted</a>
-                                        <a class="dropdown-item" href="#">Report abuse</a>
-                                    </div>
+                <div class="col">
+                    <div class="card mb-15">
+                        <div class="card-body text-center">
+                            <div class="card-controls">
+                                <div class="dropdown">
+                                    <button class="btn btn-default btn-sm btn-icon btn-transparent" type="button"
+                                        id="d350ad" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="mdi mdi-dots-vertical"></i>
+                                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="d350ad">
+                                            <a class="dropdown-item" href="#">Block</a>
+                                            <a class="dropdown-item" href="#">Muted</a>
+                                            <a class="dropdown-item" href="#">Report abuse</a>
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <a href="javascript://" class="avatar avatar-xxl">
+                                <img src="https://i.imgur.com/ROPF2fQ.png">
+                            </a>
+                            <h6 class="card-subtitle text-muted mt-20">Nandu Singh</h6>
+                            <small class="text-muted">Fullstack Developer</small>
+                            <div class="mt-10">
+                                <button type="button" class="btn btn-outline-primary">
+                                    Follow
                                 </button>
                             </div>
-                        </div>
-
-                        <a href="javascript://" class="avatar avatar-xxl">
-                            <img src="https://i.imgur.com/ROPF2fQ.png">
-                        </a>
-                        <h6 class="card-subtitle text-muted mt-20">Nandu Singh</h6>
-                        <small class="text-muted">Fullstack Developer</small>
-                        <div class="mt-10">
-                            <button type="button" class="btn btn-outline-primary">
-                                Follow
-                            </button>
                         </div>
                     </div>
                 </div>
 
-                <div class="card">
-                    <div class="card-body text-center">
-                        <div class="card-controls">
-                            <div class="dropdown">
-                                <button class="btn btn-default btn-sm btn-icon btn-transparent" type="button"
-                                    id="d350ad" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <i class="mdi mdi-dots-vertical"></i>
-                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="d350ad">
-                                        <a class="dropdown-item" href="#">Block</a>
-                                        <a class="dropdown-item" href="#">Muted</a>
-                                        <a class="dropdown-item" href="#">Report abuse</a>
-                                    </div>
+                <div class="col">
+                    <div class="card mb-15">
+                        <div class="card-body text-center">
+                            <div class="card-controls">
+                                <div class="dropdown">
+                                    <button class="btn btn-default btn-sm btn-icon btn-transparent" type="button"
+                                        id="d350ad" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="mdi mdi-dots-vertical"></i>
+                                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="d350ad">
+                                            <a class="dropdown-item" href="#">Block</a>
+                                            <a class="dropdown-item" href="#">Muted</a>
+                                            <a class="dropdown-item" href="#">Report abuse</a>
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <a href="javascript://" class="avatar avatar-xxl">
+                                <img src="https://i.imgur.com/8VXDwmt.png">
+                            </a>
+                            <div class="mb-15 mt-20">
+                                <h5 class="card-subtitle">JavaScript</h5>
+                                <small class="text-muted">150K members</small>
+                            </div>
+
+                            <div class="mb-15 text-center">
+                                <div class="avatar-group">
+                                    <a class="avatar" href="javascript://">
+                                        <img src="https://i.imgur.com/urMsIe0.png">
+                                    </a>
+                                    <a class="avatar" href="javascript://">
+                                        <img src="https://i.imgur.com/mtHKlth.png">
+                                    </a>
+                                    <a class="avatar" href="javascript://">
+                                        <img src="https://i.imgur.com/Y7cK0Jg.png">
+                                    </a>
+                                    <a class="avatar" href="javascript://">
+                                        <img src="https://i.imgur.com/07Pu9F1.png">
+                                    </a>
+                                    <a class="avatar" href="javascript://">
+                                        <img src="https://i.imgur.com/sqRDrAe.png">
+                                    </a>
+
+                                    <a class="avatar" href="javascript://">
+                                        +
+                                    </a>
+
+                                </div>
+                            </div>
+
+                            <div class="mb-15">
+                                <button type="button" class="btn btn-outline-primary">
+                                    Join
                                 </button>
                             </div>
-                        </div>
 
-                        <a href="javascript://" class="avatar avatar-xxl">
-                            <img src="https://i.imgur.com/8VXDwmt.png">
-                        </a>
-                        <div class="form-group mt-20">
-                            <h5 class="card-subtitle">JavaScript</h5>
-                            <small class="text-muted">150K members</small>
                         </div>
+                    </div>
+                </div>
 
-                        <div class="form-group text-center">
-                            <div class="avatar-group">
-                                <a class="avatar" href="javascript://">
-                                    <img src="https://i.imgur.com/urMsIe0.png">
-                                </a>
-                                <a class="avatar" href="javascript://">
-                                    <img src="https://i.imgur.com/mtHKlth.png">
-                                </a>
-                                <a class="avatar" href="javascript://">
+                <div class="col">
+                    <div class="card mb-15">
+                        <div class="card-body">
+                            <div class="card-controls">
+                                <div class="dropdown">
+                                    <button class="btn btn-default btn-sm btn-icon btn-transparent" type="button"
+                                        id="d350ad" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="mdi mdi-dots-vertical"></i>
+                                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="d350ad">
+                                            <a class="dropdown-item" href="#">Block</a>
+                                            <a class="dropdown-item" href="#">Muted</a>
+                                            <a class="dropdown-item" href="#">Report abuse</a>
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="text-center">
+                                <a href="javascript://" class="avatar avatar-xxl">
                                     <img src="https://i.imgur.com/Y7cK0Jg.png">
                                 </a>
-                                <a class="avatar" href="javascript://">
-                                    <img src="https://i.imgur.com/07Pu9F1.png">
-                                </a>
-                                <a class="avatar" href="javascript://">
-                                    <img src="https://i.imgur.com/sqRDrAe.png">
+
+                                <h6 class="card-subtitle text-muted mt-20 text-center">Vlastimil Kočvara</h6>
+                                <small class="text-muted text-center">Fullstack Developer</small>
+                                <div class="mb-15 mt-10 text-center">
+                                    <button type="button" class="btn btn-primary">
+                                        <i class="fas fa-check"></i> Followed
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="mb-15">
+                                <div class="my-5">
+                                    <span class="float-right">90%</span>
+                                    JavaScript
+                                </div>
+                                <div class="progress progress-xs">
+                                    <div class="progress-bar bg-success" role="progressbar" style="width: 90%"
+                                        aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+
+                            <div class="mb-15">
+                                <div class="my-5">
+                                    <span class="float-right">90%</span>
+                                    JavaScript
+                                </div>
+                                <div class="progress progress-xs">
+                                    <div class="progress-bar bg-success" role="progressbar" style="width: 90%"
+                                        aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+
+                            <div class="mb-15">
+                                <div class="my-5">
+                                    <span class="float-right">95%</span>
+                                    HTML5
+                                </div>
+                                <div class="progress progress-xs">
+                                    <div class="progress-bar bg-success" role="progressbar" style="width: 95%"
+                                        aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+
+                            <div class="mb-15">
+                                <div class="my-5">
+                                    <span class="float-right">60%</span>
+                                    Python
+                                </div>
+                                <div class="progress progress-xs">
+                                    <div class="progress-bar bg-danger" role="progressbar" style="width: 60%"
+                                        aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+
+                            <div class="mb-15">
+                                <div class="my-5">
+                                    <span class="float-right">80%</span>
+                                    Node.JS
+                                </div>
+                                <div class="progress progress-xs">
+                                    <div class="progress-bar bg-primary" role="progressbar" style="width: 80%"
+                                        aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-15">
+                        <div class="card-body">
+                            <div class="card-controls">
+                                <div class="dropdown">
+                                    <button class="btn btn-default btn-sm btn-icon btn-transparent" type="button"
+                                        id="d350ad" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="mdi mdi-dots-vertical"></i>
+                                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="d350ad">
+                                            <a class="dropdown-item" href="#">Block</a>
+                                            <a class="dropdown-item" href="#">Muted</a>
+                                            <a class="dropdown-item" href="#">Report abuse</a>
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="text-center">
+                                <a href="javascript://" class="avatar avatar-xxl">
+                                    <img src="https://i.imgur.com/Y7cK0Jg.png">
                                 </a>
 
-                                <a class="avatar" href="javascript://">
-                                    +
-                                </a>
+                                <h6 class="card-subtitle text-muted mt-20 text-center">Vlastimil Kočvara</h6>
+                                <small class="text-muted text-center">Fullstack Developer</small>
 
                             </div>
+
                         </div>
 
-                        <div class="form-group">
-                            <button type="button" class="btn btn-outline-primary">
-                                Join
-                            </button>
+
+                        <div class="list-group list-group-flush">
+                            <a class="list-group-item list-group-item-action" href="#">
+                                Profile</a>
+                            <a class="list-group-item list-group-item-action" href="#">Change
+                                Password</a>
+
+                            <a class="list-group-item list-group-item-action" href="#">
+                                <span class="badge bg-primary badge-pill float-right">new</span>
+                                Two factor authentication</a>
+                            <a class="list-group-item list-group-item-action" href="#">
+                                Settings
+                            </a>
                         </div>
 
                     </div>
                 </div>
+                <div class="col">
+                    <div class="card mb-15">
+                        <div class="card-header bg-transparent">Top 5 Referrers</div>
+                        <div class="list-group list-group-flush">
+                            <div class="list-group-item">
+                                <a href="https://www.google.com" class="text-body">google.com</a>
+                                <div class="float-right text-muted">
+                                    30.5%
+                                </div>
+                                <div class="progress progress-xs mt-5">
+                                    <div class="progress-bar" style="width: 30.5%;"></div>
+                                </div>
+                            </div>
 
+                            <div class="list-group-item">
+                                <a href="https://www.twitter.com" class="text-body">twitter.com</a>
+                                <div class="float-right text-muted">
+                                    25.5%
+                                </div>
+                                <div class="progress progress-xs mt-5">
+                                    <div class="progress-bar" style="width: 25.5%;"></div>
+                                </div>
+                            </div>
+                            <div class="list-group-item">
+                                <a href="https://morioh.com" class="text-body">morioh.com</a>
+                                <div class="float-right text-muted">
+                                    14%
+                                </div>
 
+                                <div class="progress progress-xs mt-5">
+                                    <div class="progress-bar" style="width: 16%;"></div>
+                                </div>
+                            </div>
 
-                <div class="card">
-                    <div class="card-body">
-                        <div class="card-controls">
-                            <div class="dropdown">
-                                <button class="btn btn-default btn-sm btn-icon btn-transparent" type="button"
-                                    id="d350ad" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <i class="mdi mdi-dots-vertical"></i>
-                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="d350ad">
-                                        <a class="dropdown-item" href="#">Block</a>
-                                        <a class="dropdown-item" href="#">Muted</a>
-                                        <a class="dropdown-item" href="#">Report abuse</a>
+                            <div class="list-group-item">
+                                <a href="https://facebook.com" class="text-body">facebook.com</a>
+                                <div class="float-right text-muted">
+                                    8%
+                                </div>
+                                <div class="progress progress-xs mt-5">
+                                    <div class="progress-bar" style="width: 8%;"></div>
+                                </div>
+                            </div>
+
+                            <div class="list-group-item">
+                                <a href="https://pinterest.com" class="text-body">pinterest.com</a>
+                                <div class="float-right text-muted">
+                                    4%
+                                </div>
+                                <div class="progress progress-xs mt-5">
+                                    <div class="progress-bar" style="width: 8%;"></div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-15">
+                        <div class="card-header">Browser stats</div>
+                        <div class="list-group list-group-flush">
+                            <div class="list-group-item">
+                                <span class="badge bg-primary float-right">30%</span>
+                                Chrome
+                            </div>
+                            <div class="list-group-item">
+                                <span class="badge bg-success float-right">20%</span>
+                                Opera
+                            </div>
+                            <div class="list-group-item">
+                                <span class="badge bg-warning float-right">15%</span>
+                                Firefox
+                            </div>
+                            <div class="list-group-item">
+                                <span class="badge bg-info float-right">10%</span>
+                                Safari
+                            </div>
+
+                            <div class="list-group-item">
+                                <span class="badge bg-danger float-right">20%</span>
+                                Other
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-15">
+                        <div class="card-body">
+
+                            <div class="row align-items-center">
+                                <div class="col-auto">
+
+                                    <a href="#!" class="avatar avatar-lg">
+                                        <img src="https://i.imgur.com/ROPF2fQ.png" alt="...">
+                                    </a>
+
+                                </div>
+                                <div class="col ml-n2">
+                                    <div class="card-title">
+                                        <a href="#!">Nandu Singh</a>
                                     </div>
-                                </button>
-                            </div>
-                        </div>
 
-                        <div class="text-center">
-                            <a href="javascript://" class="avatar avatar-xxl">
-                                <img src="https://i.imgur.com/Y7cK0Jg.png">
-                            </a>
+                                    <p class="card-text text-muted">
+                                        <time datetime="2018-01-03">Jan 3, 2018</time>
+                                    </p>
 
-                            <h6 class="card-subtitle text-muted mt-20 text-center">Vlastimil Kočvara</h6>
-                            <small class="text-muted text-center">Fullstack Developer</small>
-                            <div class="form-group mt-10 text-center">
-                                <button type="button" class="btn btn-primary">
-                                    <i class="fas fa-check"></i> Followed
-                                </button>
-                            </div>
-                        </div>
+                                </div>
+                                <!-- <div class="col-auto">
+                              
+                              <a href="#!" class="btn btn-sm btn-white d-none d-md-inline-block">
+                                Download
+                              </a>
+                      
+                            </div> -->
+                                <div class="col-auto">
 
-                        <div class="form-group">
-                            <div class="my-5">
-                                <span class="float-right">90%</span>
-                                JavaScript
-                            </div>
-                            <div class="progress progress-xs">
-                                <div class="progress-bar bg-success" role="progressbar" style="width: 90%"
-                                    aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="my-5">
-                                <span class="float-right">90%</span>
-                                JavaScript
-                            </div>
-                            <div class="progress progress-xs">
-                                <div class="progress-bar bg-success" role="progressbar" style="width: 90%"
-                                    aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="my-5">
-                                <span class="float-right">95%</span>
-                                HTML5
-                            </div>
-                            <div class="progress progress-xs">
-                                <div class="progress-bar bg-success" role="progressbar" style="width: 95%"
-                                    aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="my-5">
-                                <span class="float-right">60%</span>
-                                Python
-                            </div>
-                            <div class="progress progress-xs">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 60%"
-                                    aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="my-5">
-                                <span class="float-right">80%</span>
-                                Node.JS
-                            </div>
-                            <div class="progress progress-xs">
-                                <div class="progress-bar bg-primary" role="progressbar" style="width: 80%"
-                                    aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-
-                <div class="card">
-                    <div class="card-body">
-                        <div class="card-controls">
-                            <div class="dropdown">
-                                <button class="btn btn-default btn-sm btn-icon btn-transparent" type="button"
-                                    id="d350ad" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <i class="mdi mdi-dots-vertical"></i>
-                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="d350ad">
-                                        <a class="dropdown-item" href="#">Block</a>
-                                        <a class="dropdown-item" href="#">Muted</a>
-                                        <a class="dropdown-item" href="#">Report abuse</a>
+                                    <div class="dropdown">
+                                        <a href="#!" class="dropdown-ellipses" role="button" data-toggle="dropdown"
+                                            aria-haspopup="true" aria-expanded="false">
+                                            <i class="mdi mdi-dots-vertical"></i>
+                                        </a>
+                                        <div class="dropdown-menu dropdown-menu-right">
+                                            <a href="#!" class="dropdown-item">
+                                                Action
+                                            </a>
+                                            <a href="#!" class="dropdown-item">
+                                                Another action
+                                            </a>
+                                            <a href="#!" class="dropdown-item">
+                                                Something else here
+                                            </a>
+                                        </div>
                                     </div>
-                                </button>
+
+                                </div>
                             </div>
-                        </div>
-
-                        <div class="text-center">
-                            <a href="javascript://" class="avatar avatar-xxl">
-                                <img src="https://i.imgur.com/Y7cK0Jg.png">
-                            </a>
-
-                            <h6 class="card-subtitle text-muted mt-20 text-center">Vlastimil Kočvara</h6>
-                            <small class="text-muted text-center">Fullstack Developer</small>
 
                         </div>
-
-                    </div>
-
-
-                    <div class="list-group list-group-flush">
-                        <a class="list-group-item list-group-item-action" href="#">
-                            Profile</a>
-                        <a class="list-group-item list-group-item-action" href="#">Change
-                            Password</a>
-
-                        <a class="list-group-item list-group-item-action" href="#">
-                            <span class="badge badge-primary badge-pill float-right">new</span>
-                            Two factor authentication</a>
-                        <a class="list-group-item list-group-item-action" href="#">
-                            Settings
-                        </a>
-                    </div>
-
-                </div>
-
-
-
-
-                <div class="card">
-                    <div class="card-header bg-transparent">Top 5 Referrers</div>
-                    <div class="list-group list-group-flush">
-                        <div class="list-group-item">
-                            <a href="https://www.google.com" class="text-body">google.com</a>
-                            <div class="float-right text-muted">
-                                30.5%
-                            </div>
-                            <div class="progress progress-xs mt-5">
-                                <div class="progress-bar" style="width: 30.5%;"></div>
-                            </div>
-                        </div>
-
-                        <div class="list-group-item">
-                            <a href="https://www.twitter.com" class="text-body">twitter.com</a>
-                            <div class="float-right text-muted">
-                                25.5%
-                            </div>
-                            <div class="progress progress-xs mt-5">
-                                <div class="progress-bar" style="width: 25.5%;"></div>
-                            </div>
-                        </div>
-                        <div class="list-group-item">
-                            <a href="https://morioh.com" class="text-body">morioh.com</a>
-                            <div class="float-right text-muted">
-                                14%
-                            </div>
-
-                            <div class="progress progress-xs mt-5">
-                                <div class="progress-bar" style="width: 16%;"></div>
-                            </div>
-                        </div>
-
-                        <div class="list-group-item">
-                            <a href="https://facebook.com" class="text-body">facebook.com</a>
-                            <div class="float-right text-muted">
-                                8%
-                            </div>
-                            <div class="progress progress-xs mt-5">
-                                <div class="progress-bar" style="width: 8%;"></div>
-                            </div>
-                        </div>
-
-                        <div class="list-group-item">
-                            <a href="https://pinterest.com" class="text-body">pinterest.com</a>
-                            <div class="float-right text-muted">
-                                4%
-                            </div>
-                            <div class="progress progress-xs mt-5">
-                                <div class="progress-bar" style="width: 8%;"></div>
-                            </div>
-                        </div>
-
                     </div>
                 </div>
-
-
-                <div class="card">
-                    <div class="card-header">Browser stats</div>
-                    <div class="list-group list-group-flush">
-                        <div class="list-group-item">
-                            <span class="badge badge-primary float-right">30%</span>
-                            Chrome
-                        </div>
-                        <div class="list-group-item">
-                            <span class="badge badge-success float-right">20%</span>
-                            Opera
-                        </div>
-                        <div class="list-group-item">
-                            <span class="badge badge-warning float-right">15%</span>
-                            Firefox
-                        </div>
-                        <div class="list-group-item">
-                            <span class="badge badge-info float-right">10%</span>
-                            Safari
-                        </div>
-
-                        <div class="list-group-item">
-                            <span class="badge badge-danger float-right">20%</span>
-                            Other
-                        </div>
-
-                    </div>
-                </div>
-
-
-
-                <div class="card">
-                    <div class="card-body">
-                  
-                      <div class="row align-items-center">
-                        <div class="col-auto">
-                          
-                          <a href="#!" class="avatar avatar-lg">
-                            <img src="https://i.imgur.com/ROPF2fQ.png" alt="...">
-                          </a>
-                  
-                        </div>
-                        <div class="col ml-n2">                  
-                          <div class="card-title">
-                            <a href="#!">Nandu Singh</a>
-                          </div>                        
-                  
-                          <p class="card-text text-muted">
-                            <time datetime="2018-01-03">Jan 3, 2018</time>
-                          </p>
-                          
-                        </div>
-                        <!-- <div class="col-auto">
-                          
-                          <a href="#!" class="btn btn-sm btn-white d-none d-md-inline-block">
-                            Download
-                          </a>
-                  
-                        </div> -->
-                        <div class="col-auto">
-                          
-                          <div class="dropdown">
-                            <a href="#!" class="dropdown-ellipses" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                              <i class="mdi mdi-dots-vertical"></i>
-                            </a>
-                            <div class="dropdown-menu dropdown-menu-right">
-                              <a href="#!" class="dropdown-item">
-                                Action
-                              </a>
-                              <a href="#!" class="dropdown-item">
-                                Another action
-                              </a>
-                              <a href="#!" class="dropdown-item">
-                                Something else here
-                              </a>
-                            </div>
-                          </div>
-                  
-                        </div>
-                      </div>
-                  
-                    </div>
-                  </div>
 
 
             </div>
-
 
 
         </div>
@@ -1985,14 +1987,14 @@
     </div>
 
 
-    <script src="https://unpkg.com/jquery@3.4.1/dist/jquery.slim.min.js"></script>
-    <script src="https://unpkg.com/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-    <script src="https://unpkg.com/bootstrap@4.4.1/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/js/bootstrap.min.js"></script>
 
-    <script src="https://unpkg.com/perfect-scrollbar@1.4.0/dist/perfect-scrollbar.min.js"></script>
-    <script src="https://unpkg.com/jquery-knob@1.2.11/dist/jquery.knob.min.js"></script>
-    <script src="https://unpkg.com/jquery-sparkline@2.4.0/jquery.sparkline.min.js"></script>
-    <script src="https://unpkg.com/peity@3.3.0/jquery.peity.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/perfect-scrollbar@1.4.0/dist/perfect-scrollbar.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-knob@1.2.11/dist/jquery.knob.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-sparkline@2.4.0/jquery.sparkline.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/peity@3.3.0/jquery.peity.min.js"></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-50750921-19"></script>

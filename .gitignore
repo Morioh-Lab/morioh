@@ -9,5 +9,4 @@ obj/*
 *.bak
 config.js
 **/env/production.js
-scss/
 note.txt

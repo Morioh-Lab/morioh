@@ -37,10 +37,10 @@
     <meta name="image" content="https://i.imgur.com/gWYKl5F.png">
 
 
-    <link rel="stylesheet" href="https://unpkg.com/@fortawesome/fontawesome-free@5.11.2/css/all.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/perfect-scrollbar@1.4.0/css/perfect-scrollbar.css">
-    <link rel="stylesheet" href="https://unpkg.com/@mdi/font@4.7.95/css/materialdesignicons.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/animate.css@3.7.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/perfect-scrollbar@1.4.0/css/perfect-scrollbar.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@4.7.95/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css">
 
     <link rel="stylesheet" href="../../css/morioh.css">
 
@@ -53,17 +53,17 @@
 
         <div class="main-navbar navbar-expand-md navbar-light bg-white fixed-top shadow-sm">
 
-            <button class="btn hidden-md-up" type="button" data-toggle="collapse" data-target="#main-menu"
+            <button class="btn d-md-none" type="button" data-toggle="collapse" data-target="#main-menu"
                 aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fas fa-bars"></i>
             </button>
 
 
-            <img src="https://i.imgur.com/QTZ8pU1.png" title="Morioh" class="navbar-logo hidden-md-up"
+            <img src="https://i.imgur.com/QTZ8pU1.png" title="Morioh" class="navbar-logo d-md-none"
                 style="height: 36px;">
 
 
-            <button class="btn hidden-md-up" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            <button class="btn d-md-none" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fas fa-bars"></i>
             </button>
@@ -72,7 +72,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto hidden-sm-down">
 
-                    <li class="nav-item mr-10">
+                    <li class="nav-item mr-5">
                         <a href="javascript://" class="nav-icon font-2xl" id="navbar-toggler">
                             <!-- <i class="fas fa-bars"></i> -->
                             <!-- <i class="mdi mdi-view-sequential font-2xl"></i> -->
@@ -85,11 +85,11 @@
                         <form class="form-inline">
                             <div class="input-group">
                                 <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-                                <span class="input-group-append">
+                                
                                     <button class="btn btn-outline-primary" type="button">
                                         <i class="fas fa-search"></i>
                                     </button>
-                                </span>
+                                
                             </div>
                         </form>
                     </li>
@@ -100,27 +100,27 @@
                 <ul class="navbar-nav my-2 my-lg-0">
 
 
-                    <li class="nav-item mr-5">
+                    <li class="nav-item mr-10">
                         <a href="#" class="nav-icon font-2xl">
                             <!-- <i class="fas fa-chart-pie"></i> -->
                             <i class="mdi mdi-view-dashboard-outline"></i>
                         </a>
                     </li>
 
-                    <li class="nav-item mr-5">
+                    <li class="nav-item mr-10">
                         <a class="nav-icon font-2xl" href="#">
                             <i class="mdi mdi-bell-ring-outline"></i>
                         </a>
                     </li>
 
-                    <li class="nav-item mr-5">
+                    <li class="nav-item mr-10">
                         <a href="#" class="nav-icon font-2xl rounded-circle">
                             <!-- <i class="fas fa-cog"></i> -->
                             <i class="mdi mdi-settings-outline"></i>
                         </a>
                     </li>
 
-                    <li class="nav-item mr-5 dropdown">
+                    <li class="nav-item mr-10 dropdown">
                         <a href="#" class="nav-icon avatar rounded-circle" id="PJXN7R" role="button"
                             data-toggle="dropdown" aria-expanded="false">
                             <img src="https://i.imgur.com/ROPF2fQ.png">
@@ -197,7 +197,7 @@
                             <i class="menu-icon mdi mdi-view-dashboard"></i>
                             <span class="menu-label">Dashboard</span>
                             <span class="menu-badge">
-                                <span class="badge badge-info">1</span>
+                                <span class="badge bg-info">1</span>
                             </span>
 
                         </a>
@@ -565,9 +565,9 @@
         </div>
 
 
-        <div class="container-fluid mt-30">
+        <div class="container-fluid mt-15">
 
-            <div class="card">
+            <div class="card mb-15">
 
                 <div class="card-controls">
                     <button class="btn btn-default btn-icon btn-sm font-xl" type="button" data-toggle="modal"
@@ -584,8 +584,8 @@
                     <p>Use the button classes on an <code>&lt;a&gt;</code>,
                         <code>&lt;button&gt;</code>, or <code>&lt;input&gt;</code> element.</p>
 
-                    <div class="form-group">
-                        <button type="button" class="btn btn-default">Default</button>
+                    <div class="mb-15">
+
                         <button type="button" class="btn btn-primary">Primary</button>
                         <button type="button" class="btn btn-secondary">Secondary</button>
                         <button type="button" class="btn btn-success">Success</button>
@@ -600,7 +600,6 @@
 
                     <div class="d-none" id="LBQ3K3">
                         <pre>
-&#x3C;button type=&#x22;button&#x22; class=&#x22;btn btn-default&#x22;&#x3E;Default&#x3C;/button&#x3E;
 &#x3C;button type=&#x22;button&#x22; class=&#x22;btn btn-primary&#x22;&#x3E;Primary&#x3C;/button&#x3E;
 &#x3C;button type=&#x22;button&#x22; class=&#x22;btn btn-secondary&#x22;&#x3E;Secondary&#x3C;/button&#x3E;
 &#x3C;button type=&#x22;button&#x22; class=&#x22;btn btn-success&#x22;&#x3E;Success&#x3C;/button&#x3E;
@@ -616,7 +615,7 @@
             </div>
 
 
-            <div class="card">
+            <div class="card mb-15">
 
                 <div class="card-controls">
                     <button class="btn btn-default btn-icon btn-sm font-xl" type="button" data-toggle="modal"
@@ -635,8 +634,8 @@
                         <code>.btn-outline-*</code> ones to remove all
                         background images and colors on any button.</p>
 
-                    <div class="form-group">
-                        <button type="button" class="btn btn-outline-default">Default</button>
+                    <div class="mb-15">
+                        
                         <button type="button" class="btn btn-outline-primary">Primary</button>
                         <button type="button" class="btn btn-outline-secondary">Secondary</button>
                         <button type="button" class="btn btn-outline-success">Success</button>
@@ -651,7 +650,6 @@
 
                     <div class="d-none" id="GM731V">
                         <pre>
-&#x3C;button type=&#x22;button&#x22; class=&#x22;btn btn-outline-default&#x22;&#x3E;Default&#x3C;/button&#x3E;
 &#x3C;button type=&#x22;button&#x22; class=&#x22;btn btn-outline-primary&#x22;&#x3E;Primary&#x3C;/button&#x3E;
 &#x3C;button type=&#x22;button&#x22; class=&#x22;btn btn-outline-secondary&#x22;&#x3E;Secondary&#x3C;/button&#x3E;
 &#x3C;button type=&#x22;button&#x22; class=&#x22;btn btn-outline-success&#x22;&#x3E;Success&#x3C;/button&#x3E;
@@ -667,7 +665,7 @@
             </div>
 
 
-            <div class="card">
+            <div class="card mb-15">
 
                 <div class="card-controls">
                     <button class="btn btn-default btn-icon btn-sm font-xl" type="button" data-toggle="modal"
@@ -684,7 +682,7 @@
                     </h4>
                     <p>Add <code>.btn-lg</code>, <code>.btn-sm</code> for additional sizes.</p>
 
-                    <div class="form-group">
+                    <div class="mb-15">
                         <button type="button" class="btn btn-xs btn-primary">xs</button>
                         <button type="button" class="btn btn-sm btn-primary">Small</button>
                         <button type="button" class="btn btn-primary">Normal</button>
@@ -703,7 +701,7 @@
             </div>
 
 
-            <div class="card">
+            <div class="card mb-15">
 
                 <div class="card-controls">
                     <button class="btn btn-default btn-icon btn-sm font-xl" type="button" data-toggle="modal"
@@ -719,7 +717,7 @@
                     </h4>
 
 
-                    <div class="form-group">
+                    <div class="mb-15">
                         <button type="button" class="btn btn-primary">
                             <i class="mdi mdi-heart-outline"></i>
                         </button>
@@ -748,7 +746,7 @@
 
                     </div>
 
-                    <div class="form-group">
+                    <div class="mb-15">
                         <button type="button" class="btn btn-outline-primary">
                             <i class="mdi mdi-heart-outline"></i>
                         </button>
@@ -810,7 +808,7 @@
             </div>
 
 
-            <div class="card">
+            <div class="card mb-15">
 
                
 
@@ -821,7 +819,7 @@
                     </h4>
 
 
-                    <div class="form-group">
+                    <div class="mb-15">
                         <button type="button" class="btn btn-facebook">
                             facebook
                         </button>
@@ -834,57 +832,16 @@
                         <button type="button" class="btn btn-linkedin">
                             linkedin
                         </button>
-                        <button type="button" class="btn btn-flickr">
-                            flickr
-                        </button>
+                      
                         <button type="button" class="btn btn-tumblr">
                             tumblr
-                        </button>
-                        <button type="button" class="btn btn-xing">
-                            xing
-                        </button>
-                        <button type="button" class="btn btn-github">
-                            github
-                        </button>
-                        <button type="button" class="btn btn-youtube">
-                            youtube
-                        </button>
-                        <button type="button" class="btn btn-dribbble">
-                            dribbble
-                        </button>
-                        <button type="button" class="btn btn-instagram">
-                            instagram
-                        </button>
-                        <button type="button" class="btn btn-vk">
-                            vk
-                        </button>
-                        <button type="button" class="btn btn-yahoo">
-                            yahoo
-                        </button>
-                        <button type="button" class="btn btn-behance">
-                            behance
-                        </button>
-                        <button type="reddit" class="btn btn-reddit">
-                            reddit
-                        </button>
-
-                        <button type="button" class="btn btn-vimeo">
-                            vimeo
-                        </button>
-
-                        <button type="button" class="btn btn-gitlab">
-                            gitlab
-                        </button>
+                        </button>                   
 
                         <button type="button" class="btn btn-discord">
                             discord
                         </button>
 
-                        <button type="button" class="btn btn-flipboard">
-                            flipboard
-                        </button>
-                        
-                        
+                   
 
                     </div>
 
@@ -896,7 +853,7 @@
 
                 <div class="col-xxl-6 col-12">
 
-                    <div class="card">
+                    <div class="card mb-15">
 
                         <div class="card-controls">
                             <button class="btn btn-default btn-icon btn-sm font-xl" type="button" data-toggle="modal"
@@ -915,7 +872,7 @@
                                 quickly create a General btn.</p>
 
 
-                            <div class="form-group">
+                            <div class="mb-15">
                                 <button type="button" class="btn btn-primary btn-circle">
                                     <i class="mdi mdi-heart-outline"></i>
                                 </button>
@@ -937,7 +894,7 @@
 
                             </div>
 
-                            <div class="form-group">
+                            <div class="mb-15">
                                 <button type="button" class="btn btn-outline-primary btn-circle">
                                     <i class="mdi mdi-heart-outline"></i>
                                 </button>
@@ -958,7 +915,7 @@
 
                             </div>
 
-                            <div class="form-group">
+                            <div class="mb-15">
                                 <button type="button" class="btn btn-outline-primary btn-circle btn-lg">
                                     <i class="mdi mdi-heart-outline"></i>
                                 </button>
@@ -973,7 +930,7 @@
 
                             </div>
 
-                            <div class="form-group">
+                            <div class="mb-15">
                                 <button type="button" class="btn btn-primary btn-circle btn-lg">
                                     <i class="mdi mdi-heart-outline"></i>
                                 </button>
@@ -989,7 +946,7 @@
 
                             <div class="d-none" id="K2SLDH">
                                 <pre>
-&#x3C;div class=&#x22;form-group&#x22;&#x3E;
+&#x3C;div class=&#x22;mb-15&#x22;&#x3E;
 &#x3C;button type=&#x22;button&#x22; class=&#x22;btn btn-primary btn-circle&#x22;&#x3E;
     &#x3C;i class=&#x22;mdi mdi-heart-outline&#x22;&#x3E;&#x3C;/i&#x3E;
 &#x3C;/button&#x3E;
@@ -1011,7 +968,7 @@
 
 &#x3C;/div&#x3E;
 
-&#x3C;div class=&#x22;form-group&#x22;&#x3E;
+&#x3C;div class=&#x22;mb-15&#x22;&#x3E;
 &#x3C;button type=&#x22;button&#x22; class=&#x22;btn btn-outline-primary btn-circle&#x22;&#x3E;
     &#x3C;i class=&#x22;mdi mdi-heart-outline&#x22;&#x3E;&#x3C;/i&#x3E;
 &#x3C;/button&#x3E;
@@ -1032,7 +989,7 @@
 
 &#x3C;/div&#x3E;
 
-&#x3C;div class=&#x22;form-group&#x22;&#x3E;
+&#x3C;div class=&#x22;mb-15&#x22;&#x3E;
 &#x3C;button type=&#x22;button&#x22; class=&#x22;btn btn-outline-primary btn-circle btn-lg&#x22;&#x3E;
     &#x3C;i class=&#x22;mdi mdi-heart-outline&#x22;&#x3E;&#x3C;/i&#x3E;
 &#x3C;/button&#x3E;
@@ -1047,7 +1004,7 @@
 
 &#x3C;/div&#x3E;
 
-&#x3C;div class=&#x22;form-group&#x22;&#x3E;
+&#x3C;div class=&#x22;mb-15&#x22;&#x3E;
 &#x3C;button type=&#x22;button&#x22; class=&#x22;btn btn-primary btn-circle btn-lg&#x22;&#x3E;
     &#x3C;i class=&#x22;mdi mdi-heart-outline&#x22;&#x3E;&#x3C;/i&#x3E;
 &#x3C;/button&#x3E;
@@ -1067,7 +1024,7 @@
                 </div>
 
                 <div class="col-xxl-6 col-12">
-                    <div class="card">
+                    <div class="card mb-15">
 
                         <div class="card-controls">
                             <button class="btn btn-default btn-icon btn-sm font-xl" type="button" data-toggle="modal"
@@ -1084,7 +1041,7 @@
                             <p>Create block level buttons,with by adding add <code>.btn-block</code>.</p>
 
 
-                            <div class="form-group">
+                            <div class="mb-15">
                                 <button type="button" class="btn btn-block btn-primary">
                                     Submit
                                 </button>
@@ -1118,7 +1075,7 @@
 
 
                 <div class="col-xxl-6 col-12">
-                    <div class="card">
+                    <div class="card mb-15">
 
                         <div class="card-controls">
                             <button class="btn btn-default btn-icon btn-sm font-xl" type="button" data-toggle="modal"
@@ -1135,7 +1092,7 @@
 
 
 
-                            <div class="form-group">
+                            <div class="mb-15">
                                 <button type="button" class="btn btn-primary">
                                     <i class="spinner-grow spinner-grow-sm"></i> Loading...
                                 </button>
@@ -1164,7 +1121,7 @@
 
 
                 <div class="col-xxl-6 col-12">
-                    <div class="card">
+                    <div class="card mb-15">
 
                         <div class="card-controls">
                             <button class="btn btn-default btn-icon btn-sm font-xl" type="button" data-toggle="modal"
@@ -1181,7 +1138,7 @@
 
 
 
-                            <div class="form-group">
+                            <div class="mb-15">
                                 <div class="btn-group">
                                     <button type="button" class="btn btn-light">Left</button>
                                     <button type="button" class="btn btn-light">Middle</button>
@@ -1189,7 +1146,7 @@
                                 </div>
                             </div>
 
-                            <div class="form-group">
+                            <div class="mb-15">
                                 <div class="btn-group mb-2">
                                     <button type="button" class="btn btn-light">1</button>
                                     <button type="button" class="btn btn-primary">2</button>
@@ -1206,7 +1163,7 @@
                                 </div>
                             </div>
 
-                            <div class="form-group">
+                            <div class="mb-15">
                                 <div class="btn-group">
                                     <button type="button" class="btn btn-primary">
                                         <i class="fas fa-align-left"></i>
@@ -1232,7 +1189,7 @@
 
                             <div class="d-none" id="C0KN3B">
                                 <pre>
-&#x3C;div class=&#x22;form-group&#x22;&#x3E;
+&#x3C;div class=&#x22;mb-15&#x22;&#x3E;
     &#x3C;div class=&#x22;btn-group&#x22;&#x3E;
         &#x3C;button type=&#x22;button&#x22; class=&#x22;btn btn-light&#x22;&#x3E;Left&#x3C;/button&#x3E;
         &#x3C;button type=&#x22;button&#x22; class=&#x22;btn btn-light&#x22;&#x3E;Middle&#x3C;/button&#x3E;
@@ -1240,7 +1197,7 @@
     &#x3C;/div&#x3E;
 &#x3C;/div&#x3E;
 
-&#x3C;div class=&#x22;form-group&#x22;&#x3E;
+&#x3C;div class=&#x22;mb-15&#x22;&#x3E;
     &#x3C;div class=&#x22;btn-group mb-2&#x22;&#x3E;
         &#x3C;button type=&#x22;button&#x22; class=&#x22;btn btn-light&#x22;&#x3E;1&#x3C;/button&#x3E;
         &#x3C;button type=&#x22;button&#x22; class=&#x22;btn btn-primary&#x22;&#x3E;2&#x3C;/button&#x3E;
@@ -1257,7 +1214,7 @@
     &#x3C;/div&#x3E;
 &#x3C;/div&#x3E;
 
-&#x3C;div class=&#x22;form-group&#x22;&#x3E;
+&#x3C;div class=&#x22;mb-15&#x22;&#x3E;
     &#x3C;div class=&#x22;btn-group&#x22;&#x3E;
         &#x3C;button type=&#x22;button&#x22; class=&#x22;btn btn-primary&#x22;&#x3E;
             &#x3C;i class=&#x22;fas fa-align-left&#x22;&#x3E;&#x3C;/i&#x3E;
@@ -1311,11 +1268,11 @@
         </div>
 
 
-        <script src="https://unpkg.com/jquery@3.4.1/dist/jquery.slim.min.js"></script>
-        <script src="https://unpkg.com/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-        <script src="https://unpkg.com/bootstrap@4.4.1/dist/js/bootstrap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/js/bootstrap.min.js"></script>
 
-        <script src="https://unpkg.com/perfect-scrollbar@1.4.0/dist/perfect-scrollbar.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/perfect-scrollbar@1.4.0/dist/perfect-scrollbar.min.js"></script>
 
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-50750921-19"></script>

@@ -1,0 +1,221 @@
+%menu-minimized-icon {
+  margin: 0.25rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: $menubar-minimized-font-size;
+}
+
+.menubar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: $menubar-size;
+  z-index: $zindex-fixed;
+  @include transition();
+
+  a {
+    color: unset;
+    text-decoration: none;
+  }
+
+  &-header {
+    display: table;
+    position: relative;
+    justify-content: space-between;
+    vertical-align: middle;
+    width: 100%;
+    height: $menubar-header-size;
+
+    @include media-breakpoint-up(lg) {
+      height: $menubar-header-size-lg;
+    }
+  }
+
+  &-brand {
+    display: table-cell;
+    vertical-align: middle;    
+  }
+  &-logo {
+    width: auto !important;
+  }
+  &-toggler {
+    position: relative;
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  &-body {
+    position: relative;
+    flex-grow: 1;
+  }
+  &-footer {
+    display: block;
+    // flex: 1;
+    // @include text-truncate();
+  }
+
+  .menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    &-item {
+      position: relative;
+      display: block;
+      clear: both;
+      width: 100%;
+    }
+
+    &-link {
+      display: table;
+      text-decoration: none;
+      width: 100%;
+      justify-content: space-between;
+
+      padding: $menubar-link-padding-x $menubar-link-padding-y;
+      @include transition();
+    }
+
+    &-arrow,
+    &-badge {
+      position: relative;
+      display: table-cell;
+      text-align: center;
+      vertical-align: middle;
+    }
+
+    &-icon {
+      margin-right: 10px;
+      font-style: normal;
+    }
+  }
+
+  // light & dark
+  &-light {
+    background-color: $menubar-light-bg-color;
+    color: $menubar-light-color;
+    .menu-link {
+      color: $menubar-light-color;
+
+      &.active {
+        background-color: $menubar-light-active-bg-color;
+        color: $menubar-light-active-color;
+      }
+      &:hover {
+        background-color: $menubar-light-hover-bg-color;
+        color: $menubar-light-hover-color;
+      }
+    }
+
+    .menu {
+      &.show {
+        background-color: $menubar-light-active-bg-color;
+      }
+    }
+  }
+
+  &-dark {
+    background-color: $menubar-dark-bg-color;
+    color: $menubar-dark-color;
+    .menu-link {
+      color: $menubar-dark-color;
+
+      &.active {
+        background-color: $menubar-dark-active-bg-color;
+        color: $menubar-dark-active-color;
+      }
+      &:hover {
+        background-color: $menubar-dark-hover-bg-color;
+        color: $menubar-dark-hover-color;
+      }
+    }
+
+    .menu {
+      &.show {
+        background-color: $menubar-dark-active-bg-color;
+      }
+    }
+  }
+
+  &-right {
+    left: unset;
+    right: 0;
+  }
+}
+
+.menubar-enabled {
+  .wrapper,
+  .main-navbar {
+    margin-left: $menubar-size;
+  }
+
+  @include media-breakpoint-down(md) {
+    .menubar {
+      display: none;
+    }
+
+    .wrapper,
+    .main-navbar {
+      margin-left: 0 !important;
+    }
+    .navbar-nav {
+      flex-direction: row;
+      background-color: $white;
+    }
+  }
+
+  // menu collapsed
+
+  &.menubar-collapsed {
+    .wrapper,
+    .main-navbar {
+      margin-left: $menubar-collapsed-size;
+    }
+
+    .menubar {
+      width: $menubar-collapsed-size;
+
+      .menu-label,
+      .menu-badge,
+      .menu-arrow {
+        display: none;
+      }
+
+      .menu-icon {
+        @extend %menu-minimized-icon;
+      }
+    }
+  }
+
+  // menu minimized
+
+  &.menubar-minimized {
+    .wrapper,
+    .main-navbar {
+      margin-left: $menubar-minimized-size;
+    }
+
+    .menubar {
+      width: $menubar-minimized-size;
+
+      .menu-icon {
+        @extend %menu-minimized-icon;
+      }
+      .menu-link {
+        display: block;
+        text-align: center;
+        @include text-truncate();
+      }
+
+      .menu-arrow,
+      .menu-badge {
+        display: none;
+      }
+    }
+  }
+}

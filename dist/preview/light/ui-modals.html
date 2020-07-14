@@ -37,10 +37,10 @@
     <meta name="image" content="https://i.imgur.com/gWYKl5F.png">
 
 
-    <link rel="stylesheet" href="https://unpkg.com/@fortawesome/fontawesome-free@5.11.2/css/all.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/perfect-scrollbar@1.4.0/css/perfect-scrollbar.css">
-    <link rel="stylesheet" href="https://unpkg.com/@mdi/font@4.7.95/css/materialdesignicons.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/animate.css@3.7.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/perfect-scrollbar@1.4.0/css/perfect-scrollbar.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@4.7.95/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css">
 
     <link rel="stylesheet" href="../../css/morioh.css">
 
@@ -53,17 +53,17 @@
 
         <div class="main-navbar navbar-expand-md navbar-light bg-white fixed-top shadow-sm">
 
-            <button class="btn hidden-md-up" type="button" data-toggle="collapse" data-target="#main-menu"
+            <button class="btn d-md-none" type="button" data-toggle="collapse" data-target="#main-menu"
                 aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fas fa-bars"></i>
             </button>
 
 
-            <img src="https://i.imgur.com/QTZ8pU1.png" title="Morioh" class="navbar-logo hidden-md-up"
+            <img src="https://i.imgur.com/QTZ8pU1.png" title="Morioh" class="navbar-logo d-md-none"
                 style="height: 36px;">
 
 
-            <button class="btn hidden-md-up" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            <button class="btn d-md-none" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fas fa-bars"></i>
             </button>
@@ -72,7 +72,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto hidden-sm-down">
 
-                    <li class="nav-item mr-10">
+                    <li class="nav-item mr-5">
                         <a href="javascript://" class="nav-icon font-2xl" id="navbar-toggler">
                             <!-- <i class="fas fa-bars"></i> -->
                             <!-- <i class="mdi mdi-view-sequential font-2xl"></i> -->
@@ -85,11 +85,11 @@
                         <form class="form-inline">
                             <div class="input-group">
                                 <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-                                <span class="input-group-append">
+                               
                                     <button class="btn btn-outline-primary" type="button">
                                         <i class="fas fa-search"></i>
                                     </button>
-                                </span>
+                              
                             </div>
                         </form>
                     </li>
@@ -100,27 +100,27 @@
                 <ul class="navbar-nav my-2 my-lg-0">
 
 
-                    <li class="nav-item mr-5">
+                    <li class="nav-item mr-10">
                         <a href="#" class="nav-icon font-2xl">
                             <!-- <i class="fas fa-chart-pie"></i> -->
                             <i class="mdi mdi-view-dashboard-outline"></i>
                         </a>
                     </li>
 
-                    <li class="nav-item mr-5">
+                    <li class="nav-item mr-10">
                         <a class="nav-icon font-2xl" href="#">
                             <i class="mdi mdi-bell-ring-outline"></i>
                         </a>
                     </li>
 
-                    <li class="nav-item mr-5">
+                    <li class="nav-item mr-10">
                         <a href="#" class="nav-icon font-2xl rounded-circle">
                             <!-- <i class="fas fa-cog"></i> -->
                             <i class="mdi mdi-settings-outline"></i>
                         </a>
                     </li>
 
-                    <li class="nav-item mr-5 dropdown">
+                    <li class="nav-item mr-10 dropdown">
                         <a href="#" class="nav-icon avatar rounded-circle" id="PJXN7R" role="button"
                             data-toggle="dropdown" aria-expanded="false">
                             <img src="https://i.imgur.com/ROPF2fQ.png">
@@ -197,7 +197,7 @@
                             <i class="menu-icon mdi mdi-view-dashboard"></i>
                             <span class="menu-label">Dashboard</span>
                             <span class="menu-badge">
-                                <span class="badge badge-info">1</span>
+                                <span class="badge bg-info">1</span>
                             </span>
 
                         </a>
@@ -565,9 +565,9 @@
         </div>
 
 
-        <div class="container-fluid mt-30">
+        <div class="container-fluid mt-15">
 
-            <div class="card">
+            <div class="card mb-15">
 
                 <div class="card-body">
 
@@ -641,7 +641,7 @@
 
             </div>
 
-            <div class="card">
+            <div class="card mb-15">
 
                 <div class="card-body">
 
@@ -717,7 +717,7 @@
             </div>
 
 
-            <div class="card">
+            <div class="card mb-15">
 
                 <div class="card-body">
 
@@ -803,7 +803,7 @@
                         </div>
                     </div>
 
-                    <pre class="mt-15">
+                    <pre class="mt-3">
 &#x3C;!-- Button trigger modal --&#x3E;
 &#x3C;button type=&#x22;button&#x22; class=&#x22;btn btn-primary&#x22; data-toggle=&#x22;modal&#x22; data-target=&#x22;#exampleModalLong&#x22;&#x3E;
   Launch demo modal
@@ -909,7 +909,7 @@
                         </div>
                     </div>
 
-                    <pre class="mt-15">
+                    <pre class="mt-3">
 &#x3C;!-- Button trigger modal --&#x3E;
 &#x3C;button type=&#x22;button&#x22; class=&#x22;btn btn-primary&#x22; data-toggle=&#x22;modal&#x22; data-target=&#x22;#exampleModalScrollable&#x22;&#x3E;
     Launch demo modal
@@ -942,7 +942,7 @@
             </div>
 
 
-            <div class="card">
+            <div class="card mb-15">
 
                 <div class="card-body">
 
@@ -983,7 +983,7 @@
                         </div>
                     </div>
 
-                    <pre class="mt-15">
+                    <pre class="mt-3">
 &#x3C;!-- Button trigger modal --&#x3E;
 &#x3C;button type=&#x22;button&#x22; class=&#x22;btn btn-primary&#x22; data-toggle=&#x22;modal&#x22; data-target=&#x22;#exampleModalCenter&#x22;&#x3E;
     Launch demo modal
@@ -1017,7 +1017,7 @@
             </div>
 
 
-            <div class="card">
+            <div class="card mb-15">
 
                 <div class="card-body">
 
@@ -1047,13 +1047,13 @@
                                 <div class="modal-body">
                                     <div class="row">
                                         <div class="col-md-6">
-                                            <div class="form-group">
+                                            <div class="mb-15">
                                                 <label for="field-1" class="control-label">Name</label>
                                                 <input type="text" class="form-control" id="field-1" placeholder="John">
                                             </div>
                                         </div>
                                         <div class="col-md-6">
-                                            <div class="form-group">
+                                            <div class="mb-15">
                                                 <label for="field-2" class="control-label">Surname</label>
                                                 <input type="text" class="form-control" id="field-2" placeholder="Doe">
                                             </div>
@@ -1061,7 +1061,7 @@
                                     </div>
                                     <div class="row">
                                         <div class="col-md-12">
-                                            <div class="form-group">
+                                            <div class="mb-15">
                                                 <label for="field-3" class="control-label">Address</label>
                                                 <input type="text" class="form-control" id="field-3"
                                                     placeholder="Address">
@@ -1070,21 +1070,21 @@
                                     </div>
                                     <div class="row">
                                         <div class="col-md-4">
-                                            <div class="form-group">
+                                            <div class="mb-15">
                                                 <label for="field-4" class="control-label">City</label>
                                                 <input type="text" class="form-control" id="field-4"
                                                     placeholder="Boston">
                                             </div>
                                         </div>
                                         <div class="col-md-4">
-                                            <div class="form-group">
+                                            <div class="mb-15">
                                                 <label for="field-5" class="control-label">Country</label>
                                                 <input type="text" class="form-control" id="field-5"
                                                     placeholder="United States">
                                             </div>
                                         </div>
                                         <div class="col-md-4">
-                                            <div class="form-group">
+                                            <div class="mb-15">
                                                 <label for="field-6" class="control-label">Zip</label>
                                                 <input type="text" class="form-control" id="field-6"
                                                     placeholder="123456">
@@ -1093,7 +1093,7 @@
                                     </div>
                                     <div class="row">
                                         <div class="col-md-12">
-                                            <div class="form-group no-margin">
+                                            <div class="mb-15 no-margin">
                                                 <label for="field-7" class="control-label">Personal Info</label>
                                                 <textarea class="form-control" id="field-7"
                                                     placeholder="Write something about yourself"></textarea>
@@ -1109,17 +1109,17 @@
                         </div>
                     </div>
 
-                    <pre class="mt-15">
+                    <pre class="mt-3">
 &#x3C;div class=&#x22;modal-body&#x22;&#x3E;
 &#x3C;div class=&#x22;row&#x22;&#x3E;
     &#x3C;div class=&#x22;col-md-6&#x22;&#x3E;
-        &#x3C;div class=&#x22;form-group&#x22;&#x3E;
+        &#x3C;div class=&#x22;mb-15&#x22;&#x3E;
             &#x3C;label for=&#x22;field-1&#x22; class=&#x22;control-label&#x22;&#x3E;Name&#x3C;/label&#x3E;
             &#x3C;input type=&#x22;text&#x22; class=&#x22;form-control&#x22; id=&#x22;field-1&#x22; placeholder=&#x22;John&#x22;&#x3E;
         &#x3C;/div&#x3E;
     &#x3C;/div&#x3E;
     &#x3C;div class=&#x22;col-md-6&#x22;&#x3E;
-        &#x3C;div class=&#x22;form-group&#x22;&#x3E;
+        &#x3C;div class=&#x22;mb-15&#x22;&#x3E;
             &#x3C;label for=&#x22;field-2&#x22; class=&#x22;control-label&#x22;&#x3E;Surname&#x3C;/label&#x3E;
             &#x3C;input type=&#x22;text&#x22; class=&#x22;form-control&#x22; id=&#x22;field-2&#x22; placeholder=&#x22;Doe&#x22;&#x3E;
         &#x3C;/div&#x3E;
@@ -1127,7 +1127,7 @@
 &#x3C;/div&#x3E;
 &#x3C;div class=&#x22;row&#x22;&#x3E;
     &#x3C;div class=&#x22;col-md-12&#x22;&#x3E;
-        &#x3C;div class=&#x22;form-group&#x22;&#x3E;
+        &#x3C;div class=&#x22;mb-15&#x22;&#x3E;
             &#x3C;label for=&#x22;field-3&#x22; class=&#x22;control-label&#x22;&#x3E;Address&#x3C;/label&#x3E;
             &#x3C;input type=&#x22;text&#x22; class=&#x22;form-control&#x22; id=&#x22;field-3&#x22;
                 placeholder=&#x22;Address&#x22;&#x3E;
@@ -1136,21 +1136,21 @@
 &#x3C;/div&#x3E;
 &#x3C;div class=&#x22;row&#x22;&#x3E;
     &#x3C;div class=&#x22;col-md-4&#x22;&#x3E;
-        &#x3C;div class=&#x22;form-group&#x22;&#x3E;
+        &#x3C;div class=&#x22;mb-15&#x22;&#x3E;
             &#x3C;label for=&#x22;field-4&#x22; class=&#x22;control-label&#x22;&#x3E;City&#x3C;/label&#x3E;
             &#x3C;input type=&#x22;text&#x22; class=&#x22;form-control&#x22; id=&#x22;field-4&#x22;
                 placeholder=&#x22;Boston&#x22;&#x3E;
         &#x3C;/div&#x3E;
     &#x3C;/div&#x3E;
     &#x3C;div class=&#x22;col-md-4&#x22;&#x3E;
-        &#x3C;div class=&#x22;form-group&#x22;&#x3E;
+        &#x3C;div class=&#x22;mb-15&#x22;&#x3E;
             &#x3C;label for=&#x22;field-5&#x22; class=&#x22;control-label&#x22;&#x3E;Country&#x3C;/label&#x3E;
             &#x3C;input type=&#x22;text&#x22; class=&#x22;form-control&#x22; id=&#x22;field-5&#x22;
                 placeholder=&#x22;United States&#x22;&#x3E;
         &#x3C;/div&#x3E;
     &#x3C;/div&#x3E;
     &#x3C;div class=&#x22;col-md-4&#x22;&#x3E;
-        &#x3C;div class=&#x22;form-group&#x22;&#x3E;
+        &#x3C;div class=&#x22;mb-15&#x22;&#x3E;
             &#x3C;label for=&#x22;field-6&#x22; class=&#x22;control-label&#x22;&#x3E;Zip&#x3C;/label&#x3E;
             &#x3C;input type=&#x22;text&#x22; class=&#x22;form-control&#x22; id=&#x22;field-6&#x22;
                 placeholder=&#x22;123456&#x22;&#x3E;
@@ -1164,7 +1164,7 @@
 
             </div>
 
-            <div class="card">
+            <div class="card mb-15">
 
                 <div class="card-body">
 
@@ -1240,7 +1240,7 @@
                         </div>
                     </div>
 
-                    <pre class="mt-15">
+                    <pre class="mt-3">
 &#x3C;!-- Extra large modal --&#x3E;
 &#x3C;button type=&#x22;button&#x22; class=&#x22;btn btn-primary&#x22; data-toggle=&#x22;modal&#x22; data-target=&#x22;.bd-example-modal-xl&#x22;&#x3E;Extra large modal&#x3C;/button&#x3E;
 
@@ -1281,7 +1281,7 @@
             </div>
 
 
-            <div class="card">
+            <div class="card mb-15">
 
                 <div class="card-body">
 
@@ -1492,7 +1492,7 @@
                     </div>
 
 
-                    <pre class="mt-15">
+                    <pre class="mt-3">
 &#x3C;div id=&#x22;modal-top-right&#x22; tabindex=&#x22;-1&#x22; role=&#x22;dialog&#x22; aria-labelledby=&#x22;TopRightLabel&#x22;
     class=&#x22;modal fade&#x22; aria-hidden=&#x22;true&#x22;&#x3E;
     &#x3C;div class=&#x22;modal-dialog modal-top-right&#x22; role=&#x22;document&#x22;&#x3E;
@@ -1523,7 +1523,7 @@
 
             </div>
 
-            <div class="card">
+            <div class="card mb-15">
 
                 <div class="card-body">
 
@@ -1542,14 +1542,14 @@
                     <p>Activate a modal without writing JavaScript. Set <code>data-toggle="modal"</code> on a controller
                         element, like a button, along with a <code>data-target="#foo"</code> or <code>href="#foo"</code>
                         to target a specific modal to toggle.</p>
-                    <pre class="mt-15">
+                    <pre class="mt-3">
 &#x3C;button type=&#x22;button&#x22; data-toggle=&#x22;modal&#x22; data-target=&#x22;#myModal&#x22;&#x3E;Launch modal&#x3C;/button&#x3E;</pre>
 
                     <hr>
                     <h5>Via JavaScript</h5>
                     <p>Call a modal with id <code>myModal</code> with a single line of JavaScript:</p>
 
-                    <pre class="mt-15">$('#myModal').modal(options)</pre>
+                    <pre class="mt-3">$('#myModal').modal(options)</pre>
 
                     <hr>
                     <h5>Options</h5>
@@ -1603,7 +1603,7 @@
                     <p><code>.modal(options)</code>: Activates your content as a modal. Accepts an optional options
                         <code>object</code>.</p>
 
-                    <pre class="mt-15">
+                    <pre class="mt-3">
 $('#myModal').modal({
     keyboard: false
 })</pre>
@@ -1614,30 +1614,30 @@ $('#myModal').modal({
                             modal has actually been shown or hidden</strong> (i.e. before the
                         <code>shown.bs.modal</code> or <code>hidden.bs.modal</code> event occurs).</p>
 
-                    <pre class="mt-15">$('#myModal').modal('toggle')</pre>
+                    <pre class="mt-3">$('#myModal').modal('toggle')</pre>
 
 
                     <p><code>.modal('show')</code>: Manually opens a modal. <strong>Returns to the caller before the
                             modal has actually been shown</strong> (i.e. before the <code>shown.bs.modal</code> event
                         occurs).</p>
 
-                    <pre class="mt-15">$('#myModal').modal('show')</pre>
+                    <pre class="mt-3">$('#myModal').modal('show')</pre>
 
                     <p><code>.modal('hide')</code>: Manually hides a modal. <strong>Returns to the caller before the
                             modal has actually been hidden</strong> (i.e. before the <code>hidden.bs.modal</code> event
                         occurs).</p>
 
-                    <pre class="mt-15">$('#myModal').modal('hide')</pre>
+                    <pre class="mt-3">$('#myModal').modal('hide')</pre>
 
 
                     <p><code>.modal('handleUpdate')</code>: Manually readjust the modal’s position if the height of a
                         modal changes while it is open (i.e. in case a scrollbar appears).</p>
 
-                    <pre class="mt-15">$('#myModal').modal('handleUpdate')</pre>
+                    <pre class="mt-3">$('#myModal').modal('handleUpdate')</pre>
 
                     <p><code>.modal('dispose')</code>: Destroys an element’s modal.</p>
 
-                    <pre class="mt-15">$('#myModal').modal('dispose')</pre>
+                    <pre class="mt-3">$('#myModal').modal('dispose')</pre>
 
                     <hr>
 
@@ -1684,7 +1684,7 @@ $('#myModal').modal({
                         </tbody>
                     </table>
 
-                    <pre class="mt-15">$('#myModal').on('hidden.bs.modal', function (e) {
+                    <pre class="mt-3">$('#myModal').on('hidden.bs.modal', function (e) {
     // do something...
 })</pre>
 
@@ -1697,11 +1697,11 @@ $('#myModal').modal({
     </div>
 
 
-    <script src="https://unpkg.com/jquery@3.4.1/dist/jquery.slim.min.js"></script>
-    <script src="https://unpkg.com/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-    <script src="https://unpkg.com/bootstrap@4.4.1/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/js/bootstrap.min.js"></script>
 
-    <script src="https://unpkg.com/perfect-scrollbar@1.4.0/dist/perfect-scrollbar.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/perfect-scrollbar@1.4.0/dist/perfect-scrollbar.min.js"></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-50750921-19"></script>

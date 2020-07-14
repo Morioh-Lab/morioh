@@ -1,0 +1,20 @@
+
+// Buttons + Forms
+//
+// Shared variables that are reassigned to `$input-` and `$btn-` specific variables.
+$btn-border-radius-xs:        $border-radius-sm !default;
+
+$input-btn-padding-y-xs:      .175rem !default;
+$input-btn-padding-x-xs:      .375rem !default;
+$input-btn-font-size-xs:      $font-size-sm !default;
+$input-btn-line-height-xs:    $line-height-xs !default;
+
+$btn-padding-y-xs:            $input-btn-padding-y-xs !default;
+$btn-padding-x-xs:            $input-btn-padding-x-xs !default;
+$btn-font-size-xs:            $input-btn-font-size-xs !default;
+$btn-line-height-xs:          $input-btn-line-height-xs !default;
+
+$btn-circle-size:               2.5rem !default;
+$btn-circle-xs-size:            $btn-circle-size * .75;
+$btn-circle-sm-size:            $btn-circle-size * .85;
+$btn-circle-lg-size:            $btn-circle-size * 1.35;

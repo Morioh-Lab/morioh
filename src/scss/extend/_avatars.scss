@@ -1,0 +1,131 @@
+.avatar {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50em;
+  vertical-align: middle;
+  // background-color: $gray-100;
+  @include transition();
+  @include avatar($avatar-size, $avatar-border-size);
+
+  img {
+    width: 100%;
+    max-width: 100% !important;
+    height: auto !important;
+    max-height: 100% !important;
+    border-radius: 50em;
+    object-fit: cover;
+  }
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+// %avatar-status {
+//   position: absolute;
+//   bottom: 0;
+//   display: block;
+//   border: 1px solid $white;
+//   border-radius: 50em;
+//   right: 0;
+
+//   //   @include ltr {
+//   //     right: 0;
+//   //   }
+//   //   @include rtl {
+//   //     left: 0;
+//   //   }
+// }
+
+%avatar-status {
+  &:before {
+    content: '';
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    width: 20%;
+    height: 20%;
+    border-radius: 50rem;
+    border: $avatar-border-size solid $white;
+  }
+}
+
+.avatar-sm {
+  @include avatar($avatar-sm-size, $avatar-sm-border-size);
+}
+
+.avatar-lg {
+  @include avatar($avatar-lg-size, $avatar-lg-border-size);
+}
+
+.avatar-xl {
+  @include avatar($avatar-xl-size, $avatar-xl-border-size);
+}
+
+.avatar-xxl {
+  @include avatar($avatar-xxl-size, $avatar-xxl-border-size);
+}
+
+.avatar-group {
+  // display: flex;
+  display: inline-flex;
+
+  .avatar {
+    margin-right: -($avatar-size / 3);
+    border: 1px solid $white;
+
+    &:hover {
+      margin-right: 0;
+      //   z-index: 1;
+    }
+  }
+
+  .avatar-sm {
+    margin-right: -($avatar-sm-size / 3);
+  }
+
+  .avatar-lg {
+    margin-right: -($avatar-lg-size / 3);
+    border-width: $avatar-lg-border-size;
+  }
+
+  .avatar-xl {
+    margin-right: -($avatar-xl-size / 3);
+    border-width: $avatar-xl-border-size;
+  }
+
+  .avatar-xxl {
+    margin-right: -($avatar-xxl-size / 3);
+    border-width: $avatar-xxl-border-size;
+  }
+}
+
+.avatar-on {
+  @extend %avatar-status;
+  &:before {
+    background-color: $green;
+  }
+}
+
+.avatar-off {
+  @extend %avatar-status;
+  &:before {
+    background-color: $gray-300;
+  }
+}
+
+.avatar-busy {
+  @extend %avatar-status;
+  &:before {
+    background-color: $red;
+  }
+}
+
+.avatar-away {
+  @extend %avatar-status;
+  &:before {
+    background-color: $orange;
+  }
+}

@@ -1,0 +1,72 @@
+.navbar-light {
+  .navbar-nav {
+    .nav-link {
+      &:hover,&:active {
+        background-color: $navbar-light-hover-bg-color;
+      }
+    }
+  }
+}
+
+.navbar-dark {
+  .navbar-nav {
+    .nav-link {
+      &:hover,&:active {
+        background-color: $navbar-dark-hover-bg-color;
+      }
+    }
+  }
+}
+
+.navbar-nav {
+  .nav-item {
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+
+    .badge{
+      position: absolute;
+      right: 0;
+      top: 0;
+      // font-size: $font-size-sm;
+    }
+  }
+
+  .nav-link {
+    @include border-radius();
+    @include transition();
+  }
+  .nav-icon {
+    @extend .nav-link;
+    display: flex;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+
+    // font-size: $navbar-icon-font-size;
+
+    // i:before {
+    //   font-size: $navbar-icon-font-size;
+    // }
+  }
+}
+
+.main-navbar {
+  @extend .navbar;
+  height: $navbar-size-base;
+  @include transition();
+
+  @include media-breakpoint-up(lg) {
+    height: $navbar-size-lg;
+  }
+}
+
+.navbar-header {
+  display: flex;
+  justify-content: space-between;
+}
+

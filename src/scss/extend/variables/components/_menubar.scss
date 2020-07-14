@@ -1,0 +1,32 @@
+$menubar-padding-y:                  $spacer / 2 !default;
+$menubar-padding-x:                  $spacer !default;
+$menubar-size:                       240px !default;
+$menubar-minimized-size:             120px !default;
+$menubar-collapsed-size:             80px !default;
+
+$menubar-header-size:                $navbar-size-base !default;
+$menubar-header-size-lg:             $navbar-size-lg !default;
+
+$menubar-minimized-font-size:              $font-size-base * 1.8 !default;
+
+$menubar-link-padding-x:             .75rem !default;
+$menubar-link-padding-y:             1rem !default;
+
+$menubar-link-height:                $font-size-base * $line-height-base + $menubar-link-padding-y * 2 !default;
+
+
+$menubar-dark-bg-color:              $dark-800;
+$menubar-dark-color:                 rgba($white, .5) !default;
+$menubar-dark-hover-color:           rgba($white, .8) !default;
+$menubar-dark-hover-bg-color:        $dark-900;//rgba($white, .05) !default; 
+$menubar-dark-active-bg-color:       rgba($dark, .8) !default; 
+$menubar-dark-active-color:          $white !default;
+$menubar-dark-disabled-color:        rgba($white, .25) !default;
+
+$menubar-light-bg-color:             $white;
+$menubar-light-color:                rgba($black, .5) !default;
+$menubar-light-hover-color:          rgba($black, .7) !default;
+$menubar-light-hover-bg-color:       rgba($black, .05) !default; 
+$menubar-light-active-bg-color:      rgba($black, .1) !default; 
+$menubar-light-active-color:         rgba($black, .9) !default;
+$menubar-light-disabled-color:       rgba($black, .3) !default;

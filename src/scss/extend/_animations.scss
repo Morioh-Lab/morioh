@@ -1,0 +1,27 @@
+
+
+
+@keyframes dots-fade {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes dots-wave {
+  0%, 30%, 100% {
+    transform: translateY(0);
+  }
+  15% {
+    transform: translateY(-1rem);
+  }
+
+}
+

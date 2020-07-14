@@ -1,7 +1,7 @@
 $(() => {
 
 
-    $('#version').text('v1.0.9');
+    $('#version').text('v1.1.0');
 
     const psSidebar = new PerfectScrollbar('.menubar-body', {
         suppressScrollX: true

@@ -1,0 +1,11 @@
+.progress {
+  &-xs {
+    height: $progress-height-xs;
+  }
+  &-sm {
+    height: $progress-height-sm;
+  }
+  &-lg {
+    height: $progress-height-lg;
+  }
+}

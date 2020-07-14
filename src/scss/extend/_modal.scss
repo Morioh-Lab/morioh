@@ -1,0 +1,51 @@
+.modal-bottom-center {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.modal-bottom-left,
+.modal-bottom-right {
+  position: absolute;
+  bottom: 0;
+}
+
+.modal-top-left,
+.modal-top-right {
+  position: absolute;
+  top: 0;
+}
+
+.modal-slide-left,
+.modal-slide-right {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  bottom: 0;
+  .modal-content {
+    height: 100%;
+  } 
+}
+
+.modal-slide-right {
+  left: unset;
+  right: 0;  
+}
+
+// Scale up the modal
+@include media-breakpoint-up(sm) {
+  // Automatically set modal's width for larger viewports
+
+  .modal-bottom-left,
+  .modal-top-left {
+    left: $modal-dialog-margin-y-sm-up;
+  }
+
+  .modal-top-right,
+  .modal-bottom-right {
+    right: $modal-dialog-margin-y-sm-up;
+  }
+}

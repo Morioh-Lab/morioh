@@ -8,6 +8,7 @@ var MiniCssExtractPlugin = require('mini-css-extract-plugin');
 // var nodeExternals = require('webpack-node-externals');
 // var MiniCssExtractPlugin = require("mini-css-extract-plugin");
 var CopyWebpackPlugin = require('copy-webpack-plugin');
+var OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 
 module.exports = function (env) {
     return [
@@ -95,6 +96,7 @@ module.exports = function (env) {
                     filename: process.env.NODE_ENV === 'development' ? 'css/[name].css' : 'css/[name].min.css',
                     allChunks: true
                 }),
+                new OptimizeCssAssetsPlugin(),
 
                 new CopyWebpackPlugin([
 

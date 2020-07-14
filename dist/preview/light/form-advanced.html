@@ -37,13 +37,13 @@
     <meta name="image" content="https://i.imgur.com/gWYKl5F.png">
 
 
-    <link rel="stylesheet" href="https://unpkg.com/@fortawesome/fontawesome-free@5.11.2/css/all.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/perfect-scrollbar@1.4.0/css/perfect-scrollbar.css">
-    <link rel="stylesheet" href="https://unpkg.com/@mdi/font@4.7.95/css/materialdesignicons.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/animate.css@3.7.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/perfect-scrollbar@1.4.0/css/perfect-scrollbar.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@4.7.95/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css">
 
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/bootstrap-select@1.13.12/dist/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.12/dist/css/bootstrap-select.min.css">
 
 
 
@@ -69,17 +69,17 @@
 
         <div class="main-navbar navbar-expand-md navbar-light bg-white fixed-top shadow-sm">
 
-            <button class="btn hidden-md-up" type="button" data-toggle="collapse" data-target="#main-menu"
+            <button class="btn d-md-none" type="button" data-toggle="collapse" data-target="#main-menu"
                 aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fas fa-bars"></i>
             </button>
 
 
-            <img src="https://i.imgur.com/QTZ8pU1.png" title="Morioh" class="navbar-logo hidden-md-up"
+            <img src="https://i.imgur.com/QTZ8pU1.png" title="Morioh" class="navbar-logo d-md-none"
                 style="height: 36px;">
 
 
-            <button class="btn hidden-md-up" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            <button class="btn d-md-none" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fas fa-bars"></i>
             </button>
@@ -88,7 +88,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto hidden-sm-down">
 
-                    <li class="nav-item mr-10">
+                    <li class="nav-item mr-5">
                         <a href="javascript://" class="nav-icon font-2xl" id="navbar-toggler">
                             <!-- <i class="fas fa-bars"></i> -->
                             <!-- <i class="mdi mdi-view-sequential font-2xl"></i> -->
@@ -101,11 +101,11 @@
                         <form class="form-inline">
                             <div class="input-group">
                                 <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-                                <span class="input-group-append">
+                            
                                     <button class="btn btn-outline-primary" type="button">
                                         <i class="fas fa-search"></i>
                                     </button>
-                                </span>
+                             
                             </div>
                         </form>
                     </li>
@@ -116,27 +116,27 @@
                 <ul class="navbar-nav my-2 my-lg-0">
 
 
-                    <li class="nav-item mr-5">
+                    <li class="nav-item mr-10">
                         <a href="#" class="nav-icon font-2xl">
                             <!-- <i class="fas fa-chart-pie"></i> -->
                             <i class="mdi mdi-view-dashboard-outline"></i>
                         </a>
                     </li>
 
-                    <li class="nav-item mr-5">
+                    <li class="nav-item mr-10">
                         <a class="nav-icon font-2xl" href="#">
                             <i class="mdi mdi-bell-ring-outline"></i>
                         </a>
                     </li>
 
-                    <li class="nav-item mr-5">
+                    <li class="nav-item mr-10">
                         <a href="#" class="nav-icon font-2xl rounded-circle">
                             <!-- <i class="fas fa-cog"></i> -->
                             <i class="mdi mdi-settings-outline"></i>
                         </a>
                     </li>
 
-                    <li class="nav-item mr-5 dropdown">
+                    <li class="nav-item mr-10 dropdown">
                         <a href="#" class="nav-icon avatar rounded-circle" id="PJXN7R" role="button"
                             data-toggle="dropdown" aria-expanded="false">
                             <img src="https://i.imgur.com/ROPF2fQ.png">
@@ -213,7 +213,7 @@
                             <i class="menu-icon mdi mdi-view-dashboard"></i>
                             <span class="menu-label">Dashboard</span>
                             <span class="menu-badge">
-                                <span class="badge badge-info">1</span>
+                                <span class="badge bg-info">1</span>
                             </span>
 
                         </a>
@@ -583,7 +583,7 @@
 
         <div class="container mt-30">
 
-            <div class="card">
+            <div class="card mb-15">
                 <div class="card-body">
                     <h4 class="card-title">Input Masks</h4>
                     <p>
@@ -593,43 +593,43 @@
                     <div class="row">
                         <div class="col-md-6">
                             <form action="#">
-                                <div class="form-group">
+                                <div class="mb-15">
                                     <label>Date</label>
                                     <input type="text" class="form-control" data-toggle="input-mask"
                                         data-mask-format="00/00/0000" maxlength="10">
                                     <span class="font-13 text-muted">e.g "DD/MM/YYYY"</span>
                                 </div>
-                                <div class="form-group">
+                                <div class="mb-15">
                                     <label>Hour</label>
                                     <input type="text" class="form-control" data-toggle="input-mask"
                                         data-mask-format="00:00:00" maxlength="8">
                                     <span class="font-13 text-muted">e.g "HH:MM:SS"</span>
                                 </div>
-                                <div class="form-group">
+                                <div class="mb-15">
                                     <label>Date &amp; Hour</label>
                                     <input type="text" class="form-control" data-toggle="input-mask"
                                         data-mask-format="00/00/0000 00:00:00" maxlength="19">
                                     <span class="font-13 text-muted">e.g "DD/MM/YYYY HH:MM:SS"</span>
                                 </div>
-                                <div class="form-group">
+                                <div class="mb-15">
                                     <label>ZIP Code</label>
                                     <input type="text" class="form-control" data-toggle="input-mask"
                                         data-mask-format="00000-000" maxlength="9">
                                     <span class="font-13 text-muted">e.g "xxxxx-xxx"</span>
                                 </div>
-                                <div class="form-group">
+                                <div class="mb-15">
                                     <label>Crazy Zip Code</label>
                                     <input type="text" class="form-control" data-toggle="input-mask"
                                         data-mask-format="0-00-00-00" maxlength="10">
                                     <span class="font-13 text-muted">e.g "x-xx-xx-xx"</span>
                                 </div>
-                                <div class="form-group">
+                                <div class="mb-15">
                                     <label>Money</label>
                                     <input type="text" class="form-control" data-toggle="input-mask"
                                         data-mask-format="000.000.000.000.000,00" data-reverse="true" maxlength="22">
                                     <span class="font-13 text-muted">e.g "Your money"</span>
                                 </div>
-                                <div class="form-group">
+                                <div class="mb-15">
                                     <label>Money 2</label>
                                     <input type="text" class="form-control" data-toggle="input-mask"
                                         data-mask-format="#.##0,00" data-reverse="true">
@@ -641,43 +641,43 @@
 
                         <div class="col-md-6">
                             <form action="#">
-                                <div class="form-group">
+                                <div class="mb-15">
                                     <label>Telephone</label>
                                     <input type="text" class="form-control" data-toggle="input-mask"
                                         data-mask-format="0000-0000" maxlength="9">
                                     <span class="font-13 text-muted">e.g "xxxx-xxxx"</span>
                                 </div>
-                                <div class="form-group">
+                                <div class="mb-15">
                                     <label>Telephone with Code Area</label>
                                     <input type="text" class="form-control" data-toggle="input-mask"
                                         data-mask-format="(00) 0000-0000" maxlength="14">
                                     <span class="font-13 text-muted">e.g "(xx) xxxx-xxxx"</span>
                                 </div>
-                                <div class="form-group">
+                                <div class="mb-15">
                                     <label>US Telephone</label>
                                     <input type="text" class="form-control" data-toggle="input-mask"
                                         data-mask-format="(000) 000-0000" maxlength="14">
                                     <span class="font-13 text-muted">e.g "(xxx) xxx-xxxx"</span>
                                 </div>
-                                <div class="form-group">
+                                <div class="mb-15">
                                     <label>São Paulo Celphones</label>
                                     <input type="text" class="form-control" data-toggle="input-mask"
                                         data-mask-format="(00) 00000-0000" maxlength="15">
                                     <span class="font-13 text-muted">e.g "(xx) xxxxx-xxxx"</span>
                                 </div>
-                                <div class="form-group">
+                                <div class="mb-15">
                                     <label>CPF</label>
                                     <input type="text" class="form-control" data-toggle="input-mask"
                                         data-mask-format="000.000.000-00" data-reverse="true" maxlength="14">
                                     <span class="font-13 text-muted">e.g "xxx.xxx.xxxx-xx"</span>
                                 </div>
-                                <div class="form-group">
+                                <div class="mb-15">
                                     <label>CNPJ</label>
                                     <input type="text" class="form-control" data-toggle="input-mask"
                                         data-mask-format="00.000.000/0000-00" data-reverse="true" maxlength="18">
                                     <span class="font-13 text-muted">e.g "xx.xxx.xxx/xxxx-xx"</span>
                                 </div>
-                                <div class="form-group">
+                                <div class="mb-15">
                                     <label>IP Address</label>
                                     <input type="text" class="form-control" data-toggle="input-mask"
                                         data-mask-format="099.099.099.099" data-reverse="true" maxlength="15">
@@ -692,7 +692,7 @@
             </div>
 
 
-            <div class="card">
+            <div class="card mb-15">
                 <div class="card-body">
                     <h4 class="card-title">Bootstrap Select</h4>
                     <p>
@@ -907,7 +907,7 @@
             </div>
 
 
-            <div class="card">
+            <div class="card mb-15">
                 <div class="card-body">
                     <h4 class="card-title">Form Validation</h4>
                     <p>Parsley is a javascript form validation library. It helps you provide your users
@@ -922,18 +922,18 @@
 
                     <form data-parsley-validate autocomplete="off">
                         <div class="row">
-                            <div class="form-group col-6">
+                            <div class="mb-15 col-6">
                                 <label>Firstname: <span class="text-danger">*</span></label>
                                 <input type="text" name="firstname" class="form-control" placeholder="Enter firstname"
                                     required>
-                            </div><!-- form-group -->
-                            <div class="form-group col-6">
+                            </div><!-- mb-15 -->
+                            <div class="mb-15 col-6">
                                 <label>Lastname: <span class="text-danger">*</span></label>
                                 <input type="text" name="lastname" class="form-control" placeholder="Enter lastname"
                                     required>
-                            </div><!-- form-group -->
+                            </div><!-- mb-15 -->
                         </div>
-                        <div class="form-group">
+                        <div class="mb-15">
                             <button type="submit" class="btn btn-primary">Submit</button>
                         </div>
                     </form>
@@ -944,12 +944,12 @@
 
 
                     <form data-parsley-validate autocomplete="off">
-                        <div class="form-group">
+                        <div class="mb-15">
                             <label>Required</label>
                             <input type="text" class="form-control" required="" placeholder="Type something">
                         </div>
 
-                        <div class="form-group">
+                        <div class="mb-15">
                             <label>Equal To</label>
                             <div>
                                 <input type="password" id="pass2" class="form-control" required=""
@@ -961,47 +961,47 @@
                             </div>
                         </div>
 
-                        <div class="form-group">
+                        <div class="mb-15">
                             <label>E-Mail</label>
                             <div>
                                 <input type="email" class="form-control" required="" parsley-type="email"
                                     placeholder="Enter a valid e-mail">
                             </div>
                         </div>
-                        <div class="form-group">
+                        <div class="mb-15">
                             <label>URL</label>
                             <div>
                                 <input parsley-type="url" type="url" class="form-control" required="" placeholder="URL">
                             </div>
                         </div>
-                        <div class="form-group">
+                        <div class="mb-15">
                             <label>Digits</label>
                             <div>
                                 <input data-parsley-type="digits" type="text" class="form-control" required=""
                                     placeholder="Enter only digits">
                             </div>
                         </div>
-                        <div class="form-group">
+                        <div class="mb-15">
                             <label>Number</label>
                             <div>
                                 <input data-parsley-type="number" type="text" class="form-control" required=""
                                     placeholder="Enter only numbers">
                             </div>
                         </div>
-                        <div class="form-group">
+                        <div class="mb-15">
                             <label>Alphanumeric</label>
                             <div>
                                 <input data-parsley-type="alphanum" type="text" class="form-control" required=""
                                     placeholder="Enter alphanumeric value">
                             </div>
                         </div>
-                        <div class="form-group">
+                        <div class="mb-15">
                             <label>Textarea</label>
                             <div>
                                 <textarea required="" class="form-control"></textarea>
                             </div>
                         </div>
-                        <div class="form-group">
+                        <div class="mb-15">
 
                             <button type="submit" class="btn btn-primary">
                                 Submit
@@ -1014,49 +1014,49 @@
 
                     <form data-parsley-validate autocomplete="off">
 
-                        <div class="form-group">
+                        <div class="mb-15">
                             <label>Min Length</label>
                             <div>
                                 <input type="text" class="form-control" required data-parsley-minlength="6"
                                     placeholder="Min 6 chars." />
                             </div>
                         </div>
-                        <div class="form-group">
+                        <div class="mb-15">
                             <label>Max Length</label>
                             <div>
                                 <input type="text" class="form-control" required data-parsley-maxlength="6"
                                     placeholder="Max 6 chars." />
                             </div>
                         </div>
-                        <div class="form-group">
+                        <div class="mb-15">
                             <label>Range Length</label>
                             <div>
                                 <input type="text" class="form-control" required data-parsley-length="[5,10]"
                                     placeholder="Text between 5 - 10 chars length" />
                             </div>
                         </div>
-                        <div class="form-group">
+                        <div class="mb-15">
                             <label>Min Value</label>
                             <div>
                                 <input type="text" class="form-control" required data-parsley-min="6"
                                     placeholder="Min value is 6" />
                             </div>
                         </div>
-                        <div class="form-group">
+                        <div class="mb-15">
                             <label>Max Value</label>
                             <div>
                                 <input type="text" class="form-control" required data-parsley-max="6"
                                     placeholder="Max value is 6" />
                             </div>
                         </div>
-                        <div class="form-group">
+                        <div class="mb-15">
                             <label>Range Value</label>
                             <div>
                                 <input class="form-control" required type="text" min="6" max="100"
                                     placeholder="Number between 6 - 100" />
                             </div>
                         </div>
-                        <div class="form-group">
+                        <div class="mb-15">
                             <label>Regular Exp</label>
                             <div>
                                 <input type="text" class="form-control" required data-parsley-pattern="#[A-Fa-f0-9]{6}"
@@ -1064,7 +1064,7 @@
                             </div>
                         </div>
 
-                        <div class="form-group mb-0">
+                        <div class="mb-15 mb-0">
                             <button type="submit" class="btn btn-primary">
                                 Submit
                             </button>
@@ -1080,14 +1080,14 @@
         </div>
 
 
-        <script src="https://unpkg.com/jquery@3.4.1/dist/jquery.slim.min.js"></script>
-        <script src="https://unpkg.com/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-        <script src="https://unpkg.com/bootstrap@4.4.1/dist/js/bootstrap.min.js"></script>
-        <script src="https://unpkg.com/perfect-scrollbar@1.4.0/dist/perfect-scrollbar.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/js/bootstrap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/perfect-scrollbar@1.4.0/dist/perfect-scrollbar.min.js"></script>
         
-        <script src="https://unpkg.com/jquery-mask-plugin@1.14.16/dist/jquery.mask.min.js"></script>        
+        <script src="https://cdn.jsdelivr.net/npm/jquery-mask-plugin@1.14.16/dist/jquery.mask.min.js"></script>        
         <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/js/bootstrap-select.min.js"></script>
-        <script src="https://unpkg.com/parsleyjs@2.9.2/dist/parsley.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/parsleyjs@2.9.2/dist/parsley.min.js"></script>
 
 
         <!-- Global site tag (gtag.js) - Google Analytics -->

@@ -1,0 +1,111 @@
+// .btn-circle,
+// .btn-icon {
+//   width: $btn-circle-size;
+//   height: $btn-circle-size;
+//   padding: 0;
+//   margin: 0;
+//   text-align: center;
+//   vertical-align: middle;
+// }
+
+.btn {
+  &-icon,
+  &-circle {
+    width: $btn-circle-size;
+    height: $btn-circle-size;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    vertical-align: middle;
+
+    &.btn-xs {
+      width: $btn-circle-xs-size;
+      height: $btn-circle-xs-size;
+    }
+
+    &.btn-sm {
+      width: $btn-circle-sm-size;
+      height: $btn-circle-sm-size;
+    }
+
+    &.btn-lg {
+      width: $btn-circle-lg-size;
+      height: $btn-circle-lg-size;
+    }
+  }
+
+  // i {
+  //   position: relative;
+  // }
+
+  &-circle {
+    border-radius: 100%;
+  }
+
+  &-upload {
+    position: relative;
+    overflow: hidden;
+
+    input[type='file'] {
+      position: absolute;
+      width: 100%;
+      height: 100% !important;
+      opacity: 0;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: 0;
+      padding: 0;
+      z-index: 9;
+      cursor: pointer;
+    }
+  }
+
+  &-transparent {
+    background-color: transparent;
+    border-color: transparent;
+  }
+  &-xs, &-group-xs>.btn{
+    @include button-size($btn-padding-y-xs, $btn-padding-x-xs, $btn-font-size-xs, $btn-border-radius-xs);
+  }
+}
+
+// .btn-upload {
+//   position: relative;
+//   overflow: hidden;
+
+//   input[type='file'] {
+//     position: absolute;
+//     width: 100%;
+//     height: 100% !important;
+//     opacity: 0;
+//     top: 0;
+//     bottom: 0;
+//     left: 0;
+//     right: 0;
+//     margin: 0;
+//     padding: 0;
+//     z-index: 9;
+//     cursor: pointer;
+//   }
+// }
+
+// .btn-transparent {
+//   background-color: transparent;
+//   border-color: transparent;
+// }
+
+// Brand buttons
+
+@each $color, $value in $brands-colors {
+  .btn-#{$color} {
+    @include button-variant($value, $value);
+  }
+}
+
+
+
+// .btn-xs {
+//   @include button-size($btn-padding-y-xs, $btn-padding-x-xs, $btn-font-size-xs, $btn-line-height-xs, $btn-border-radius-sm);
+// }

@@ -1,0 +1,16 @@
+.dropdown-menu {
+  padding: 5px;
+  @include transition();
+}
+
+.dropdown-item {
+  width: 100%;
+  @include border-radius();
+  @include transition();
+
+  i {
+    width: 1em;
+    // text-align: center;
+    margin-right: 0.5em;
+  }
+}

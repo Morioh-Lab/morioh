@@ -1,0 +1,45 @@
+.wrapper {
+  overflow: hidden;
+  min-height: 80vh;
+  position: relative;
+}
+
+.navbar-top-fixed {
+  .wrapper {
+    margin-top: $navbar-size-base;
+    @include media-breakpoint-up(lg) {
+      margin-top: $navbar-size-lg;
+    }
+  }
+}
+
+pre,
+pre code {
+  text-shadow: 0 1px rgba($white, 0.8);
+  direction: ltr;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  tab-size: 3;
+  hyphens: none;
+  border: none;
+  @include border-radius();
+  
+}
+pre {
+  background-color: $gray-100;
+  padding: $spacer;
+}
+
+blockquote,
+.blockquote {
+  font-style: italic;
+  padding: $spacer/2;
+  border-left: 0.25rem solid $gray-100;
+  &-reverse {
+    border-left: 0;
+    border-right: 0.25rem solid $gray-100;
+  }
+}

@@ -1,0 +1,159 @@
+ /*!
+ * Morioh Responsive Template based on Bootstrap v5.0.0-alpha1
+ * Version - 1.1.0
+ * Copyright 2011-2020 The Bootstrap Authors
+ * Copyright 2011-2019 Twitter, Inc.
+ * Copyright 2020 Animate.css 4.1.0
+ * Copyright 2019-2020 Morioh Team - https://morioh.com
+ * Licensed under MIT (https://github.com/Morioh-Lab/morioh/blob/master/LICENSE)
+ */
+
+// Core
+
+@import "base/functions";
+// @import "extend/functions";
+
+
+// variables
+
+@import "extend/variables/colors";
+@import "extend/variables/reset";
+@import "extend/variables/spacing";
+
+@import "base/variables";
+@import "extend/variables";
+
+
+@import "base/mixins";
+@import "extend/mixins";
+
+// @import "base/utilities";
+@import "extend/utilities";
+
+
+// Layout & components
+@import "base/root";
+@import "base/reboot";
+@import "base/type";
+@import "base/images";
+@import "base/containers";
+@import "base/grid";
+@import "base/tables";
+@import "base/forms";
+@import "base/buttons";
+@import "base/transitions";
+@import "base/dropdown";
+@import "base/button-group";
+@import "base/nav";
+@import "base/navbar";
+@import "base/card";
+@import "base/breadcrumb";
+@import "base/pagination";
+@import "base/badge";
+@import "base/alert";
+@import "base/progress";
+@import "base/list-group";
+@import "base/close";
+@import "base/toasts";
+@import "base/modal";
+@import "base/tooltip";
+@import "base/popover";
+@import "base/carousel";
+@import "base/spinners";
+
+// Helpers
+@import "base/helpers";
+
+// Utilities
+@import "base/utilities/api";
+
+
+// Extend components
+
+@import "extend/buttons";
+
+
+@import "extend/animations.scss";
+// @import "extend/accordion.scss";
+// @import "extend/alert.scss";
+// @import "extend/avatar.scss";
+// @import "extend/badge.scss";
+// @import "extend/buttons.scss";
+@import "extend/cards.scss";
+// @import "extend/carousel.scss";
+// @import "extend/close.scss";
+// @import "extend/extend-forms.scss";
+@import "extend/dropdown.scss";
+// @import "extend/footer.scss";
+// @import "extend/forms.scss";
+// @import "extend/grid.scss";
+// @import "extend/icons.scss";
+// @import "extend/input-group.scss";
+// @import "extend/list-group.scss";
+@import "extend/modal.scss";
+// @import "extend/nav.scss";
+@import "extend/navbar.scss";
+// @import "extend/pagination.scss";
+// @import "extend/popover.scss";
+@import "extend/progress.scss";
+// @import "extend/section.scss";
+// @import "extend/separator.scss";
+// @import "extend/type.scss";
+@import "extend/ribbons.scss";
+@import "extend/spinners.scss";
+
+@import "extend/avatars.scss";
+@import "extend/menubar.scss";
+
+
+// @import "extend/reboot.scss";
+@import "extend/global";
+@import "extend/utilities";
+
+
+// Animate.css
+
+@import '../../node_modules/animate.css/source/_vars.css';
+@import '../../node_modules/animate.css/source/_base.css';
+
+/* Fading entrances  */
+@import '../../node_modules/animate.css/source/fading_entrances/fadeIn.css';
+@import '../../node_modules/animate.css/source/fading_entrances/fadeInDown.css';
+@import '../../node_modules/animate.css/source/fading_entrances/fadeInDownBig.css';
+@import '../../node_modules/animate.css/source/fading_entrances/fadeInLeft.css';
+@import '../../node_modules/animate.css/source/fading_entrances/fadeInLeftBig.css';
+@import '../../node_modules/animate.css/source/fading_entrances/fadeInRight.css';
+@import '../../node_modules/animate.css/source/fading_entrances/fadeInRightBig.css';
+@import '../../node_modules/animate.css/source/fading_entrances/fadeInUp.css';
+@import '../../node_modules/animate.css/source/fading_entrances/fadeInUpBig.css';
+@import '../../node_modules/animate.css/source/fading_entrances/fadeInTopLeft.css';
+@import '../../node_modules/animate.css/source/fading_entrances/fadeInTopRight.css';
+@import '../../node_modules/animate.css/source/fading_entrances/fadeInBottomLeft.css';
+@import '../../node_modules/animate.css/source/fading_entrances/fadeInBottomRight.css';
+
+/* Fading exits */
+@import '../../node_modules/animate.css/source/fading_exits/fadeOut.css';
+@import '../../node_modules/animate.css/source/fading_exits/fadeOutDown.css';
+@import '../../node_modules/animate.css/source/fading_exits/fadeOutDownBig.css';
+@import '../../node_modules/animate.css/source/fading_exits/fadeOutLeft.css';
+@import '../../node_modules/animate.css/source/fading_exits/fadeOutLeftBig.css';
+@import '../../node_modules/animate.css/source/fading_exits/fadeOutRight.css';
+@import '../../node_modules/animate.css/source/fading_exits/fadeOutRightBig.css';
+@import '../../node_modules/animate.css/source/fading_exits/fadeOutUp.css';
+@import '../../node_modules/animate.css/source/fading_exits/fadeOutUpBig.css';
+@import '../../node_modules/animate.css/source/fading_exits/fadeOutTopLeft.css';
+@import '../../node_modules/animate.css/source/fading_exits/fadeOutTopRight.css';
+@import '../../node_modules/animate.css/source/fading_exits/fadeOutBottomRight.css';
+@import '../../node_modules/animate.css/source/fading_exits/fadeOutBottomLeft.css';
+
+/* Sliding entrances */
+@import '../../node_modules/animate.css/source/sliding_entrances/slideInDown.css';
+@import '../../node_modules/animate.css/source/sliding_entrances/slideInLeft.css';
+@import '../../node_modules/animate.css/source/sliding_entrances/slideInRight.css';
+@import '../../node_modules/animate.css/source/sliding_entrances/slideInUp.css';
+
+/* Sliding exits */
+@import '../../node_modules/animate.css/source/sliding_exits/slideOutDown.css';
+@import '../../node_modules/animate.css/source/sliding_exits/slideOutLeft.css';
+@import '../../node_modules/animate.css/source/sliding_exits/slideOutRight.css';
+@import '../../node_modules/animate.css/source/sliding_exits/slideOutUp.css';

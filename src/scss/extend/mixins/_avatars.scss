@@ -1,0 +1,14 @@
+@mixin avatar($size, $status-size) {
+  width: $size;
+  height: $size;
+  font-size: $size/1.8;
+  // img {
+  //   width: $size;
+  //   height: $size;
+  // }
+  &%avatar-status {
+    &:before {
+      border-width: $status-size;
+    }
+  }
+}

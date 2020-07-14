@@ -1,0 +1,26 @@
+.card {
+  // margin-bottom: $card-each-margin;
+
+  //   &-body{
+  //       position: relative;
+  //   }
+
+  &-controls {
+    // float: right;
+    position: absolute;
+    right: $card-spacer-x;
+    top: $card-spacer-x;
+
+    .dropdown {
+      display: inline-block;
+    }
+  }
+
+  &-title {
+    font-size: $font-size-lg;
+  }
+
+  .card-body + .card-body {
+    padding-top: 0;
+  }
+}

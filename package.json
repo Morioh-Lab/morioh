@@ -1,6 +1,6 @@
 {
   "name": "morioh",
-  "version": "1.0.9",
+  "version": "1.1.2",
   "description": "Morioh Theme: Responsive Template with Bootstrap 4, HTML5 and Vue.js",
   "main": "./dist/css/morioh.min.css",
   "scripts": {
@@ -20,7 +20,7 @@
     "admin",
     "admin panel",
     "admin template",
-    "bootstrap",    
+    "bootstrap",
     "dashboard",
     "framework",
     "front-end",
@@ -34,26 +34,30 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Morioh-Lab/morioh.git"
-  },  
+  },
   "bugs": {
     "url": "https://github.com/Morioh-Lab/morioh/issues"
   },
   "homepage": "https://morioh.com/www/morioh",
   "devDependencies": {
-    "autoprefixer": "^9.7.3",
+    "autoprefixer": "^9.8.4",
     "clean-webpack-plugin": "^3.0.0",
-    "copy-webpack-plugin": "^5.0.5",
+    "copy-webpack-plugin": "^5.1.1",
     "cross-env": "^6.0.3",
-    "css-loader": "^3.2.1",
-    "file-loader": "^5.0.2",
-    "mini-css-extract-plugin": "^0.8.0",
-    "node-sass": "^4.13.0",
+    "css-loader": "^3.6.0",
+    "file-loader": "^5.1.0",
+    "mini-css-extract-plugin": "^0.8.2",
+    "node-sass": "^4.14.1",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
     "postcss-loader": "^3.0.0",
-    "sass-loader": "^8.0.0",
-    "style-loader": "^1.0.1",
-    "webpack": "^4.41.2",
-    "webpack-cli": "^3.3.10",
+    "sass-loader": "^8.0.2",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12",
     "webpack-node-externals": "^1.7.2"
   },
-  "dependencies": {}
+  "dependencies": {
+    "animate.css": "^4.1.0",
+    "bootstrap": "^5.0.0-alpha1"
+  }
 }

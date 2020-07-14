@@ -1,0 +1,42 @@
+// Spacing
+//
+// Control the default styling of most Bootstrap elements by modifying these
+// variables. Mostly focused on spacing.
+// You can add more entries to the $spacers map, should you need more variation.
+
+// custom spacers
+$custom-spacer: 0.063rem !default; // 1px
+$spacers: (
+  0: 0,
+  // 3: $custom-spacer * 3,
+  5: $custom-spacer * 5,
+  10: $custom-spacer * 10,
+  15: $custom-spacer * 15,
+  20: $custom-spacer * 20,
+  // 30: $custom-spacer * 30,
+  50: $custom-spacer * 50,
+  60: $custom-spacer * 60,
+  // 100: $custom-spacer * 100,
+  // 200: $custom-spacer * 200,
+  // 250: $custom-spacer * 250,
+  // 350: $custom-spacer * 350,
+  // 400: $custom-spacer * 400,
+);
+
+$custom-spacers: (
+  0: 0,
+  // 3: $custom-spacer * 3,
+  5: $custom-spacer * 5,
+  10: $custom-spacer * 10,
+  15: $custom-spacer * 15,
+  20: $custom-spacer * 20,
+  // 30: $custom-spacer * 30,
+  50: $custom-spacer * 50,
+  60: $custom-spacer * 60,
+  100: $custom-spacer * 100,
+  200: $custom-spacer * 200,
+  250: $custom-spacer * 250,
+  350: $custom-spacer * 350,
+  400: $custom-spacer * 400,
+  500: $custom-spacer * 500,
+);

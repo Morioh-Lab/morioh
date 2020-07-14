@@ -1,0 +1,9 @@
+@mixin ribbon-variant($background, $border: darken($background, 10%)) {
+  .ribbon-body {
+    color: color-yiq($background);
+    @include gradient-bg($background);  
+  }
+  &:before {
+    border-color: $border;
+  }
+}

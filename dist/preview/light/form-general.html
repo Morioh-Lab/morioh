@@ -37,10 +37,10 @@
     <meta name="image" content="https://i.imgur.com/gWYKl5F.png">
 
 
-    <link rel="stylesheet" href="https://unpkg.com/@fortawesome/fontawesome-free@5.11.2/css/all.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/perfect-scrollbar@1.4.0/css/perfect-scrollbar.css">
-    <link rel="stylesheet" href="https://unpkg.com/@mdi/font@4.7.95/css/materialdesignicons.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/animate.css@3.7.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/perfect-scrollbar@1.4.0/css/perfect-scrollbar.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@4.7.95/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css">
 
     <link rel="stylesheet" href="../../css/morioh.css">
 
@@ -53,17 +53,17 @@
 
         <div class="main-navbar navbar-expand-md navbar-light bg-white fixed-top shadow-sm">
 
-            <button class="btn hidden-md-up" type="button" data-toggle="collapse" data-target="#main-menu"
+            <button class="btn d-md-none" type="button" data-toggle="collapse" data-target="#main-menu"
                 aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fas fa-bars"></i>
             </button>
 
 
-            <img src="https://i.imgur.com/QTZ8pU1.png" title="Morioh" class="navbar-logo hidden-md-up"
+            <img src="https://i.imgur.com/QTZ8pU1.png" title="Morioh" class="navbar-logo d-md-none"
                 style="height: 36px;">
 
 
-            <button class="btn hidden-md-up" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            <button class="btn d-md-none" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fas fa-bars"></i>
             </button>
@@ -72,7 +72,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto hidden-sm-down">
 
-                    <li class="nav-item mr-10">
+                    <li class="nav-item mr-5">
                         <a href="javascript://" class="nav-icon font-2xl" id="navbar-toggler">
                             <!-- <i class="fas fa-bars"></i> -->
                             <!-- <i class="mdi mdi-view-sequential font-2xl"></i> -->
@@ -85,12 +85,11 @@
                         <form class="form-inline">
                             <div class="input-group">
                                 <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-                                <span class="input-group-append">
-                                    <button class="btn btn-outline-primary" type="button">
-                                        <i class="fas fa-search"></i>
-                                    </button>
-                                </span>
-                            </div>
+
+                                <button class="btn btn-outline-primary" type="button">
+                                    <i class="fas fa-search"></i>
+                                </button>
+
                         </form>
                     </li>
 
@@ -100,27 +99,27 @@
                 <ul class="navbar-nav my-2 my-lg-0">
 
 
-                    <li class="nav-item mr-5">
+                    <li class="nav-item mr-10">
                         <a href="#" class="nav-icon font-2xl">
                             <!-- <i class="fas fa-chart-pie"></i> -->
                             <i class="mdi mdi-view-dashboard-outline"></i>
                         </a>
                     </li>
 
-                    <li class="nav-item mr-5">
+                    <li class="nav-item mr-10">
                         <a class="nav-icon font-2xl" href="#">
                             <i class="mdi mdi-bell-ring-outline"></i>
                         </a>
                     </li>
 
-                    <li class="nav-item mr-5">
+                    <li class="nav-item mr-10">
                         <a href="#" class="nav-icon font-2xl rounded-circle">
                             <!-- <i class="fas fa-cog"></i> -->
                             <i class="mdi mdi-settings-outline"></i>
                         </a>
                     </li>
 
-                    <li class="nav-item mr-5 dropdown">
+                    <li class="nav-item mr-10 dropdown">
                         <a href="#" class="nav-icon avatar rounded-circle" id="PJXN7R" role="button"
                             data-toggle="dropdown" aria-expanded="false">
                             <img src="https://i.imgur.com/ROPF2fQ.png">
@@ -197,7 +196,7 @@
                             <i class="menu-icon mdi mdi-view-dashboard"></i>
                             <span class="menu-label">Dashboard</span>
                             <span class="menu-badge">
-                                <span class="badge badge-info">1</span>
+                                <span class="badge bg-info">1</span>
                             </span>
 
                         </a>
@@ -565,9 +564,9 @@
         </div>
 
 
-        <div class="container-fluid mt-30">
+        <div class="container-fluid mt-15">
 
-            <div class="card">
+            <div class="card mb-15">
                 <div class="card-body">
                     <h4 class="card-title">Forms</h4>
                     <p>
@@ -587,7 +586,7 @@
                         for email address or <code>number</code> for numerical information) to take advantage of newer
                         input controls like email verification, number selection, and more.</p>
 
-                  
+
                     <hr>
 
                     <h4>Input</h4>
@@ -597,16 +596,16 @@
                     </p>
 
                     <div class="row">
-                        <div class="form-group col-sm-6">
+                        <div class="mb-15 col-sm-6">
                             <input type="text" class="form-control" placeholder="Input box">
                         </div>
-                        <div class="form-group col-sm-6">
+                        <div class="mb-15 col-sm-6">
                             <input type="text" class="form-control" placeholder="Input box (disabled)" disabled="">
                         </div>
-                        <div class="form-group col-sm-6">
+                        <div class="mb-15 col-sm-6">
                             <textarea class="form-control" rows="2" placeholder="Textarea"></textarea>
                         </div>
-                        <div class="form-group col-sm-6">
+                        <div class="mb-15 col-sm-6">
                             <textarea class="form-control" rows="2" placeholder="Textarea (disabled)"
                                 disabled=""></textarea>
                         </div>
@@ -627,19 +626,19 @@
 
                     <form class="was-validated">
                         <div class="row">
-                            <div class="form-group col-sm-6">
+                            <div class="mb-15 col-sm-6">
                                 <input type="text" class="form-control" placeholder="Valid state">
                                 <div class="valid-feedback">Looks good!</div>
                             </div>
-                            <div class="form-group col-sm-6">
+                            <div class="mb-15 col-sm-6">
                                 <input type="text" class="form-control" placeholder="Invalid state" required="">
                                 <div class="invalid-feedback">This is required</div>
                             </div>
-                            <div class="form-group col-sm-6">
+                            <div class="mb-15 col-sm-6">
                                 <textarea class="form-control" rows="2" placeholder="Valid state"></textarea>
                                 <div class="valid-feedback">Looks good!</div>
                             </div>
-                            <div class="form-group col-sm-6">
+                            <div class="mb-15 col-sm-6">
                                 <textarea class="form-control" rows="2" placeholder="Invalid state"
                                     required=""></textarea>
                                 <div class="invalid-feedback">This is required</div>
@@ -650,19 +649,19 @@
                     <pre class="my-30">
 &lt;form class=&quot;was-validated&quot;&gt;
     &lt;div class=&quot;row&quot;&gt;
-        &lt;div class=&quot;form-group col-sm-6&quot;&gt;
+        &lt;div class=&quot;mb-15 col-sm-6&quot;&gt;
             &lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Valid state&quot;&gt;
             &lt;div class=&quot;valid-feedback&quot;&gt;Looks good!&lt;/div&gt;
         &lt;/div&gt;
-        &lt;div class=&quot;form-group col-sm-6&quot;&gt;
+        &lt;div class=&quot;mb-15 col-sm-6&quot;&gt;
             &lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Invalid state&quot; required=&quot;&quot;&gt;
             &lt;div class=&quot;invalid-feedback&quot;&gt;This is required&lt;/div&gt;
         &lt;/div&gt;
-        &lt;div class=&quot;form-group col-sm-6&quot;&gt;
+        &lt;div class=&quot;mb-15 col-sm-6&quot;&gt;
             &lt;textarea class=&quot;form-control&quot; rows=&quot;2&quot; placeholder=&quot;Valid state&quot;&gt;&lt;/textarea&gt;
             &lt;div class=&quot;valid-feedback&quot;&gt;Looks good!&lt;/div&gt;
         &lt;/div&gt;
-        &lt;div class=&quot;form-group col-sm-6&quot;&gt;
+        &lt;div class=&quot;mb-15 col-sm-6&quot;&gt;
             &lt;textarea class=&quot;form-control&quot; rows=&quot;2&quot; placeholder=&quot;Invalid state&quot;
                 required=&quot;&quot;&gt;&lt;/textarea&gt;
             &lt;div class=&quot;invalid-feedback&quot;&gt;This is required&lt;/div&gt;
@@ -679,25 +678,25 @@
 
                     <div class="d-flex">
                         <div class="mr-30">
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="customCheck1">
-                                <label class="custom-control-label" for="customCheck1">Custom checkbox</label>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="customCheck1">
+                                <label class="form-check-label" for="customCheck1">Custom checkbox</label>
                             </div>
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="customCheck2" disabled="">
-                                <label class="custom-control-label" for="customCheck2">Custom checkbox
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="customCheck2" disabled="">
+                                <label class="form-check-label" for="customCheck2">Custom checkbox
                                     (disabled)</label>
                             </div>
                         </div>
                         <div class="mr-30">
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="customCheck3" checked="">
-                                <label class="custom-control-label" for="customCheck3">Custom checkbox (checked)</label>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="customCheck3" checked="">
+                                <label class="form-check-label" for="customCheck3">Custom checkbox (checked)</label>
                             </div>
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="customCheck4" checked=""
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="customCheck4" checked=""
                                     disabled="">
-                                <label class="custom-control-label" for="customCheck4">Custom checkbox (checked
+                                <label class="form-check-label" for="customCheck4">Custom checkbox (checked
                                     disabled)</label>
                             </div>
                         </div>
@@ -705,24 +704,24 @@
 
 
                     <pre class="my-30">
-&lt;div class=&quot;custom-control custom-checkbox&quot;&gt;
-&lt;input type=&quot;checkbox&quot; class=&quot;custom-control-input&quot; id=&quot;customCheck1&quot;&gt;
-&lt;label class=&quot;custom-control-label&quot; for=&quot;customCheck1&quot;&gt;Custom checkbox&lt;/label&gt;
+&lt;div class=&quot;form-check&quot;&gt;
+&lt;input type=&quot;checkbox&quot; class=&quot;form-check-input&quot; id=&quot;customCheck1&quot;&gt;
+&lt;label class=&quot;form-check-label&quot; for=&quot;customCheck1&quot;&gt;Custom checkbox&lt;/label&gt;
 &lt;/div&gt;
 
-&lt;div class=&quot;custom-control custom-checkbox&quot;&gt;
-&lt;input type=&quot;checkbox&quot; class=&quot;custom-control-input&quot; id=&quot;customCheck2&quot; disabled&gt;
-&lt;label class=&quot;custom-control-label&quot; for=&quot;customCheck2&quot;&gt;Custom checkbox (disabled)&lt;/label&gt;
+&lt;div class=&quot;form-check&quot;&gt;
+&lt;input type=&quot;checkbox&quot; class=&quot;form-check-input&quot; id=&quot;customCheck2&quot; disabled&gt;
+&lt;label class=&quot;form-check-label&quot; for=&quot;customCheck2&quot;&gt;Custom checkbox (disabled)&lt;/label&gt;
 &lt;/div&gt;
 
-&lt;div class=&quot;custom-control custom-checkbox&quot;&gt;
-&lt;input type=&quot;checkbox&quot; class=&quot;custom-control-input&quot; id=&quot;customCheck3&quot; checked&gt;
-&lt;label class=&quot;custom-control-label&quot; for=&quot;customCheck3&quot;&gt;Custom checkbox (checked)&lt;/label&gt;
+&lt;div class=&quot;form-check&quot;&gt;
+&lt;input type=&quot;checkbox&quot; class=&quot;form-check-input&quot; id=&quot;customCheck3&quot; checked&gt;
+&lt;label class=&quot;form-check-label&quot; for=&quot;customCheck3&quot;&gt;Custom checkbox (checked)&lt;/label&gt;
 &lt;/div&gt;
 
-&lt;div class=&quot;custom-control custom-checkbox&quot;&gt;
-&lt;input type=&quot;checkbox&quot; class=&quot;custom-control-input&quot; id=&quot;customCheck4&quot; checked disabled&gt;
-&lt;label class=&quot;custom-control-label&quot; for=&quot;customCheck4&quot;&gt;Custom checkbox (checked disabled)&lt;/label&gt;
+&lt;div class=&quot;form-check&quot;&gt;
+&lt;input type=&quot;checkbox&quot; class=&quot;form-check-input&quot; id=&quot;customCheck4&quot; checked disabled&gt;
+&lt;label class=&quot;form-check-label&quot; for=&quot;customCheck4&quot;&gt;Custom checkbox (checked disabled)&lt;/label&gt;
 &lt;/div&gt;
                     </pre>
 
@@ -736,48 +735,48 @@
                     <div class="d-flex">
                         <div class="mr-30">
                             <div class="custom-control custom-radio">
-                                <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input"
+                                <input type="radio" id="customRadio1" name="customRadio" class="form-check-input"
                                     checked="">
-                                <label class="custom-control-label" for="customRadio1">Custom radio</label>
+                                <label class="form-check-label" for="customRadio1">Custom radio</label>
                             </div>
                             <div class="custom-control custom-radio">
-                                <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
-                                <label class="custom-control-label" for="customRadio2">Custom radio</label>
+                                <input type="radio" id="customRadio2" name="customRadio" class="form-check-input">
+                                <label class="form-check-label" for="customRadio2">Custom radio</label>
                             </div>
                         </div>
                         <div class="mr-30">
                             <div class="custom-control custom-radio">
-                                <input type="radio" id="customRadio3" name="customRadio2" class="custom-control-input"
+                                <input type="radio" id="customRadio3" name="customRadio2" class="form-check-input"
                                     checked="" disabled="">
-                                <label class="custom-control-label" for="customRadio3">Custom radio (disabled)</label>
+                                <label class="form-check-label" for="customRadio3">Custom radio (disabled)</label>
                             </div>
                             <div class="custom-control custom-radio">
-                                <input type="radio" id="customRadio4" name="customRadio2" class="custom-control-input"
+                                <input type="radio" id="customRadio4" name="customRadio2" class="form-check-input"
                                     disabled="">
-                                <label class="custom-control-label" for="customRadio4">Custom radio (disabled)</label>
+                                <label class="form-check-label" for="customRadio4">Custom radio (disabled)</label>
                             </div>
                         </div>
                     </div>
 
                     <pre class="my-30">
 &lt;div class=&quot;custom-control custom-radio&quot;&gt;
-  &lt;input type=&quot;radio&quot; id=&quot;customRadio1&quot; name=&quot;customRadio&quot; class=&quot;custom-control-input&quot; checked&gt;
-  &lt;label class=&quot;custom-control-label&quot; for=&quot;customRadio1&quot;&gt;Custom radio&lt;/label&gt;
+  &lt;input type=&quot;radio&quot; id=&quot;customRadio1&quot; name=&quot;customRadio&quot; class=&quot;form-check-input&quot; checked&gt;
+  &lt;label class=&quot;form-check-label&quot; for=&quot;customRadio1&quot;&gt;Custom radio&lt;/label&gt;
 &lt;/div&gt;
 
 &lt;div class=&quot;custom-control custom-radio&quot;&gt;
-  &lt;input type=&quot;radio&quot; id=&quot;customRadio2&quot; name=&quot;customRadio&quot; class=&quot;custom-control-input&quot;&gt;
-  &lt;label class=&quot;custom-control-label&quot; for=&quot;customRadio2&quot;&gt;Custom radio&lt;/label&gt;
+  &lt;input type=&quot;radio&quot; id=&quot;customRadio2&quot; name=&quot;customRadio&quot; class=&quot;form-check-input&quot;&gt;
+  &lt;label class=&quot;form-check-label&quot; for=&quot;customRadio2&quot;&gt;Custom radio&lt;/label&gt;
 &lt;/div&gt;
 
 &lt;div class=&quot;custom-control custom-radio&quot;&gt;
-  &lt;input type=&quot;radio&quot; id=&quot;customRadio3&quot; name=&quot;customRadio2&quot; class=&quot;custom-control-input&quot; checked disabled&gt;
-  &lt;label class=&quot;custom-control-label&quot; for=&quot;customRadio3&quot;&gt;Custom radio&lt;/label&gt;
+  &lt;input type=&quot;radio&quot; id=&quot;customRadio3&quot; name=&quot;customRadio2&quot; class=&quot;form-check-input&quot; checked disabled&gt;
+  &lt;label class=&quot;form-check-label&quot; for=&quot;customRadio3&quot;&gt;Custom radio&lt;/label&gt;
 &lt;/div&gt;
 
 &lt;div class=&quot;custom-control custom-radio&quot;&gt;
-  &lt;input type=&quot;radio&quot; id=&quot;customRadio4&quot; name=&quot;customRadio2&quot; class=&quot;custom-control-input&quot; disabled&gt;
-  &lt;label class=&quot;custom-control-label&quot; for=&quot;customRadio4&quot;&gt;Custom radio&lt;/label&gt;
+  &lt;input type=&quot;radio&quot; id=&quot;customRadio4&quot; name=&quot;customRadio2&quot; class=&quot;form-check-input&quot; disabled&gt;
+  &lt;label class=&quot;form-check-label&quot; for=&quot;customRadio4&quot;&gt;Custom radio&lt;/label&gt;
 &lt;/div&gt;
                     </pre>
 
@@ -789,49 +788,49 @@
 
                     <div class="d-flex">
                         <div class="mr-30">
-                            <div class="custom-control custom-switch">
-                                <input type="checkbox" class="custom-control-input" id="customSwitch1">
-                                <label class="custom-control-label" for="customSwitch1">Toggle this switch
+                            <div class="form-check form-switch">
+                                <input type="checkbox" class="form-check-input" id="customSwitch1">
+                                <label class="form-check-label" for="customSwitch1">Toggle this switch
                                     element</label>
                             </div>
-                            <div class="custom-control custom-switch">
-                                <input type="checkbox" class="custom-control-input" disabled="" id="customSwitch2">
-                                <label class="custom-control-label" for="customSwitch2">Disabled switch element</label>
+                            <div class="form-check form-switch">
+                                <input type="checkbox" class="form-check-input" disabled="" id="customSwitch2">
+                                <label class="form-check-label" for="customSwitch2">Disabled switch element</label>
                             </div>
                         </div>
                         <div class="mr-30">
-                            <div class="custom-control custom-switch">
-                                <input type="checkbox" class="custom-control-input" id="customSwitch3" checked="">
-                                <label class="custom-control-label" for="customSwitch3">Toggle this switch
+                            <div class="form-check form-switch">
+                                <input type="checkbox" class="form-check-input" id="customSwitch3" checked="">
+                                <label class="form-check-label" for="customSwitch3">Toggle this switch
                                     element</label>
                             </div>
-                            <div class="custom-control custom-switch">
-                                <input type="checkbox" class="custom-control-input" disabled="" id="customSwitch4"
+                            <div class="form-check form-switch">
+                                <input type="checkbox" class="form-check-input" disabled="" id="customSwitch4"
                                     checked="">
-                                <label class="custom-control-label" for="customSwitch4">Disabled switch element</label>
+                                <label class="form-check-label" for="customSwitch4">Disabled switch element</label>
                             </div>
                         </div>
                     </div>
 
                     <pre class="my-30">
-&lt;div class=&quot;custom-control custom-switch&quot;&gt;
-  &lt;input type=&quot;checkbox&quot; class=&quot;custom-control-input&quot; id=&quot;customSwitch1&quot;&gt;
-  &lt;label class=&quot;custom-control-label&quot; for=&quot;customSwitch1&quot;&gt;Toggle this switch element&lt;/label&gt;
+&lt;div class=&quot;form-check form-switch&quot;&gt;
+  &lt;input type=&quot;checkbox&quot; class=&quot;form-check-input&quot; id=&quot;customSwitch1&quot;&gt;
+  &lt;label class=&quot;form-check-label&quot; for=&quot;customSwitch1&quot;&gt;Toggle this switch element&lt;/label&gt;
 &lt;/div&gt;
 
-&lt;div class=&quot;custom-control custom-switch&quot;&gt;
-  &lt;input type=&quot;checkbox&quot; class=&quot;custom-control-input&quot; disabled id=&quot;customSwitch2&quot;&gt;
-  &lt;label class=&quot;custom-control-label&quot; for=&quot;customSwitch2&quot;&gt;Disabled switch element&lt;/label&gt;
+&lt;div class=&quot;form-check form-switch&quot;&gt;
+  &lt;input type=&quot;checkbox&quot; class=&quot;form-check-input&quot; disabled id=&quot;customSwitch2&quot;&gt;
+  &lt;label class=&quot;form-check-label&quot; for=&quot;customSwitch2&quot;&gt;Disabled switch element&lt;/label&gt;
 &lt;/div&gt;
 
-&lt;div class=&quot;custom-control custom-switch&quot;&gt;
-  &lt;input type=&quot;checkbox&quot; class=&quot;custom-control-input&quot; id=&quot;customSwitch3&quot; checked&gt;
-  &lt;label class=&quot;custom-control-label&quot; for=&quot;customSwitch3&quot;&gt;Toggle this switch element&lt;/label&gt;
+&lt;div class=&quot;form-check form-switch&quot;&gt;
+  &lt;input type=&quot;checkbox&quot; class=&quot;form-check-input&quot; id=&quot;customSwitch3&quot; checked&gt;
+  &lt;label class=&quot;form-check-label&quot; for=&quot;customSwitch3&quot;&gt;Toggle this switch element&lt;/label&gt;
 &lt;/div&gt;
 
-&lt;div class=&quot;custom-control custom-switch&quot;&gt;
-  &lt;input type=&quot;checkbox&quot; class=&quot;custom-control-input&quot; disabled id=&quot;customSwitch4&quot; checked disabled&gt;
-  &lt;label class=&quot;custom-control-label&quot; for=&quot;customSwitch4&quot;&gt;Disabled switch element&lt;/label&gt;
+&lt;div class=&quot;form-check form-switch&quot;&gt;
+  &lt;input type=&quot;checkbox&quot; class=&quot;form-check-input&quot; disabled id=&quot;customSwitch4&quot; checked disabled&gt;
+  &lt;label class=&quot;form-check-label&quot; for=&quot;customSwitch4&quot;&gt;Disabled switch element&lt;/label&gt;
 &lt;/div&gt;
                     </pre>
 
@@ -840,10 +839,10 @@
 
                     <h4>Range</h4>
 
-                    <p>Create custom range controls with <code>.custom-range</code>. The track (the background) and
+                    <p>Create custom range controls with <code>.form-range</code>. The track (the background) and
                         thumb (the value) are both styled to appear the same across browsers.</p>
 
-                    <input type="range" class="custom-range" id="customRange1">
+                    <input type="range" class="form-range" id="customRange1">
 
 
                     <hr>
@@ -856,7 +855,7 @@
 
             <div class="row">
                 <div class="col-xxl-6 col-12">
-                    <div class="card">
+                    <div class="card mb-15">
                         <div class="card-body">
                             <h4>File Browser </h4>
                             <p>
@@ -865,16 +864,22 @@
                                 to hook them up with functional Choose file… and selected file name text.
                             </p>
 
-                            <div class="custom-file">
-                                <input type="file" class="custom-file-input" id="customFile">
-                                <label class="custom-file-label" for="customFile">Choose file</label>
+                            <div class="form-file">
+                                <input type="file" class="form-file-input" id="customFile">
+                                <label class="form-file-label" for="customFile">
+                                    <span class="form-file-text">Choose file...</span>
+                                    <span class="form-file-button">Browse</span>
+                                </label>
                             </div>
 
                             <pre class="my-30">
-&lt;div class=&quot;custom-file&quot;&gt;
-    &lt;input type=&quot;file&quot; class=&quot;custom-file-input&quot; id=&quot;customFile&quot;&gt;
-    &lt;label class=&quot;custom-file-label&quot; for=&quot;customFile&quot;&gt;Choose file&lt;/label&gt;
-&lt;/div&gt;
+&#x3C;div class=&#x22;form-file&#x22;&#x3E;
+&#x3C;input type=&#x22;file&#x22; class=&#x22;form-file-input&#x22; id=&#x22;customFile&#x22;&#x3E;
+&#x3C;label class=&#x22;form-file-label&#x22; for=&#x22;customFile&#x22;&#x3E;
+    &#x3C;span class=&#x22;form-file-text&#x22;&#x3E;Choose file...&#x3C;/span&#x3E;
+    &#x3C;span class=&#x22;form-file-button&#x22;&#x3E;Browse&#x3C;/span&#x3E;
+&#x3C;/label&#x3E;
+&#x3C;/div&#x3E;
                             </pre>
                         </div>
                     </div>
@@ -882,16 +887,16 @@
 
 
                 <div class="col-xxl-6 col-12">
-                    <div class="card">
+                    <div class="card mb-15">
                         <div class="card-body">
                             <h4>Select</h4>
                             <p>
-                                Custom select menus need only a custom class, <code>.custom-select</code> to trigger the
+                                Custom select menus need only a custom class, <code>.form-select</code> to trigger the
                                 custom
                                 styles.
                             </p>
 
-                            <select class="custom-select">
+                            <select class="form-select">
                                 <option selected="">Open this select menu</option>
                                 <option value="1">One</option>
                                 <option value="2">Two</option>
@@ -899,7 +904,7 @@
                             </select>
 
                             <pre class="my-30">
-&lt;select class=&quot;custom-select&quot;&gt;
+&lt;select class=&quot;form-select&quot;&gt;
     &lt;option selected&gt;Open this select menu&lt;/option&gt;
     &lt;option value=&quot;1&quot;&gt;One&lt;/option&gt;
     &lt;option value=&quot;2&quot;&gt;Two&lt;/option&gt;
@@ -913,7 +918,7 @@
 
             </div>
 
-            <div class="card">
+            <div class="card mb-15">
                 <div class="card-body">
                     <h4>Input Sizes & Group</h4>
                     <p>
@@ -922,7 +927,7 @@
                     </p>
 
                     <form role="form" class="form-horizontal">
-                        <div class="form-group row">
+                        <div class="mb-15 row">
                             <label class="col-sm-2 col-form-label" for="example-input-small">Small</label>
                             <div class="col-sm-10">
                                 <input type="text" id="example-input-small" name="example-input-small"
@@ -930,7 +935,7 @@
                             </div>
                         </div>
 
-                        <div class="form-group row">
+                        <div class="mb-15 row">
                             <label class="col-sm-2 col-form-label" for="example-input-normal">Normal</label>
                             <div class="col-sm-10">
                                 <input type="text" id="example-input-normal" name="example-input-normal"
@@ -938,7 +943,7 @@
                             </div>
                         </div>
 
-                        <div class="form-group row">
+                        <div class="mb-15 row">
                             <label class="col-sm-2 col-form-label" for="example-input-large">Large</label>
                             <div class="col-sm-10">
                                 <input type="text" id="example-input-large" name="example-input-large"
@@ -946,31 +951,31 @@
                             </div>
                         </div>
 
-                        <div class="form-group row">
+                        <div class="mb-15 row">
                             <label class="col-sm-2 col-form-label">Grid Sizes</label>
                             <div class="col-sm-4">
                                 <input type="text" class="form-control" placeholder=".col-sm-4">
                             </div>
                         </div>
 
-                        <div class="form-group row">
+                        <div class="mb-15 row">
                             <label class="col-sm-2 col-form-label">Static</label>
                             <div class="col-sm-10">
                                 <div class="input-group">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text" id="basic-addon1">@</span>
-                                    </div>
+
+                                    <span class="input-group-text" id="basic-addon1">@</span>
+
                                     <input type="text" class="form-control" placeholder="Username" aria-label="Username"
                                         aria-describedby="basic-addon1">
                                 </div>
                             </div>
                         </div>
 
-                        <div class="form-group row">
+                        <div class="mb-15 row">
                             <label class="col-sm-2 col-form-label">Dropdowns</label>
                             <div class="col-sm-10">
                                 <div class="input-group mb-3">
-                                    <div class="input-group-prepend">
+                                   
                                         <button class="btn btn-primary  dropdown-toggle" type="button"
                                             data-toggle="dropdown" aria-haspopup="true"
                                             aria-expanded="false">Dropdown</button>
@@ -981,7 +986,7 @@
                                             <div role="separator" class="dropdown-divider"></div>
                                             <a class="dropdown-item" href="#">Separated link</a>
                                         </div>
-                                    </div>
+                                   
                                     <input type="text" class="form-control" placeholder="" aria-label=""
                                         aria-describedby="basic-addon1">
                                 </div>
@@ -989,15 +994,15 @@
                             </div>
                         </div>
 
-                        <div class="form-group row mb-0">
+                        <div class="mb-15 row mb-0">
                             <label class="col-sm-2 col-form-label">Buttons</label>
                             <div class="col-sm-10">
                                 <div class="input-group">
                                     <input type="text" class="form-control" placeholder="Recipient's username"
                                         aria-label="Recipient's username" aria-describedby="basic-addon2">
-                                    <div class="input-group-append">
+                                 
                                         <button class="btn btn-dark" type="button">Button</button>
-                                    </div>
+                                  
                                 </div>
                             </div>
                         </div>
@@ -1005,136 +1010,135 @@
                     </form>
 
                     <pre class="my-30">
-&lt;form role=&quot;form&quot; class=&quot;form-horizontal&quot;&gt;
-    &lt;div class=&quot;form-group row&quot;&gt;
-        &lt;label class=&quot;col-sm-2 col-form-label&quot; for=&quot;example-input-small&quot;&gt;Small&lt;/label&gt;
-        &lt;div class=&quot;col-sm-10&quot;&gt;
-            &lt;input type=&quot;text&quot; id=&quot;example-input-small&quot; name=&quot;example-input-small&quot;
-                class=&quot;form-control form-control-sm&quot; placeholder=&quot;.input-sm&quot;&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
+&#x3C;form role=&#x22;form&#x22; class=&#x22;form-horizontal&#x22;&#x3E;
+&#x3C;div class=&#x22;mb-15 row&#x22;&#x3E;
+&#x3C;label class=&#x22;col-sm-2 col-form-label&#x22; for=&#x22;example-input-small&#x22;&#x3E;Small&#x3C;/label&#x3E;
+&#x3C;div class=&#x22;col-sm-10&#x22;&#x3E;
+    &#x3C;input type=&#x22;text&#x22; id=&#x22;example-input-small&#x22; name=&#x22;example-input-small&#x22;
+        class=&#x22;form-control form-control-sm&#x22; placeholder=&#x22;.input-sm&#x22;&#x3E;
+&#x3C;/div&#x3E;
+&#x3C;/div&#x3E;
 
-    &lt;div class=&quot;form-group row&quot;&gt;
-        &lt;label class=&quot;col-sm-2 col-form-label&quot; for=&quot;example-input-normal&quot;&gt;Normal&lt;/label&gt;
-        &lt;div class=&quot;col-sm-10&quot;&gt;
-            &lt;input type=&quot;text&quot; id=&quot;example-input-normal&quot; name=&quot;example-input-normal&quot;
-                class=&quot;form-control&quot; placeholder=&quot;Normal&quot;&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
+&#x3C;div class=&#x22;mb-15 row&#x22;&#x3E;
+&#x3C;label class=&#x22;col-sm-2 col-form-label&#x22; for=&#x22;example-input-normal&#x22;&#x3E;Normal&#x3C;/label&#x3E;
+&#x3C;div class=&#x22;col-sm-10&#x22;&#x3E;
+    &#x3C;input type=&#x22;text&#x22; id=&#x22;example-input-normal&#x22; name=&#x22;example-input-normal&#x22;
+        class=&#x22;form-control&#x22; placeholder=&#x22;Normal&#x22;&#x3E;
+&#x3C;/div&#x3E;
+&#x3C;/div&#x3E;
 
-    &lt;div class=&quot;form-group row&quot;&gt;
-        &lt;label class=&quot;col-sm-2 col-form-label&quot; for=&quot;example-input-large&quot;&gt;Large&lt;/label&gt;
-        &lt;div class=&quot;col-sm-10&quot;&gt;
-            &lt;input type=&quot;text&quot; id=&quot;example-input-large&quot; name=&quot;example-input-large&quot;
-                class=&quot;form-control form-control-lg&quot; placeholder=&quot;.input-lg&quot;&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
+&#x3C;div class=&#x22;mb-15 row&#x22;&#x3E;
+&#x3C;label class=&#x22;col-sm-2 col-form-label&#x22; for=&#x22;example-input-large&#x22;&#x3E;Large&#x3C;/label&#x3E;
+&#x3C;div class=&#x22;col-sm-10&#x22;&#x3E;
+    &#x3C;input type=&#x22;text&#x22; id=&#x22;example-input-large&#x22; name=&#x22;example-input-large&#x22;
+        class=&#x22;form-control form-control-lg&#x22; placeholder=&#x22;.input-lg&#x22;&#x3E;
+&#x3C;/div&#x3E;
+&#x3C;/div&#x3E;
 
-    &lt;div class=&quot;form-group row&quot;&gt;
-        &lt;label class=&quot;col-sm-2 col-form-label&quot;&gt;Grid Sizes&lt;/label&gt;
-        &lt;div class=&quot;col-sm-4&quot;&gt;
-            &lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;.col-sm-4&quot;&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
+&#x3C;div class=&#x22;mb-15 row&#x22;&#x3E;
+&#x3C;label class=&#x22;col-sm-2 col-form-label&#x22;&#x3E;Grid Sizes&#x3C;/label&#x3E;
+&#x3C;div class=&#x22;col-sm-4&#x22;&#x3E;
+    &#x3C;input type=&#x22;text&#x22; class=&#x22;form-control&#x22; placeholder=&#x22;.col-sm-4&#x22;&#x3E;
+&#x3C;/div&#x3E;
+&#x3C;/div&#x3E;
 
-    &lt;div class=&quot;form-group row&quot;&gt;
-        &lt;label class=&quot;col-sm-2 col-form-label&quot;&gt;Static&lt;/label&gt;
-        &lt;div class=&quot;col-sm-10&quot;&gt;
-            &lt;div class=&quot;input-group&quot;&gt;
-                &lt;div class=&quot;input-group-prepend&quot;&gt;
-                    &lt;span class=&quot;input-group-text&quot; id=&quot;basic-addon1&quot;&gt;@&lt;/span&gt;
-                &lt;/div&gt;
-                &lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Username&quot; aria-label=&quot;Username&quot;
-                    aria-describedby=&quot;basic-addon1&quot;&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
+&#x3C;div class=&#x22;mb-15 row&#x22;&#x3E;
+&#x3C;label class=&#x22;col-sm-2 col-form-label&#x22;&#x3E;Static&#x3C;/label&#x3E;
+&#x3C;div class=&#x22;col-sm-10&#x22;&#x3E;
+    &#x3C;div class=&#x22;input-group&#x22;&#x3E;
 
-    &lt;div class=&quot;form-group row&quot;&gt;
-        &lt;label class=&quot;col-sm-2 col-form-label&quot;&gt;Dropdowns&lt;/label&gt;
-        &lt;div class=&quot;col-sm-10&quot;&gt;
-            &lt;div class=&quot;input-group mb-3&quot;&gt;
-                &lt;div class=&quot;input-group-prepend&quot;&gt;
-                    &lt;button class=&quot;btn btn-primary  dropdown-toggle&quot; type=&quot;button&quot;
-                        data-toggle=&quot;dropdown&quot; aria-haspopup=&quot;true&quot;
-                        aria-expanded=&quot;false&quot;&gt;Dropdown&lt;/button&gt;
-                    &lt;div class=&quot;dropdown-menu&quot;&gt;
-                        &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Action&lt;/a&gt;
-                        &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Another action&lt;/a&gt;
-                        &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Something else here&lt;/a&gt;
-                        &lt;div role=&quot;separator&quot; class=&quot;dropdown-divider&quot;&gt;&lt;/div&gt;
-                        &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Separated link&lt;/a&gt;
-                    &lt;/div&gt;
-                &lt;/div&gt;
-                &lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;&quot; aria-label=&quot;&quot;
-                    aria-describedby=&quot;basic-addon1&quot;&gt;
-            &lt;/div&gt;
+        &#x3C;span class=&#x22;input-group-text&#x22; id=&#x22;basic-addon1&#x22;&#x3E;@&#x3C;/span&#x3E;
 
-        &lt;/div&gt;
-    &lt;/div&gt;
+        &#x3C;input type=&#x22;text&#x22; class=&#x22;form-control&#x22; placeholder=&#x22;Username&#x22; aria-label=&#x22;Username&#x22;
+            aria-describedby=&#x22;basic-addon1&#x22;&#x3E;
+    &#x3C;/div&#x3E;
+&#x3C;/div&#x3E;
+&#x3C;/div&#x3E;
 
-    &lt;div class=&quot;form-group row mb-0&quot;&gt;
-        &lt;label class=&quot;col-sm-2 col-form-label&quot;&gt;Buttons&lt;/label&gt;
-        &lt;div class=&quot;col-sm-10&quot;&gt;
-            &lt;div class=&quot;input-group&quot;&gt;
-                &lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Recipient&apos;s username&quot;
-                    aria-label=&quot;Recipient&apos;s username&quot; aria-describedby=&quot;basic-addon2&quot;&gt;
-                &lt;div class=&quot;input-group-append&quot;&gt;
-                    &lt;button class=&quot;btn btn-dark&quot;
-                        type=&quot;button&quot;&gt;Button&lt;/button&gt;
-                &lt;/div&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
+&#x3C;div class=&#x22;mb-15 row&#x22;&#x3E;
+&#x3C;label class=&#x22;col-sm-2 col-form-label&#x22;&#x3E;Dropdowns&#x3C;/label&#x3E;
+&#x3C;div class=&#x22;col-sm-10&#x22;&#x3E;
+    &#x3C;div class=&#x22;input-group mb-3&#x22;&#x3E;
+        
+            &#x3C;button class=&#x22;btn btn-primary  dropdown-toggle&#x22; type=&#x22;button&#x22;
+                data-toggle=&#x22;dropdown&#x22; aria-haspopup=&#x22;true&#x22;
+                aria-expanded=&#x22;false&#x22;&#x3E;Dropdown&#x3C;/button&#x3E;
+            &#x3C;div class=&#x22;dropdown-menu&#x22;&#x3E;
+                &#x3C;a class=&#x22;dropdown-item&#x22; href=&#x22;#&#x22;&#x3E;Action&#x3C;/a&#x3E;
+                &#x3C;a class=&#x22;dropdown-item&#x22; href=&#x22;#&#x22;&#x3E;Another action&#x3C;/a&#x3E;
+                &#x3C;a class=&#x22;dropdown-item&#x22; href=&#x22;#&#x22;&#x3E;Something else here&#x3C;/a&#x3E;
+                &#x3C;div role=&#x22;separator&#x22; class=&#x22;dropdown-divider&#x22;&#x3E;&#x3C;/div&#x3E;
+                &#x3C;a class=&#x22;dropdown-item&#x22; href=&#x22;#&#x22;&#x3E;Separated link&#x3C;/a&#x3E;
+            &#x3C;/div&#x3E;
+        
+        &#x3C;input type=&#x22;text&#x22; class=&#x22;form-control&#x22; placeholder=&#x22;&#x22; aria-label=&#x22;&#x22;
+            aria-describedby=&#x22;basic-addon1&#x22;&#x3E;
+    &#x3C;/div&#x3E;
 
-&lt;/form&gt;
+&#x3C;/div&#x3E;
+&#x3C;/div&#x3E;
+
+&#x3C;div class=&#x22;mb-15 row mb-0&#x22;&#x3E;
+&#x3C;label class=&#x22;col-sm-2 col-form-label&#x22;&#x3E;Buttons&#x3C;/label&#x3E;
+&#x3C;div class=&#x22;col-sm-10&#x22;&#x3E;
+    &#x3C;div class=&#x22;input-group&#x22;&#x3E;
+        &#x3C;input type=&#x22;text&#x22; class=&#x22;form-control&#x22; placeholder=&#x22;Recipient&#x27;s username&#x22;
+            aria-label=&#x22;Recipient&#x27;s username&#x22; aria-describedby=&#x22;basic-addon2&#x22;&#x3E;
+        
+            &#x3C;button class=&#x22;btn btn-dark&#x22; type=&#x22;button&#x22;&#x3E;Button&#x3C;/button&#x3E;
+        
+    &#x3C;/div&#x3E;
+&#x3C;/div&#x3E;
+&#x3C;/div&#x3E;
+
+&#x3C;/form&#x3E;
                     </pre>
                 </div>
             </div>
 
 
-            <div class="card">
+            <div class="card mb-15">
                 <div class="card-body">
                     <h4>Basic</h4>
                     <form role="form">
-                        <div class="form-group">
+                        <div class="mb-15">
                             <label for="exampleInputEmail1">Email address</label>
                             <input type="email" class="form-control" id="exampleInputEmail1"
                                 aria-describedby="emailHelp" placeholder="Enter email">
                             <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
                                 else.</small>
                         </div>
-                        <div class="form-group">
+                        <div class="mb-15">
                             <label for="exampleInputPassword1">Password</label>
                             <input type="password" class="form-control" id="exampleInputPassword1"
                                 placeholder="Password">
                         </div>
-                        <div class="form-group">
-                            <div class="checkbox">
-                                <input id="checkbox0" type="checkbox">
-                                <label for="checkbox0">
-                                    Check me out
+                        <div class="mb-15">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Remember login
                                 </label>
-                            </div>
+                              </div>
                         </div>
                         <button type="submit" class="btn btn-primary">Submit</button>
                     </form>
 
                     <pre class="my-30">
 &lt;form role=&quot;form&quot;&gt;
-    &lt;div class=&quot;form-group&quot;&gt;
+    &lt;div class=&quot;mb-15&quot;&gt;
         &lt;label for=&quot;exampleInputEmail1&quot;&gt;Email address&lt;/label&gt;
         &lt;input type=&quot;email&quot; class=&quot;form-control&quot; id=&quot;exampleInputEmail1&quot;
             aria-describedby=&quot;emailHelp&quot; placeholder=&quot;Enter email&quot;&gt;
         &lt;small id=&quot;emailHelp&quot; class=&quot;form-text text-muted&quot;&gt;We&apos;ll never share your email with anyone
             else.&lt;/small&gt;
     &lt;/div&gt;
-    &lt;div class=&quot;form-group&quot;&gt;
+    &lt;div class=&quot;mb-15&quot;&gt;
         &lt;label for=&quot;exampleInputPassword1&quot;&gt;Password&lt;/label&gt;
         &lt;input type=&quot;password&quot; class=&quot;form-control&quot; id=&quot;exampleInputPassword1&quot;
             placeholder=&quot;Password&quot;&gt;
     &lt;/div&gt;
-    &lt;div class=&quot;form-group&quot;&gt;
+    &lt;div class=&quot;mb-15&quot;&gt;
         &lt;div class=&quot;checkbox&quot;&gt;
             &lt;input id=&quot;checkbox0&quot; type=&quot;checkbox&quot;&gt;
             &lt;label for=&quot;checkbox0&quot;&gt;
@@ -1149,30 +1153,30 @@
             </div>
 
 
-            <div class="card">
+            <div class="card mb-15">
                 <div class="card-body">
                     <h4>Horizontal</h4>
                     <form class="form-horizontal" role="form">
-                        <div class="form-group row">
+                        <div class="mb-15 row">
                             <label for="inputEmail3" class="col-sm-3 col-form-label">Email</label>
                             <div class="col-sm-9">
                                 <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
                             </div>
                         </div>
-                        <div class="form-group row">
+                        <div class="mb-15 row">
                             <label for="inputPassword3" class="col-sm-3 col-form-label">Password</label>
                             <div class="col-sm-9">
                                 <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
                             </div>
                         </div>
-                        <div class="form-group row">
+                        <div class="mb-15 row">
                             <label for="inputPassword5" class="col-sm-3 col-form-label">Re Password</label>
                             <div class="col-sm-9">
                                 <input type="password" class="form-control" id="inputPassword5"
                                     placeholder="Retype Password">
                             </div>
                         </div>
-                        <div class="form-group row justify-content-end">
+                        <div class="mb-15 row justify-content-end">
                             <div class="col-sm-9">
                                 <div class="checkbox checkbox-primary">
                                     <input id="checkbox2" type="checkbox">
@@ -1182,7 +1186,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="form-group mb-0 justify-content-end row">
+                        <div class="mb-15 mb-0 justify-content-end row">
                             <div class="col-sm-9">
                                 <button type="submit" class="btn btn-info">Sign in</button>
                             </div>
@@ -1191,26 +1195,26 @@
 
                     <pre class="my-30">
 &lt;form class=&quot;form-horizontal&quot; role=&quot;form&quot;&gt;
-    &lt;div class=&quot;form-group row&quot;&gt;
+    &lt;div class=&quot;mb-15 row&quot;&gt;
         &lt;label for=&quot;inputEmail3&quot; class=&quot;col-sm-3 col-form-label&quot;&gt;Email&lt;/label&gt;
         &lt;div class=&quot;col-sm-9&quot;&gt;
             &lt;input type=&quot;email&quot; class=&quot;form-control&quot; id=&quot;inputEmail3&quot; placeholder=&quot;Email&quot;&gt;
         &lt;/div&gt;
     &lt;/div&gt;
-    &lt;div class=&quot;form-group row&quot;&gt;
+    &lt;div class=&quot;mb-15 row&quot;&gt;
         &lt;label for=&quot;inputPassword3&quot; class=&quot;col-sm-3 col-form-label&quot;&gt;Password&lt;/label&gt;
         &lt;div class=&quot;col-sm-9&quot;&gt;
             &lt;input type=&quot;password&quot; class=&quot;form-control&quot; id=&quot;inputPassword3&quot; placeholder=&quot;Password&quot;&gt;
         &lt;/div&gt;
     &lt;/div&gt;
-    &lt;div class=&quot;form-group row&quot;&gt;
+    &lt;div class=&quot;mb-15 row&quot;&gt;
         &lt;label for=&quot;inputPassword5&quot; class=&quot;col-sm-3 col-form-label&quot;&gt;Re Password&lt;/label&gt;
         &lt;div class=&quot;col-sm-9&quot;&gt;
             &lt;input type=&quot;password&quot; class=&quot;form-control&quot; id=&quot;inputPassword5&quot;
                 placeholder=&quot;Retype Password&quot;&gt;
         &lt;/div&gt;
     &lt;/div&gt;
-    &lt;div class=&quot;form-group row justify-content-end&quot;&gt;
+    &lt;div class=&quot;mb-15 row justify-content-end&quot;&gt;
         &lt;div class=&quot;col-sm-9&quot;&gt;
             &lt;div class=&quot;checkbox checkbox-primary&quot;&gt;
                 &lt;input id=&quot;checkbox2&quot; type=&quot;checkbox&quot;&gt;
@@ -1220,7 +1224,7 @@
             &lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
-    &lt;div class=&quot;form-group mb-0 justify-content-end row&quot;&gt;
+    &lt;div class=&quot;mb-15 mb-0 justify-content-end row&quot;&gt;
         &lt;div class=&quot;col-sm-9&quot;&gt;
             &lt;button type=&quot;submit&quot; class=&quot;btn btn-info&quot;&gt;Sign in&lt;/button&gt;
         &lt;/div&gt;
@@ -1231,7 +1235,7 @@
             </div>
 
 
-            <div class="card">
+            <div class="card mb-15">
                 <div class="card-body">
                     <h4>Form Grid</h4>
                     <p>
@@ -1242,30 +1246,30 @@
 
                     <form>
                         <div class="row">
-                            <div class="form-group col-md-6">
+                            <div class="mb-15 col-md-6">
                                 <label for="inputEmail4" class="col-form-label">Email</label>
                                 <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
                             </div>
-                            <div class="form-group col-md-6">
+                            <div class="mb-15 col-md-6">
                                 <label for="inputPassword4" class="col-form-label">Password</label>
                                 <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
                             </div>
                         </div>
-                        <div class="form-group">
+                        <div class="mb-15">
                             <label for="inputAddress" class="col-form-label">Address</label>
                             <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
                         </div>
-                        <div class="form-group">
+                        <div class="mb-15">
                             <label for="inputAddress2" class="col-form-label">Address 2</label>
                             <input type="text" class="form-control" id="inputAddress2"
                                 placeholder="Apartment, studio, or floor">
                         </div>
                         <div class="row">
-                            <div class="form-group col-md-6">
+                            <div class="mb-15 col-md-6">
                                 <label for="inputCity" class="col-form-label">City</label>
                                 <input type="text" class="form-control" id="inputCity">
                             </div>
-                            <div class="form-group col-md-4">
+                            <div class="mb-15 col-md-4">
                                 <label for="inputState" class="col-form-label">State</label>
                                 <select id="inputState" class="form-control">
                                     <option>Choose</option>
@@ -1275,15 +1279,15 @@
 
                                 </select>
                             </div>
-                            <div class="form-group col-md-2">
+                            <div class="mb-15 col-md-2">
                                 <label for="inputZip" class="col-form-label">Zip</label>
                                 <input type="text" class="form-control" id="inputZip">
                             </div>
                         </div>
-                        <div class="form-group">
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="customCheck11">
-                                <label class="custom-control-label" for="customCheck11">Check this custom
+                        <div class="mb-15">
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="customCheck11">
+                                <label class="form-check-label" for="customCheck11">Check this custom
                                     checkbox</label>
                             </div>
                         </div>
@@ -1293,30 +1297,30 @@
                     <pre class="my-30"><code>
 &lt;form&gt;
     &lt;div class=&quot;row&quot;&gt;
-        &lt;div class=&quot;form-group col-md-6&quot;&gt;
+        &lt;div class=&quot;mb-15 col-md-6&quot;&gt;
             &lt;label for=&quot;inputEmail4&quot; class=&quot;col-form-label&quot;&gt;Email&lt;/label&gt;
             &lt;input type=&quot;email&quot; class=&quot;form-control&quot; id=&quot;inputEmail4&quot; placeholder=&quot;Email&quot;&gt;
         &lt;/div&gt;
-        &lt;div class=&quot;form-group col-md-6&quot;&gt;
+        &lt;div class=&quot;mb-15 col-md-6&quot;&gt;
             &lt;label for=&quot;inputPassword4&quot; class=&quot;col-form-label&quot;&gt;Password&lt;/label&gt;
             &lt;input type=&quot;password&quot; class=&quot;form-control&quot; id=&quot;inputPassword4&quot; placeholder=&quot;Password&quot;&gt;
         &lt;/div&gt;
     &lt;/div&gt;
-    &lt;div class=&quot;form-group&quot;&gt;
+    &lt;div class=&quot;mb-15&quot;&gt;
         &lt;label for=&quot;inputAddress&quot; class=&quot;col-form-label&quot;&gt;Address&lt;/label&gt;
         &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;inputAddress&quot; placeholder=&quot;1234 Main St&quot;&gt;
     &lt;/div&gt;
-    &lt;div class=&quot;form-group&quot;&gt;
+    &lt;div class=&quot;mb-15&quot;&gt;
         &lt;label for=&quot;inputAddress2&quot; class=&quot;col-form-label&quot;&gt;Address 2&lt;/label&gt;
         &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;inputAddress2&quot;
             placeholder=&quot;Apartment, studio, or floor&quot;&gt;
     &lt;/div&gt;
     &lt;div class=&quot;row&quot;&gt;
-        &lt;div class=&quot;form-group col-md-6&quot;&gt;
+        &lt;div class=&quot;mb-15 col-md-6&quot;&gt;
             &lt;label for=&quot;inputCity&quot; class=&quot;col-form-label&quot;&gt;City&lt;/label&gt;
             &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;inputCity&quot;&gt;
         &lt;/div&gt;
-        &lt;div class=&quot;form-group col-md-4&quot;&gt;
+        &lt;div class=&quot;mb-15 col-md-4&quot;&gt;
             &lt;label for=&quot;inputState&quot; class=&quot;col-form-label&quot;&gt;State&lt;/label&gt;
             &lt;select id=&quot;inputState&quot; class=&quot;form-control&quot;&gt;
                 &lt;option&gt;Choose&lt;/option&gt;
@@ -1326,15 +1330,15 @@
 
             &lt;/select&gt;
         &lt;/div&gt;
-        &lt;div class=&quot;form-group col-md-2&quot;&gt;
+        &lt;div class=&quot;mb-15 col-md-2&quot;&gt;
             &lt;label for=&quot;inputZip&quot; class=&quot;col-form-label&quot;&gt;Zip&lt;/label&gt;
             &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;inputZip&quot;&gt;
         &lt;/div&gt;
     &lt;/div&gt;
-    &lt;div class=&quot;form-group&quot;&gt;
-        &lt;div class=&quot;custom-control custom-checkbox&quot;&gt;
-            &lt;input type=&quot;checkbox&quot; class=&quot;custom-control-input&quot; id=&quot;customCheck11&quot;&gt;
-            &lt;label class=&quot;custom-control-label&quot; for=&quot;customCheck11&quot;&gt;Check this custom
+    &lt;div class=&quot;mb-15&quot;&gt;
+        &lt;div class=&quot;form-check&quot;&gt;
+            &lt;input type=&quot;checkbox&quot; class=&quot;form-check-input&quot; id=&quot;customCheck11&quot;&gt;
+            &lt;label class=&quot;form-check-label&quot; for=&quot;customCheck11&quot;&gt;Check this custom
                 checkbox&lt;/label&gt;
         &lt;/div&gt;
     &lt;/div&gt;
@@ -1350,12 +1354,12 @@
     </div>
 
 
-    <script src="https://unpkg.com/jquery@3.4.1/dist/jquery.min.js"></script>
-    <script src="https://unpkg.com/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-    <script src="https://unpkg.com/bootstrap@4.4.1/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/js/bootstrap.min.js"></script>
 
-    <script src="https://unpkg.com/perfect-scrollbar@1.4.0/dist/perfect-scrollbar.min.js"></script>
-   
+    <script src="https://cdn.jsdelivr.net/npm/perfect-scrollbar@1.4.0/dist/perfect-scrollbar.min.js"></script>
+
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-50750921-19"></script>

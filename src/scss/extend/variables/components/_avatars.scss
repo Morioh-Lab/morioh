@@ -1,0 +1,16 @@
+// Avatars
+
+$avatar-size:           3rem !default;
+$avatar-border-size:    0.065rem !default;
+
+$avatar-sm-size:        $avatar-size * 0.75 !default;
+$avatar-sm-border-size: $avatar-border-size * 0.75 !default;
+
+$avatar-lg-size:        $avatar-size * 1.5 !default;
+$avatar-lg-border-size: $avatar-border-size * 1.5 !default;
+
+$avatar-xl-size:        $avatar-size * 2 !default;
+$avatar-xl-border-size: $avatar-border-size * 2 !default;
+
+$avatar-xxl-size:        $avatar-size * 3 !default;
+$avatar-xxl-border-size: $avatar-border-size * 3 !default;

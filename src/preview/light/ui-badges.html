@@ -37,10 +37,10 @@
     <meta name="image" content="https://i.imgur.com/gWYKl5F.png">
 
 
-    <link rel="stylesheet" href="https://unpkg.com/@fortawesome/fontawesome-free@5.11.2/css/all.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/perfect-scrollbar@1.4.0/css/perfect-scrollbar.css">
-    <link rel="stylesheet" href="https://unpkg.com/@mdi/font@4.7.95/css/materialdesignicons.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/animate.css@3.7.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/perfect-scrollbar@1.4.0/css/perfect-scrollbar.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@4.7.95/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css">
 
     <link rel="stylesheet" href="../../css/morioh.css">
 
@@ -53,17 +53,17 @@
 
         <div class="main-navbar navbar-expand-md navbar-light bg-white fixed-top shadow-sm">
 
-            <button class="btn hidden-md-up" type="button" data-toggle="collapse" data-target="#main-menu"
+            <button class="btn d-md-none" type="button" data-toggle="collapse" data-target="#main-menu"
                 aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fas fa-bars"></i>
             </button>
 
 
-            <img src="https://i.imgur.com/QTZ8pU1.png" title="Morioh" class="navbar-logo hidden-md-up"
+            <img src="https://i.imgur.com/QTZ8pU1.png" title="Morioh" class="navbar-logo d-md-none"
                 style="height: 36px;">
 
 
-            <button class="btn hidden-md-up" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            <button class="btn d-md-none" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fas fa-bars"></i>
             </button>
@@ -72,7 +72,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto hidden-sm-down">
 
-                    <li class="nav-item mr-10">
+                    <li class="nav-item mr-5">
                         <a href="javascript://" class="nav-icon font-2xl" id="navbar-toggler">
                             <!-- <i class="fas fa-bars"></i> -->
                             <!-- <i class="mdi mdi-view-sequential font-2xl"></i> -->
@@ -85,11 +85,11 @@
                         <form class="form-inline">
                             <div class="input-group">
                                 <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-                                <span class="input-group-append">
-                                    <button class="btn btn-outline-primary" type="button">
-                                        <i class="fas fa-search"></i>
-                                    </button>
-                                </span>
+
+                                <button class="btn btn-outline-primary" type="button">
+                                    <i class="fas fa-search"></i>
+                                </button>
+
                             </div>
                         </form>
                     </li>
@@ -100,27 +100,27 @@
                 <ul class="navbar-nav my-2 my-lg-0">
 
 
-                    <li class="nav-item mr-5">
+                    <li class="nav-item mr-10">
                         <a href="#" class="nav-icon font-2xl">
                             <!-- <i class="fas fa-chart-pie"></i> -->
                             <i class="mdi mdi-view-dashboard-outline"></i>
                         </a>
                     </li>
 
-                    <li class="nav-item mr-5">
+                    <li class="nav-item mr-10">
                         <a class="nav-icon font-2xl" href="#">
                             <i class="mdi mdi-bell-ring-outline"></i>
                         </a>
                     </li>
 
-                    <li class="nav-item mr-5">
+                    <li class="nav-item mr-10">
                         <a href="#" class="nav-icon font-2xl rounded-circle">
                             <!-- <i class="fas fa-cog"></i> -->
                             <i class="mdi mdi-settings-outline"></i>
                         </a>
                     </li>
 
-                    <li class="nav-item mr-5 dropdown">
+                    <li class="nav-item mr-10 dropdown">
                         <a href="#" class="nav-icon avatar rounded-circle" id="PJXN7R" role="button"
                             data-toggle="dropdown" aria-expanded="false">
                             <img src="https://i.imgur.com/ROPF2fQ.png">
@@ -197,7 +197,7 @@
                             <i class="menu-icon mdi mdi-view-dashboard"></i>
                             <span class="menu-label">Dashboard</span>
                             <span class="menu-badge">
-                                <span class="badge badge-info">1</span>
+                                <span class="badge bg-info">1</span>
                             </span>
 
                         </a>
@@ -564,9 +564,9 @@
 
         </div>
 
-        <div class="container-fluid mt-30">
+        <div class="container-fluid mt-15">
 
-            <div class="card">
+            <div class="card mb-15">
                 <div class="card-body">
                     <h4 class="card-title">
                         Badges
@@ -580,22 +580,22 @@
                     <p>Badges scale to match the size of the immediate parent element by using relative font sizing and
                         <code>em</code> units.</p>
 
-                    <div class="form-group">
-                        <h1>Example heading <span class="badge badge-primary">New</span></h1>
-                        <h2>Example heading <span class="badge badge-success">New</span></h2>
-                        <h3>Example heading <span class="badge badge-warning">New</span></h3>
-                        <h4>Example heading <span class="badge badge-danger">New</span></h4>
-                        <h5>Example heading <span class="badge badge-info">New</span></h5>
-                        <h6>Example heading <span class="badge badge-dark">New</span></h6>
+                    <div class="mb-15">
+                        <h1>Example heading <span class="badge bg-primary">New</span></h1>
+                        <h2>Example heading <span class="badge bg-success">New</span></h2>
+                        <h3>Example heading <span class="badge bg-warning">New</span></h3>
+                        <h4>Example heading <span class="badge bg-danger">New</span></h4>
+                        <h5>Example heading <span class="badge bg-info">New</span></h5>
+                        <h6>Example heading <span class="badge bg-dark">New</span></h6>
                     </div>
 
                     <pre>
-&lt;h1&gt;Example heading &lt;span class=&quot;badge badge-primary&quot;&gt;New&lt;/span&gt;&lt;/h1&gt;
-&lt;h2&gt;Example heading &lt;span class=&quot;badge badge-success&quot;&gt;New&lt;/span&gt;&lt;/h2&gt;
-&lt;h3&gt;Example heading &lt;span class=&quot;badge badge-warning&quot;&gt;New&lt;/span&gt;&lt;/h3&gt;
-&lt;h4&gt;Example heading &lt;span class=&quot;badge badge-danger&quot;&gt;New&lt;/span&gt;&lt;/h4&gt;
-&lt;h5&gt;Example heading &lt;span class=&quot;badge badge-info&quot;&gt;New&lt;/span&gt;&lt;/h5&gt;
-&lt;h6&gt;Example heading &lt;span class=&quot;badge badge-dark&quot;&gt;New&lt;/span&gt;&lt;/h6&gt;                    </pre>
+&lt;h1&gt;Example heading &lt;span class=&quot;badge bg-primary&quot;&gt;New&lt;/span&gt;&lt;/h1&gt;
+&lt;h2&gt;Example heading &lt;span class=&quot;badge bg-success&quot;&gt;New&lt;/span&gt;&lt;/h2&gt;
+&lt;h3&gt;Example heading &lt;span class=&quot;badge bg-warning&quot;&gt;New&lt;/span&gt;&lt;/h3&gt;
+&lt;h4&gt;Example heading &lt;span class=&quot;badge bg-danger&quot;&gt;New&lt;/span&gt;&lt;/h4&gt;
+&lt;h5&gt;Example heading &lt;span class=&quot;badge bg-info&quot;&gt;New&lt;/span&gt;&lt;/h5&gt;
+&lt;h6&gt;Example heading &lt;span class=&quot;badge bg-dark&quot;&gt;New&lt;/span&gt;&lt;/h6&gt;                    </pre>
 
 
                     <hr>
@@ -603,14 +603,14 @@
 
                     <div class="form-gorup">
                         <button type="button" class="btn btn-primary">
-                            Notifications <span class="badge badge-danger">4</span>
+                            Notifications <span class="badge bg-danger">4</span>
                         </button>
                     </div>
 
-                    <div class="form-group mt-30">
+                    <div class="mb-15 mt-30">
                         <pre>
 &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;
-    Notifications &lt;span class=&quot;badge badge-warning&quot;&gt;4&lt;/span&gt;
+    Notifications &lt;span class=&quot;badge bg-warning&quot;&gt;4&lt;/span&gt;
 &lt;/button&gt;
                 </pre>
 
@@ -620,26 +620,26 @@
 
                         <p>Add any of the below mentioned modifier classes to change the appearance of a badge.</p>
 
-                        <div class="form-group">
-                            <span class="badge badge-primary">Primary</span>
-                            <span class="badge badge-secondary">Secondary</span>
-                            <span class="badge badge-success">Success</span>
-                            <span class="badge badge-danger">Danger</span>
-                            <span class="badge badge-warning">Warning</span>
-                            <span class="badge badge-info">Info</span>
-                            <span class="badge badge-light">Light</span>
-                            <span class="badge badge-dark">Dark</span>
+                        <div class="mb-15">
+                            <span class="badge bg-primary">Primary</span>
+                            <span class="badge bg-secondary">Secondary</span>
+                            <span class="badge bg-success">Success</span>
+                            <span class="badge bg-danger">Danger</span>
+                            <span class="badge bg-warning">Warning</span>
+                            <span class="badge bg-info">Info</span>
+                            <span class="badge bg-light">Light</span>
+                            <span class="badge bg-dark">Dark</span>
                         </div>
 
                         <pre class="mt-30">
-&lt;span class=&quot;badge badge-primary&quot;&gt;Primary&lt;/span&gt;
-&lt;span class=&quot;badge badge-secondary&quot;&gt;Secondary&lt;/span&gt;
-&lt;span class=&quot;badge badge-success&quot;&gt;Success&lt;/span&gt;
-&lt;span class=&quot;badge badge-danger&quot;&gt;Danger&lt;/span&gt;
-&lt;span class=&quot;badge badge-warning&quot;&gt;Warning&lt;/span&gt;
-&lt;span class=&quot;badge badge-info&quot;&gt;Info&lt;/span&gt;
-&lt;span class=&quot;badge badge-light&quot;&gt;Light&lt;/span&gt;
-&lt;span class=&quot;badge badge-dark&quot;&gt;Dark&lt;/span&gt;                        </pre>
+&lt;span class=&quot;badge bg-primary&quot;&gt;Primary&lt;/span&gt;
+&lt;span class=&quot;badge bg-secondary&quot;&gt;Secondary&lt;/span&gt;
+&lt;span class=&quot;badge bg-success&quot;&gt;Success&lt;/span&gt;
+&lt;span class=&quot;badge bg-danger&quot;&gt;Danger&lt;/span&gt;
+&lt;span class=&quot;badge bg-warning&quot;&gt;Warning&lt;/span&gt;
+&lt;span class=&quot;badge bg-info&quot;&gt;Info&lt;/span&gt;
+&lt;span class=&quot;badge bg-light&quot;&gt;Light&lt;/span&gt;
+&lt;span class=&quot;badge bg-dark&quot;&gt;Dark&lt;/span&gt;                        </pre>
 
 
                         <hr>
@@ -650,26 +650,26 @@
                             <code>border-radius</code> and additional horizontal <code>padding</code>). Useful if you
                             miss the badges from v3.</p>
 
-                        <div class="form-group">
-                            <span class="badge badge-pill badge-primary">Primary</span>
-                            <span class="badge badge-pill badge-secondary">Secondary</span>
-                            <span class="badge badge-pill badge-success">Success</span>
-                            <span class="badge badge-pill badge-danger">Danger</span>
-                            <span class="badge badge-pill badge-warning">Warning</span>
-                            <span class="badge badge-pill badge-info">Info</span>
-                            <span class="badge badge-pill badge-light">Light</span>
-                            <span class="badge badge-pill badge-dark">Dark</span>
+                        <div class="mb-15">
+                            <span class="badge bg-pill badge-primary">Primary</span>
+                            <span class="badge bg-pill badge-secondary">Secondary</span>
+                            <span class="badge bg-pill badge-success">Success</span>
+                            <span class="badge bg-pill badge-danger">Danger</span>
+                            <span class="badge bg-pill badge-warning">Warning</span>
+                            <span class="badge bg-pill badge-info">Info</span>
+                            <span class="badge bg-pill badge-light">Light</span>
+                            <span class="badge bg-pill badge-dark">Dark</span>
                         </div>
 
                         <pre class="mt-30">
-&lt;span class=&quot;badge badge-pill badge-primary&quot;&gt;Primary&lt;/span&gt;
-&lt;span class=&quot;badge badge-pill badge-secondary&quot;&gt;Secondary&lt;/span&gt;
-&lt;span class=&quot;badge badge-pill badge-success&quot;&gt;Success&lt;/span&gt;
-&lt;span class=&quot;badge badge-pill badge-danger&quot;&gt;Danger&lt;/span&gt;
-&lt;span class=&quot;badge badge-pill badge-warning&quot;&gt;Warning&lt;/span&gt;
-&lt;span class=&quot;badge badge-pill badge-info&quot;&gt;Info&lt;/span&gt;
-&lt;span class=&quot;badge badge-pill badge-light&quot;&gt;Light&lt;/span&gt;
-&lt;span class=&quot;badge badge-pill badge-dark&quot;&gt;Dark&lt;/span&gt;                        </pre>
+&lt;span class=&quot;badge bg-pill badge-primary&quot;&gt;Primary&lt;/span&gt;
+&lt;span class=&quot;badge bg-pill badge-secondary&quot;&gt;Secondary&lt;/span&gt;
+&lt;span class=&quot;badge bg-pill badge-success&quot;&gt;Success&lt;/span&gt;
+&lt;span class=&quot;badge bg-pill badge-danger&quot;&gt;Danger&lt;/span&gt;
+&lt;span class=&quot;badge bg-pill badge-warning&quot;&gt;Warning&lt;/span&gt;
+&lt;span class=&quot;badge bg-pill badge-info&quot;&gt;Info&lt;/span&gt;
+&lt;span class=&quot;badge bg-pill badge-light&quot;&gt;Light&lt;/span&gt;
+&lt;span class=&quot;badge bg-pill badge-dark&quot;&gt;Dark&lt;/span&gt;                        </pre>
 
 
                     </div>
@@ -679,89 +679,89 @@
                     <h4>Badge Dots</h4>
 
 
-                    <div class="form-group">
+                    <div class="mb-15">
 
-                        <span class="badge badge-primary rounded-circle w-10 h-10">
+                        <span class="badge bg-primary rounded-circle w-10 h-10">
                             <i class="sr-only">&nbsp;</i>
                         </span>
-                        <span class="badge badge-success rounded-circle w-10 h-10">
+                        <span class="badge bg-success rounded-circle w-10 h-10">
                             <i class="sr-only">&nbsp;</i>
                         </span>
-                        <span class="badge badge-danger rounded-circle w-10 h-10">
+                        <span class="badge bg-danger rounded-circle w-10 h-10">
                             <i class="sr-only">&nbsp;</i>
                         </span>
-                        <span class="badge badge-warning rounded-circle w-10 h-10">
+                        <span class="badge bg-warning rounded-circle w-10 h-10">
                             <i class="sr-only">&nbsp;</i>
                         </span>
-                        <span class="badge badge-info rounded-circle w-10 h-10">
+                        <span class="badge bg-info rounded-circle w-10 h-10">
                             <i class="sr-only">&nbsp;</i>
                         </span>
-                        <span class="badge badge-dark rounded-circle w-10 h-10">
+                        <span class="badge bg-dark rounded-circle w-10 h-10">
                             <i class="sr-only">&nbsp;</i>
                         </span>
 
                     </div>
 
-                    <div class="form-group">
+                    <div class="mb-15">
 
-                        <span class="badge badge-primary rounded-circle w-20 h-20">
+                        <span class="badge bg-primary rounded-circle w-20 h-20">
                             <i class="sr-only">&nbsp;</i>
                         </span>
-                        <span class="badge badge-success rounded-circle w-20 h-20">
+                        <span class="badge bg-success rounded-circle w-20 h-20">
                             <i class="sr-only">&nbsp;</i>
                         </span>
-                        <span class="badge badge-danger rounded-circle w-20 h-20">
+                        <span class="badge bg-danger rounded-circle w-20 h-20">
                             <i class="sr-only">&nbsp;</i>
                         </span>
-                        <span class="badge badge-warning rounded-circle w-20 h-20">
+                        <span class="badge bg-warning rounded-circle w-20 h-20">
                             <i class="sr-only">&nbsp;</i>
                         </span>
-                        <span class="badge badge-info rounded-circle w-20 h-20">
+                        <span class="badge bg-info rounded-circle w-20 h-20">
                             <i class="sr-only">&nbsp;</i>
                         </span>
-                        <span class="badge badge-dark rounded-circle w-20 h-20">
+                        <span class="badge bg-dark rounded-circle w-20 h-20">
                             <i class="sr-only">&nbsp;</i>
                         </span>
 
                     </div>
 
                     <pre>
-&lt;span class=&quot;badge badge-primary rounded-circle w-10 h-10&quot;&gt;
+&lt;span class=&quot;badge bg-primary rounded-circle w-10 h-10&quot;&gt;
     &lt;i class=&quot;sr-only&quot;&gt;&amp;nbsp;&lt;/i&gt;
 &lt;/span&gt;
-&lt;span class=&quot;badge badge-success rounded-circle w-10 h-10&quot;&gt;
+&lt;span class=&quot;badge bg-success rounded-circle w-10 h-10&quot;&gt;
     &lt;i class=&quot;sr-only&quot;&gt;&amp;nbsp;&lt;/i&gt;
 &lt;/span&gt;
-&lt;span class=&quot;badge badge-danger rounded-circle w-10 h-10&quot;&gt;
+&lt;span class=&quot;badge bg-danger rounded-circle w-10 h-10&quot;&gt;
     &lt;i class=&quot;sr-only&quot;&gt;&amp;nbsp;&lt;/i&gt;
 &lt;/span&gt;
-&lt;span class=&quot;badge badge-warning rounded-circle w-10 h-10&quot;&gt;
+&lt;span class=&quot;badge bg-warning rounded-circle w-10 h-10&quot;&gt;
     &lt;i class=&quot;sr-only&quot;&gt;&amp;nbsp;&lt;/i&gt;
 &lt;/span&gt;
-&lt;span class=&quot;badge badge-info rounded-circle w-10 h-10&quot;&gt;
+&lt;span class=&quot;badge bg-info rounded-circle w-10 h-10&quot;&gt;
     &lt;i class=&quot;sr-only&quot;&gt;&amp;nbsp;&lt;/i&gt;
 &lt;/span&gt;
-&lt;span class=&quot;badge badge-dark rounded-circle w-10 h-10&quot;&gt;
+&lt;span class=&quot;badge bg-dark rounded-circle w-10 h-10&quot;&gt;
     &lt;i class=&quot;sr-only&quot;&gt;&amp;nbsp;&lt;/i&gt;
 &lt;/span&gt;                    </pre>
 
                     <pre>
-&lt;span class=&quot;badge badge-primary rounded-circle w-20 h-20&quot;&gt;
+&lt;span class=&quot;badge bg-primary rounded-circle w-20 h-20&quot;&gt;
     &lt;i class=&quot;sr-only&quot;&gt;&amp;nbsp;&lt;/i&gt;
 &lt;/span&gt;
-&lt;span class=&quot;badge badge-success rounded-circle w-20 h-20&quot;&gt;
+&lt;span class=&quot;badge bg-success rounded-circle w-20 h-20&quot;&gt;
     &lt;i class=&quot;sr-only&quot;&gt;&amp;nbsp;&lt;/i&gt;
 &lt;/span&gt;
-&lt;span class=&quot;badge badge-danger rounded-circle w-20 h-20&quot;&gt;
+&lt;span class=&quot;badge bg-danger rounded-circle w-20 h-20&quot;&gt;
     &lt;i class=&quot;sr-only&quot;&gt;&amp;nbsp;&lt;/i&gt;
 &lt;/span&gt;
-&lt;span class=&quot;badge badge-warning rounded-circle w-20 h-20&quot;&gt;
+&lt;span class=&quot;badge bg-warning rounded-circle w-20 h-20&quot;&gt;
     &lt;i class=&quot;sr-only&quot;&gt;&amp;nbsp;&lt;/i&gt;
 &lt;/span&gt;
-&lt;span class=&quot;badge badge-info rounded-circle w-20 h-20&quot;&gt;
+&lt;span class=&quot;badge bg-info rounded-circle w-20 h-20&quot;&gt;
     &lt;i class=&quot;sr-only&quot;&gt;&amp;nbsp;&lt;/i&gt;
 &lt;/span&gt;
-&lt;span class=&quot;badge badge-dark rounded-circle w-20 h-20&quot;&gt;
+&lt;span class=&quot;badge bg-dark rounded-circle w-20 h-20&quot;&gt;
     &lt;i class=&quot;sr-only&quot;&gt;&amp;nbsp;&lt;/i&gt;
 &lt;/span&gt;</pre>
 
@@ -773,11 +773,11 @@
     </div>
 
 
-    <script src="https://unpkg.com/jquery@3.4.1/dist/jquery.slim.min.js"></script>
-    <script src="https://unpkg.com/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-    <script src="https://unpkg.com/bootstrap@4.4.1/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/js/bootstrap.min.js"></script>
 
-    <script src="https://unpkg.com/perfect-scrollbar@1.4.0/dist/perfect-scrollbar.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/perfect-scrollbar@1.4.0/dist/perfect-scrollbar.min.js"></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-50750921-19"></script>
