@@ -10,3 +10,4 @@ obj/*
 config.js
 **/env/production.js
 note.txt
+temp

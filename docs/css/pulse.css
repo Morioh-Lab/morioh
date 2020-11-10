@@ -1,0 +1,53 @@
+@-webkit-keyframes pulse {
+    to {
+        -webkit-box-shadow: 0 0 0 10px rgba(232, 76, 61, 0);
+        box-shadow: 0 0 0 10px rgba(232, 76, 61, 0)
+    }
+}
+
+@-moz-keyframes pulse {
+    to {
+        -moz-box-shadow: 0 0 0 10px rgba(232, 76, 61, 0);
+        box-shadow: 0 0 0 10px rgba(232, 76, 61, 0)
+    }
+}
+
+@-o-keyframes pulse {
+    to {
+        box-shadow: 0 0 0 10px rgba(232, 76, 61, 0)
+    }
+}
+
+@keyframes pulse {
+    to {
+        -webkit-box-shadow: 0 0 0 10px rgba(232, 76, 61, 0);
+        -moz-box-shadow: 0 0 0 10px rgba(232, 76, 61, 0);
+        box-shadow: 0 0 0 10px rgba(232, 76, 61, 0)
+    }
+}
+
+.pulse {
+    -webkit-box-shadow: 0 0 0 0 rgba(61, 177, 107, .9)!important;
+    -moz-box-shadow: 0 0 0 0 rgba(61, 177, 107, .9)!important;
+    box-shadow: 0 0 0 0 rgba(61, 177, 107, .9)!important;
+    -webkit-animation: pulse 1.5s infinite!important
+}
+
+
+
+.fa-beat {
+    animation: fa-beat 1s ease infinite;
+    -webkit-animation: fa-beat 1s ease infinite;
+}
+
+@keyframes fa-beat {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.3);
+    }
+    100% {
+        transform: scale(1);
+    }
+}

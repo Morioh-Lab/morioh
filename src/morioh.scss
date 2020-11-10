@@ -1,0 +1,28 @@
+/*!
+ * Morioh Responsive Template based on Bootstrap v5.0.0-alpha2
+ * Version - 1.1.0
+ * Copyright 2011-2020 The Bootstrap Authors
+ * Copyright 2011-2019 Twitter, Inc.
+ * Copyright 2020 Animate.css 4.1.0
+ * Copyright 2019-2020 Morioh Team - https://morioh.com
+ * Licensed under MIT (https://github.com/Morioh-Lab/morioh/blob/master/LICENSE)
+ */
+
+// @use "@material/theme" with (
+//   $primary: #fcb8ab,
+//   $secondary: #feeae6,
+//   $on-primary: #442b2d,
+//   $on-secondary: #442b2d,
+// );
+
+@use './base';
+
+@use "./components/button";
+@use "./components/button-icon";
+@use "./components/navbar";
+@use "./components/checkbox";
+@use "./components/grid";
+@use "./components/form-field";
+@use "./components/list";
+@use "./components/drawer";
+

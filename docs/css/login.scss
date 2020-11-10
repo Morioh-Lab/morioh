@@ -1,0 +1,59 @@
+.page-login-full {
+    position: fixed;
+    /* background: #fff; */
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100% !important;
+
+    overflow: auto;
+    z-index: 9999;
+}
+
+.page-login-full:before {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background-position: center top;
+    background-size: cover;
+    background-image: url('https://i.morioh.com/964566894.jpg');
+}
+
+.page-login-full:after {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background: #333;
+    opacity: 0.3;
+    /* background-color: rgba(38, 50, 56, 0.6); */
+}
+
+.page-login-full .brand {
+    margin-top: -60px;
+}
+
+.page-login-full .card-form {
+    width: 370px;
+    margin-top: 100px;
+}
+
+@include media-breakpoint-down(sm) {
+    .page-login-full {
+        height: auto;
+        overflow: auto;
+    }
+    .page-login-full .card-form {
+        width: 100%;
+        margin-top: 60px;
+    }
+}

@@ -1,61 +1,43 @@
 "use strict";
 
-var Hapi = require("@hapi/hapi"),
-    fs = require('fs');
+var Hapi = require("@hapi/hapi");
 
 (async () => {
-
-    var server = Hapi.server(config.www);
-
-    await require("./register")(server);
-
-    await server.register([
-        { plugin: require("@hapi/inert") }
-
-    ]);
-
-    server.route([
-
-        {
-            method: 'GET',
-            path: '/js/{file*}',
-            options: {
-                auth: false
-            },
-            handler: {
-                directory: {
-                    path: './js'
-                }
-            }
-        },
-        {
-            method: 'GET',
-            path: '/css/{file*}',
-            options: {
-                auth: false
-            },
-            handler: {
-                directory: {
-                    path: './css'
-                }
-            }
-        },
-
-        {
-            method: "GET",
-            path: "/{p*}",
-            options: {
-                auth: false
-            },
-            handler: (request, h) => {
-                return fs.readFileSync('./index.html');
-            }
-        },
-    ]);
+  var server = Hapi.server({
+    port: 8080,
+    host: '127.0.0.1',
+    router: {
+      isCaseSensitive: true,
+      stripTrailingSlash: true
+    }
+  });
+  await server.register([
+    { plugin: require("@hapi/inert") }
+  ]);
 
 
-    console.log("Worker %s started and running at: %s", process.pid, server.info.uri);
+  server.route([
+    {
+      method: 'GET',
+      path: '/docs/{file*}',
+      handler: {
+        directory: {
+          path: './docs'
+        }
+      }
+    },
+    {
+      method: "GET",
+      path: "/{p*}",
+      handler: (request, h) => {
+        return h.file("./docs/index.html");
+      }
+    }
+  ]);
+
+  await server.start();
+
+  console.log("Worker %s started and running at: %s", process.pid, server.info.uri);
 
 
 })();
-
